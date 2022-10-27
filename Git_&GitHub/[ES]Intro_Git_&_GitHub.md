@@ -61,7 +61,7 @@ Podemos también descargar los cambios del repositorio remoto utilizando el coma
 
 1) Necesitaremos un repositorio local y uno remoto. Desde el local haremos cambios, que luego vamos a agregar al repositorio remoto.
 
-> 
+> 🏅 Desafío II: Creá un repositorio en GitHub con el nombre `WBDS_LA_Camp`
 
 2) La primera vez que usas GIT vas a tener que configurar tu nombre completo y tu email con los siguientes comandos:
 git config --global user.name "TU NOMBRE"
