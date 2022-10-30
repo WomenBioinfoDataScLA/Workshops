@@ -15,21 +15,21 @@
 ##  Introducción
 
 [¿Qué es un sistema de control de versiones?](#control-de-versiones)
-Los sistemas de control de versiones comienzan con una versión base del documento y luego registran los cambios que realiza en cada paso del camino. 
+Un sistema de control de versiones es una herramienta que realiza un seguimiento de los cambios de un documento o directorio de forma automática, creando efectivamente diferentes versiones de nuestros archivos. Los sistemas de control de versiones comienzan con una versión base del documento y luego registran los cambios que realiza en cada paso del camino. Existen múltiples programas que nos permiten realizar un control de versiones de nuetsros prosyectos, pero en este tutorial veremos cómo utilizar [Git](https://git-scm.com/downloads), uno de los más populares en la actualidad.
 
-Se podría pensar como un video: puede retroceder para comenzar en el documento inicial y reproducir cada estado o cambio que realizó, llegando finalmente a su versión más reciente.
+Para comprender mejor qué hace Git se podría pensar que es un artista que intenta crear una película de [`stop motion`](https://es.wikipedia.org/wiki/Animaci%C3%B3n_en_volumen). Como bien sabrán, la construcción de estas películas requiere de muchas fotos que resgistren los movimientos de los personajes al detalle. Pensemos entonces que Git toma fotos instantáneas de los cambios durante la vida de un proyecto, para construir su película. Se podría pensar al proyecto entonces como un video: sobre el que se puede retroceder para comenzar en el documento inicial y reproducir cada estado o cambio que realizó, hasta llegar finalmente a su versión más reciente.
 
-Un sistema de control de versiones es una herramienta que realiza un seguimiento de los cambios de un documento o directorio de forma automática, creando efectivamente diferentes versiones de nuestros archivos. 
+Cada registro de estos cambios se denomina `commit` y mantiene metadatos (referencias temporales y de autorías, etc) útiles sobre ellos. El historial completo de `commits` para un proyecto en particular y sus metadatos forman un `repositorio`. 
 
-Cada registro de estos cambios se denomina `commit` y mantiene metadatos útiles sobre ellos. El historial completo de `commits` para un proyecto en particular y sus metadatos forman un `repositorio`. 
+![Git commits img](./assets/%5BES%5DCONTROL_DE_VERSIONES_schema1.png)
 
-![Git commits img](#)
+Siguiendo con la analogía del video, podemos pensar cada `commit` como un fotograma en nuestro video, siendo este el historial completo de cambios de un archivo o directorio. Pero antes de tomar la foto, no sería mala idea preparar a nuestros personajes y apuntar la cámara adecuadamente para que sea capaz de capturar estos cambios adecuadamente. Entonces, al hacer `git add` lo que hacemos es especificar qué movimientos de los personajes quedarán registrados en la próxima foto (colocando las cosas en el área `index` de Git), algo así como gritar `cheeese` para que nadie salga con mala cara. Y luego, cuando hacemos `git commit` le indicamos a Git que es momensto de tomar la foto y registrar de forma permanente los movimientos o cambios en el estado de nuestros personajes.
 
-Siguiendo con la analogía del video, podemos pensar cada `commit` como un fotograma en nuestro video, siendo este el historial completo de cambios de un archivo o directorio. 
+![Git areas](./assets/%5BES%5DCONTROL_DE_VERSIONES_git_areas.png)
 
-Cada `commit` funciona como un “paquete” de cambios realizados, que se pueden ir agregando al `stage` (estado intermedio con cambios) mediante el comando git add. 
+En resumen, Git tiene un área de preparación `index` a la que podemos agregar elementos con `git add`. Los cambios no se documentan de forma permanentehasta que los confirmamos con `git commit`. Los cambios se gestionan como una unidad, al generar un `commit`, y quedan registrados al hacer `git commit`. Esto nos permite enviar grupos específicos de archivos al mismo tiempo o separados, según lo que deseemos.
 
-Estos cambios se gestionan como una unidad, al generar un `commit`, y quedan registrados en una “foto” al hacer `git commit`.
+Ahora bien ¿Qué pasa si alguno de los cambios que hicimos no nos sirve? Bueno, como en pasa en la vida real, las cosas pueden `malir sal` y vamos a necesitar volver a empezar. Pero por su puesto que no vamos a comenzar 
 
 Es muy importante especificar los cambios realizados en cada `commit`, esto nos ayudará a rastrear cualquier cambio al querer volver atrás.
 
@@ -61,10 +61,24 @@ Podemos también descargar los cambios del repositorio remoto utilizando el coma
 
 1) Necesitaremos un repositorio local y uno remoto. Desde el local haremos cambios, que luego vamos a agregar al repositorio remoto.
 
+Tomemos uno de los caminos posibles para crear un proyecto:
+
+>
 > 🏅 Desafío II: Creá un repositorio en GitHub con el nombre `WBDS_LA_Camp`
+>
+
 
 2) La primera vez que usas GIT vas a tener que configurar tu nombre completo y tu email con los siguientes comandos:
 git config --global user.name "TU NOMBRE"
 git config --global user.email "TU DIRECCION DE EMAIL"
+
+La primera vez que nos descargamos localmente un repositorio, se dice que se `clona` en nuestra computadora. Es decir, se hace una copia local de todo lo que contiene la carpeta remota (en la computadora de Don GitHub): archivos y metadatos.
+
+>
+>
+> 🏅 Desafío III: Cloná tu repositorio `WBDS_LA_Camp` en tu computadora
+>
+> 🏅 Desafío IV: Cloná tu repositorio `WBDS_LA_Camp` 
+>
 
 3) Una vez creada la cuenta y un repositorio en alguno de estos servicios, tenés que bajarte la información del repositorio remoto a tu computadora
