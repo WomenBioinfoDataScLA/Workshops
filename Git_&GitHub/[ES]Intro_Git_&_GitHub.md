@@ -66,8 +66,8 @@ Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" 
 >
 > 🏅 Desafío II: Creá un repositorio en GitHub con el nombre `WBDS_LA_Camp`
 >
-> ![](./assets/%5BES%5DCONTROL_DE_VERSIONES_create_a_repo.png)
->
+
+<img src="./assets/%5BES%5DCONTROL_DE_VERSIONES_create_a_repo.png" style="width: 200px">
 
 La primera vez que nos descargamos localmente un repositorio, se dice que se `clona` en nuestra computadora. Es decir, se hace una copia local de todo lo que contiene la carpeta remota (en la computadora de Don GitHub): archivos y metadatos.
 
@@ -77,8 +77,9 @@ La primera vez que nos descargamos localmente un repositorio, se dice que se `cl
 >
 > Para eso copiá el enlace que te genera GitHub para clonar el repositorio:
 >
-> ![clone](./assets/%5BES%5DCONTROL_DE_VERSIONES_clone.png)
->
+
+<img src="./assets/%5BES%5DCONTROL_DE_VERSIONES_clone.png" style="width: 200px">
+
 > Y escribí en tu terminal:
 > ```bash
 > #git clone <enlace a tu repo>
@@ -87,11 +88,41 @@ La primera vez que nos descargamos localmente un repositorio, se dice que se `cl
 > ```
 >
 
-📑 [**NOTA**]: La primera vez que usas GIT vas a tener que [configurar](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls) Stu nombre completo y tu email con los siguientes comandos:
+📑 [**NOTA**]: La primera vez que usas GIT vas a tener que [configurar](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls)  tu nombre completo y tu email con los siguientes comandos:
 
 ```bash
 git config --global user.name <TU NOMBRE>
 git config --global user.email <TU DIRECCION DE EMAIL>
 ```
+¡Ahora que tenemos el clon de nuestro repositorio remoto, vamos a comenzar a trabajar en el proyecto! Creá un archivo dentro de la carpeta `WBDS_LA_Camp` de tu computadora:
 
-Una vez creada la cuenta y un repositorio en alguno de estos servicios, tenés que bajarte la información del repositorio remoto a tu computadora
+```bash 
+## Ingresamos primero a la carpeta que nos clonamos
+## recordá pasarle al comando cd el path tu carpeta
+cd WBDSLA_Camp
+
+## creamos un archivo README.md
+touch README.md
+```
+
+>
+> 🏅 Desafío IV: agregá estos cambios al index y empujá los cambios a tu repositorio remoto
+>
+
+📑 [**NOTA**]: Cuando queremos empujar todo lo que tenemos hasta ahora resulta agregar el argumento `.` al comando `git add`, de esta forma, al hacer `git add .` agregaremos todos los cambios que hicimos hasta aquí en el repositorio.
+
+Si todo sale bien vas a ver en tu terminal el siguiente mensaje:
+
+```bash
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 246.61 KiB | 1.88 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To github.com:WomenBioinfoDataScLA/Workshops.git
+   d2ba9b7..af541bb  master -> master
+```
+
+💡 Para pensar: ¿De qué otro modo comprobarías que efectivamente los cambios fueron subidos al repositorio remoto?
+
