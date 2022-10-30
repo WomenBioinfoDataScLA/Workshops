@@ -29,11 +29,11 @@ Siguiendo con la analogía del video, podemos pensar cada `commit` como un fotog
 
 En resumen, Git tiene un área de preparación `index` a la que podemos agregar elementos con `git add`. Los cambios no se documentan de forma permanentehasta que los confirmamos con `git commit`. Los cambios se gestionan como una unidad, al generar un `commit`, y quedan registrados al hacer `git commit`. Esto nos permite enviar grupos específicos de archivos al mismo tiempo o separados, según lo que deseemos.
 
-Ahora bien ¿Qué pasa si alguno de los cambios que hicimos no nos sirve? Bueno, como en pasa en la vida real, las cosas pueden `malir sal` y vamos a necesitar volver a empezar. Pero por su puesto que no vamos a comenzar 
 
-Es muy importante especificar los cambios realizados en cada `commit`, esto nos ayudará a rastrear cualquier cambio al querer volver atrás.
+📑 [**NOTA**]: Es muy importante especificar los cambios realizados en cada `commit`, esto nos ayudará a rastrear cualquier cambio al querer volver atrás.
 
-![Git schema](./assets/%5BES%5DCONTROL_DE_VERSIONES_schema.jpg)
+Ahora bien ¿Qué pasa si alguno de los cambios que hicimos no nos sirve? Bueno, como en pasa en la vida real, las cosas pueden "malir sal" y vamos a necesitar volver a empezar. Pero por su puesto que no vamos a comenzar desde cero si llevamos buen rato trabajando en el proyecto.. ehem! ¡mejor dicho, en la película! Es por eso que quizás nos venga bien guardar las fotos que nos pueden servir en un futuro en una cajita que llamaremos `stash`, haciendo `git stash`. Pero ojo, que siempre se puede reutilizar aquello que dejamos `stasheado` haciendo `git stash apply`. 
+
 
 ## Git al infinito y más allá...
 
@@ -55,30 +55,43 @@ Podemos hacer una sincronización saliente del repo local al remoto (origin), ha
 
 Podemos también descargar los cambios del repositorio remoto utilizando el comando `git pull`.
 
-![Git complete schema](./assets/%5BES%5DCONTROL_DE_VERSIONES_esquema_completo.png)
 
-¡Ahora que sabemos compartir nuestros aportes con el mundo, vamos a crear nuestro primer commit!:
 
-1) Necesitaremos un repositorio local y uno remoto. Desde el local haremos cambios, que luego vamos a agregar al repositorio remoto.
+## Manos a la terminal 💻
 
-Tomemos uno de los caminos posibles para crear un proyecto:
+🥳 ¡Ahora que sabemos compartir nuestros aportes con el mundo, vamos a crear nuestro primer commit!
+
+Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" del otro (`clones`). Desde el repositorio local haremos cambios, que luego vamos a agregar al repositorio remoto.
 
 >
 > 🏅 Desafío II: Creá un repositorio en GitHub con el nombre `WBDS_LA_Camp`
 >
-
-
-2) La primera vez que usas GIT vas a tener que configurar tu nombre completo y tu email con los siguientes comandos:
-git config --global user.name "TU NOMBRE"
-git config --global user.email "TU DIRECCION DE EMAIL"
+> ![](./assets/%5BES%5DCONTROL_DE_VERSIONES_create_a_repo.png)
+>
 
 La primera vez que nos descargamos localmente un repositorio, se dice que se `clona` en nuestra computadora. Es decir, se hace una copia local de todo lo que contiene la carpeta remota (en la computadora de Don GitHub): archivos y metadatos.
 
->
+
 >
 > 🏅 Desafío III: Cloná tu repositorio `WBDS_LA_Camp` en tu computadora
 >
-> 🏅 Desafío IV: Cloná tu repositorio `WBDS_LA_Camp` 
+> Para eso copiá el enlace que te genera GitHub para clonar el repositorio:
+>
+> ![clone](./assets/%5BES%5DCONTROL_DE_VERSIONES_clone.png)
+>
+> Y escribí en tu terminal:
+> ```bash
+> #git clone <enlace a tu repo>
+>
+> git clone git@github.com:AJVelezRueda/WBDSLA_Camp.git
+> ```
 >
 
-3) Una vez creada la cuenta y un repositorio en alguno de estos servicios, tenés que bajarte la información del repositorio remoto a tu computadora
+📑 [**NOTA**]: La primera vez que usas GIT vas a tener que [configurar](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls) Stu nombre completo y tu email con los siguientes comandos:
+
+```bash
+git config --global user.name <TU NOMBRE>
+git config --global user.email <TU DIRECCION DE EMAIL>
+```
+
+Una vez creada la cuenta y un repositorio en alguno de estos servicios, tenés que bajarte la información del repositorio remoto a tu computadora
