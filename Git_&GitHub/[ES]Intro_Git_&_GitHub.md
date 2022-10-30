@@ -10,7 +10,7 @@
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
-> Para realizar este recorrido necesitarás tener Git instalado en tu computadora y [GitHub adecuadamente](https://docs.github.com/es/get-started/quickstart/set-up-git) configurado. Podés encontrar un resumen de lo que necesitas en el [tutorial de configuración]().
+> Para realizar este recorrido necesitarás tener Git instalado en tu computadora y [GitHub adecuadamente](https://docs.github.com/es/get-started/quickstart/set-up-git) configurado. Podés encontrar un resumen de lo que necesitas en el [tutorial de configuración](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
 
 ##  Introducción
 
@@ -200,6 +200,7 @@ Antes de confirmar nuestros cambios vamos a agregar algunos detalles a nuesta do
 >
 
 💡 Para pensar: ¿Para qué nos sirve este comando?¿Cómo se ve el archivo `README.md` ahora? 
+
 👀 Investigá qué hacen los comandos `git stash show` y `git stash list`
 
 Ahora agregá el siguiente  texto:`El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de grado y posgrado que tengan interés ​​en aprender bioinformática y ciencia de datos desde cero.`
@@ -234,4 +235,5 @@ Mi nombre es Ana Julia Velez Rueda, soy doctora en bioinformática, gradudada en
 >
 
 💡 Para pensar: ¿Cómo se ve el archivo `README.md` ahora? ¿Se podrán recuperar los cambios?
+
 👀 Investigá qué devuelven los comandos `git stash show` y `git stash list`
