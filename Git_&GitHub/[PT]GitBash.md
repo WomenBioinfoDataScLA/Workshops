@@ -23,7 +23,7 @@ Se você têm o Sistema Operacional Windows em seu computador, o Git pode ser ba
 
 Abra o arquivo baixado para iniciar o instalador. Siga os passos de instalação até concluir com êxito. Em seguida, abra o programa.
 
-![Git Bash gif](./assets/gitbash_installation.gif)
+<img src="./assets/gitbash_installation.gif" style="width: 500px">
 
 ### MacOS
 Se você têm o Sistema Operacional macOS em seu computador, vamos primeiro checar se você já têm o Git instalado. Se você tiver o XCode instalado, cole o comando abaixo no terminal e aperte enter:
