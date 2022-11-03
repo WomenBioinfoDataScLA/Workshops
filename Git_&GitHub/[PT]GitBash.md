@@ -36,7 +36,12 @@ Se apareceu uma mensagem como: `git version 2.7.0 (Apple Git-66)`, você já tê
 
 Se não apareceu uma mensagem com a versão de seu git após correr `git --version`, siga os próximos passos para realizar a instalação.
 
-O Git para macOS pode ser baixado [aqui](https://sourceforge.net/projects/git-osx-installer/files/). Abra o arquivo baixado para iniciar o instalador. Siga os passos de instalação até concluir com êxito. Em seguida, abra o programa.
+O Git para macOS pode ser baixado [aqui](https://sourceforge.net/projects/git-osx-installer/files/).
+
+<img src="./assets/git_for_mac.png" style="width: 500px">
+
+
+Abra o arquivo baixado para iniciar o instalador. Siga os passos de instalação até concluir com êxito. Em seguida, abra o programa.
 
 Confirme que a instalação funcionou correndo `git --version` novamente e veja se dessa vez aparece uma informação sobre a versão instalada.
 
