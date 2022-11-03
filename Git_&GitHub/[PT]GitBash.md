@@ -19,7 +19,7 @@ Se você têm o Sistema Operacional Windows em seu computador, uma alternativa i
 ### Windows
 Se você têm o Sistema Operacional Windows em seu computador, o Git pode ser baixado [aqui](https://gitforwindows.org/).
 
-![Git for windows img](./assets/git_for_windows.png)
+<img src="./assets/git_for_windows.png" style="width: 500px">
 
 Abra o arquivo baixado para iniciar o instalador. Siga os passos de instalação até concluir com êxito. Em seguida, abra o programa.
 
