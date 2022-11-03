@@ -33,27 +33,25 @@ Resumindo, o Git tem uma área de teste `index` à qual podemos adicionar itens 
 
 Agora, o que acontece se alguma das alterações que fizemos não funcionar para nós? Bem, como acontece na vida real, as coisas podem "dar errado" e precisaremos recomeçar. Mas é claro que não vamos começar do zero se já estamos trabalhando no projeto há muito tempo... quer dizer, no filme! É por isso que pode ser bom para nós salvar as fotos que podem ser úteis no futuro em uma caixinha que chamaremos de `stash`, fazendo `git stash`. Você sempre pode reutilizar o que deixou `stashed` fazendo `git stash apply`.
 
-## Git al infinito y más allá...
+## Git ao infinito e além...
 
-Git trabaja con un repositorio local que está en tu computadora, donde vas a ir agregando tus commits y uno remoto (en la nube) en el cual podes subir tus commits, compartirlos con alguien más o bajarte los commits que haya subido alguien.
+O Git funciona com um repositório local que está no seu computador, onde você vai adicionar seus commits e um repositório remoto (na nuvem) no qual você pode fazer upload de seus commits, compartilhá-los com outra pessoa ou baixar os commits que alguém carregou .
 
-Existen varios varios servicios para almacenar repositorios remotamente:
+Existem vários serviços para armazenar repositórios remotamente:
 
 - [Github](https://github.com) 
 - [Bitbucket](https://bitbucket.com)
 - [Gitlab](https://gitlab.com/)
 
-Para usarlos deberás registrarte y crear una cuenta. 
+Para usá-los você deve se registrar e criar uma conta.
 
 >
->🏅 Desafío I: Creá tu cuenta en [GitHub](https://github.com/) ¡Tené a mano tu nombre de usuarie y contraseña, lo vas a necesitar!
+>🏅 Desafio I: Crie sua conta no [GitHub](https://github.com/). Tenha seu login e senha à mão, você vai precisar!
 >
 
-Podemos hacer una sincronización saliente del repo local al remoto (origin), haciendo `git push`. Este comando envía los commits generados localmente que no se hayan enviado anteriormente.
+Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
 
-Podemos también descargar los cambios del repositorio remoto utilizando el comando `git pull`.
-
-
+Também podemos extrair alterações do repositório remoto usando o comando `git pull`.
 
 ## Manos a la terminal 💻
 
