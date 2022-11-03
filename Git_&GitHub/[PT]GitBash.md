@@ -12,6 +12,8 @@
 
 #  Git Bash
 
+Se você têm o Sistema Operacional Windows em seu computador, uma alternativa interessante para estudar comandos Linux é o `Git Bash`. O Git Bash é um programa para ser instalado no Windows, que interpreta comandos Bash e permite a emulação de um ambiente Linux. Além disso, ele te permite usar o `git`, que vamos conhecer e aprender a usar neste Pre-Camp. 
+
 ## *Como instalar*
 
 ### Windows
