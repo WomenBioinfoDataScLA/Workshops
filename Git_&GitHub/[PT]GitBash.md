@@ -74,4 +74,12 @@ Agora vamos configurar seu e-mail e nome de usuário utilizando os comandos a se
 git config --global user.name <seu usuário>
 
 git config --global user.email <seu email>
+```
+
+## Configurar 
+
+Agora vamos inicializar um repositório Git nesta pasta que estamos.
+
+```bash
+git init
 ````
