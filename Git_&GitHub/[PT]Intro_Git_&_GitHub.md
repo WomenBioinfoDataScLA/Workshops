@@ -1,7 +1,7 @@
 # CONTROL DE VERSIONES
 
 
-🚨 Este material foi criadp pela Dra. Ana Julia Velez Rueda e Dra. Liliane Conteville
+🚨 Este material foi criado pela Dra. Ana Julia Velez Rueda e Dra. Liliane Conteville
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
