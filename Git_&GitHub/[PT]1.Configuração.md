@@ -55,9 +55,7 @@ sudo apt-get install git
 Para ter certeza que a instalação funcionou, corra `git --version` novamente e veja se dessa vez aparece uma informação sobre a versão instalada.
 
 ## *Configurar seus dados*
-Com o git instalado em seu computador, abra o Git Bash (se você tiver windows) ou o terminal (se você tiver macOS ou Linux).
-
-Agora vamos configurar seu e-mail e nome de usuário utilizando os comandos a seguir. Mas lembre-se de substituir `<seu usuário>` com seu nome e `<seu email>` com o seu email pessoal.
+Com o git instalado em seu computador, agora vamos configurar seu e-mail e nome de usuário utilizando os comandos a seguir. Mas lembre-se de substituir `<seu usuário>` com seu nome e `<seu email>` com o seu email pessoal.
 
 ```bash
 git config --global user.name <seu usuário>
