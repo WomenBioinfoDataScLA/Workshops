@@ -12,7 +12,7 @@
 
 #  Introdução
 
-Para fazer o próximo tutorial de `Git e Github`, você precisará ter o Git instalado em seu computador e o GitHub configurado corretamente. 
+Nessa segunda parte do Pre-Camp, vamos aprender a usar o `Git` e o `Github`. Para isso, você precisará ter o Git instalado em seu computador e o GitHub configurado corretamente. 
 
 ## *Instalar o Git*
 
