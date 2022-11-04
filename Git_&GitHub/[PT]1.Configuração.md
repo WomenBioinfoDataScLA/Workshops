@@ -20,13 +20,16 @@ No material de [Primeiros Passos](https://github.com/WomenBioinfoDataScLA/WBDSLA
 
 Se você têm o Sistema Operacional Linux ou macOS em seu computador, abra um `terminal`.
 
-👉 Com o GitBash ou um terminal aberto, vamos primeiro checar se você já têm o Git instalado. Para isso, cole o comando abaixo no terminal e aperte enter. Uma das formas de colar um texto no terminal é apertando o botão direito do mouse e depois clicar em `Paste` ou `Colar`. 
+Com o GitBash ou um terminal aberto, vamos primeiro checar se você já têm o Git instalado. Para isso, cole o comando abaixo no terminal e aperte enter. Uma das formas de colar um texto no terminal é apertando o botão direito do mouse e depois clicar em `Paste` ou `Colar`. 
 
 ```bash
 git --version
 ```
 
-Se apareceu uma mensagem como: `git version 2.7.0 (Apple Git-66)`, você já têm o Git instalado, então pule essa etapa de instalação e vá para a etapa de configuração neste tutorial.
+<img src="./assets/git_version.gif" style="width: 500px">
+
+
+Se apareceu uma mensagem como: `git version 2.38.1`, você já têm o Git instalado, então pule essa etapa de instalação e vá para a etapa de configuração neste tutorial.
 
 Se não apareceu uma mensagem com a versão de seu git após correr `git --version`, siga os próximos passos para realizar a instalação.
 
