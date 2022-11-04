@@ -1,4 +1,4 @@
-# CONTROLE DE VERSÕES
+### CONTROLE DE VERSÕES
 
 
 🚨 Este material foi criado pela Dra. Ana Julia Velez Rueda e Dra. Liliane Conteville
@@ -10,23 +10,17 @@
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
-#  Git Bash
+#  Introdução
 
-Se você têm o Sistema Operacional Windows em seu computador, uma alternativa interessante para estudar comandos Linux é o `Git Bash`. O Git Bash é um programa para ser instalado no Windows, que interpreta comandos Bash e permite a emulação de um ambiente Linux. Além disso, ele te permite usar o `git`, que vamos conhecer e aprender a usar neste Pre-Camp. 
+Para fazer o próximo tutorial de `Git e Github`, você precisará ter o Git instalado em seu computador e o GitHub configurado corretamente. 
 
-## *Como instalar*
+## *Instalar o Git*
 
-### Windows
-Se você têm o Sistema Operacional Windows em seu computador, o Git pode ser baixado [aqui](https://gitforwindows.org/).
+No material de [Primeiros Passos](https://github.com/WomenBioinfoDataScLA/WBDSLA_PreCamp_PT/blob/main/%5BPT%5DPrimeiros_Passos.md), explicamos como baixar e instalar o `Git Bash`, no caso de você ter o Sistema Operacional Windows em seu computador. Esse programa já vem com o Git instalado.
 
-<img src="./assets/git_for_windows.png" style="width: 500px">
+Se você têm o Sistema Operacional Linux ou macOS em seu computador, abra um `terminal`.
 
-Abra o arquivo baixado para iniciar o instalador. Siga os passos de instalação até concluir com êxito. Em seguida, abra o programa.
-
-<img src="./assets/gitbash_installation.gif" style="width: 500px">
-
-### MacOS
-Se você têm o Sistema Operacional macOS em seu computador, vamos primeiro checar se você já têm o Git instalado. Se você tiver o XCode instalado, cole o comando abaixo no terminal e aperte enter:
+👉 Com o GitBash ou um terminal aberto, vamos primeiro checar se você já têm o Git instalado. Para isso, cole o comando abaixo no terminal e aperte enter. Uma das formas de colar um texto no terminal é apertando o botão direito do mouse e depois clicar em `Paste` ou `Colar`. 
 
 ```bash
 git --version
@@ -36,24 +30,16 @@ Se apareceu uma mensagem como: `git version 2.7.0 (Apple Git-66)`, você já tê
 
 Se não apareceu uma mensagem com a versão de seu git após correr `git --version`, siga os próximos passos para realizar a instalação.
 
+### macOS
 O Git para macOS pode ser baixado [aqui](https://sourceforge.net/projects/git-osx-installer/files/).
 
 <img src="./assets/git_for_mac.png" style="width: 500px">
-
 
 Abra o arquivo baixado para iniciar o instalador. Siga os passos de instalação até concluir com êxito. Em seguida, abra o programa.
 
 Confirme que a instalação funcionou correndo `git --version` novamente e veja se dessa vez aparece uma informação sobre a versão instalada.
 
 ### Linux
-
-Se você têm o Sistema Operacional Linux em seu computador, vamos primeiro checar se você já têm o Git instalado. Abra o terminal (Ctrl+Alt+T), cole o comando abaixo e aperte enter:
-
-> git --version
-
-Se apareceu uma mensagem como: `git version 2.7.0`, você já têm o Git instalado, então pule essa etapa de instalação e vá para a etapa de configuração neste tutorial.
-
-Se não apareceu uma mensagem com a versão de seu git após correr `git --version`, siga os próximos passos para realizar a instalação.
 
 Com o terminal aberto, corra os seguintes comandos:
 
