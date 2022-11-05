@@ -47,10 +47,6 @@ La primera vez que nos descargamos localmente un repositorio, se dice que se `cl
 
 📑 [**NOTA**]: El comando anterior solo funcionará si ha configurado bien los datos de su cuenta de Github, como se muestra en el [tutorial anterior](%5BES%5D0.Intro.md).
 
-```bash
-git config --global user.name <TU NOMBRE>
-git config --global user.email <TU DIRECCION DE EMAIL>
-```
 ¡Ahora que tenemos el clon de nuestro repositorio remoto, vamos a comenzar a trabajar en el proyecto! Creá un archivo dentro de la carpeta `WBDS_LA_Camp` de tu computadora:
 
 ```bash 
