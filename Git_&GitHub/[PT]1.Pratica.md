@@ -1,4 +1,4 @@
-# CONTROL DE VERSIONES
+### CONTROL DE VERSIONES
 
 🚨 Este material foi criado pela Dra. Ana Julia Velez Rueda e Dra. Liliane Conteville
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
@@ -10,7 +10,7 @@
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 
-## Manos a la terminal 💻
+## Mãos no terminal 💻
 
 Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
 
