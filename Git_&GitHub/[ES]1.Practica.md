@@ -45,7 +45,7 @@ La primera vez que nos descargamos localmente un repositorio, se dice que se `cl
 > ```
 >
 
-📑 [**NOTA**]: La primera vez que usas GIT vas a tener que [configurar](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls)  tu nombre completo y tu email con los siguientes comandos:
+📑 [**NOTA**]: El comando anterior solo funcionará si ha configurado bien los datos de su cuenta de Github, como se muestra en el [tutorial anterior](%5BES%5D0.Intro.md).
 
 ```bash
 git config --global user.name <TU NOMBRE>

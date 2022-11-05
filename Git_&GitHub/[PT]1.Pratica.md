@@ -44,7 +44,7 @@ A primeira vez que baixamos um repositório localmente, diz-se que ele está `cl
 > ```
 >
 
-📑 [**NOTA**]: O comando acima só irá funcionar se você configurou bem os dados de sua conta no Github, como foi mostrado no [tutorial anterior](0.Intro.md).
+📑 [**NOTA**]: O comando acima só irá funcionar se você configurou bem os dados de sua conta no Github, como foi mostrado no [tutorial anterior](%5BPT%5D0.Intro.md).
 
 Agora que temos o clone do nosso repositório remoto, vamos começar a trabalhar no projeto! Crie um arquivo dentro da pasta `WBDS_LA_Camp` do seu computador:
 
