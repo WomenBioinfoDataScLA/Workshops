@@ -52,7 +52,7 @@ Agora que temos o clone do nosso repositório remoto, vamos começar a trabalhar
 ## Lembre-se de passar o caminho da sua pasta para o comando cd
 cd WBDSLA_Camp
 
-## criamos um arquivo README.md
+## Criamos um arquivo README.md
 touch README.md
 ```
 
