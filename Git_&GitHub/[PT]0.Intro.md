@@ -97,7 +97,7 @@ git config --global user.name <seu login>
 git config --global user.email <seu email>
 ```
 
-📑 [**NOTA**]: Se você precisar de mais informações, cheque a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
+📑 [**NOTA**]: Se você precisar de mais informações, cheque a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories).
 
 ## *Onde armazenar meus repositórios?*
 
