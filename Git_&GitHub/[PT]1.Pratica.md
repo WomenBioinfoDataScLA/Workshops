@@ -62,6 +62,13 @@ touch README.md
 >
 
 📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório.
+   
+Quando queremos documentar permanentemente as alterações no repositório, fazemos um "commit". É importante que esse `commit` acompanhe uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m`.
+
+```bash 
+git commit
+```
+
 
 💡 Para pensar: De que forma você verificaria se as alterações foram carregadas no repositório remoto?
 
