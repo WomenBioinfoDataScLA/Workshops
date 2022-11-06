@@ -126,7 +126,7 @@ cat <caminho para arquivo onde está a chave>
 
 Pronto! Agora só precisamos adicionar essa chave na sua conta do Github. Para isso, vá nas [configurações da sua conta do github](https://github.com/settings/profile), clique em "SSH and GPG keys" à esquerda e depois em "New SSH key" à direita. Adicione um label à chave como "Meu Computador Pessoal" e depois cole a chave no local indicado.
 
-![](paste_ssh.png)
+![](./assets/paste_ssh.png)
 
 ## *Onde armazenar meus repositórios?*
 
