@@ -115,7 +115,7 @@ Quando for solicitado "Enter file in which to save the key" (Inserir um arquivo 
 Dentre as mensagens que serão mostradas na tela, uma indicará onde a chave foi salva. Busque algo parecido com:
 
 ```
-Your public key has been saved in /c/Users/Pichau/.ssh/id_rsa.pub
+Your public key has been saved in <caminho para arquivo .pub>
 ```
 
 Agora abra o arquivo contendo a chave, **selecione** todo o seu conteúdo e **copie** para o seu **clipboard**.
