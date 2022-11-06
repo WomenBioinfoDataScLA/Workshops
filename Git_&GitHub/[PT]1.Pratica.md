@@ -31,18 +31,17 @@ A primeira vez que baixamos um repositório localmente, diz-se que ele está `cl
 >
 > 🏅 Desafío III: Clone seu repositório `WBDS_LA_Camp` no seu computador
 >
-> Para isso, copie o link que o GitHub gera para clonar o repositório:
->
+
+Para isso, copie o link que o GitHub gera para clonar o repositório:
 
 <img src="./assets/%5BES%5DCONTROL_DE_VERSIONES_clone.png" style="width: 500px">
 
-> E digite no seu terminal:
-> ```bash
-> #git clone <enlace a tu repo>
->
-> git clone git@github.com:AJVelezRueda/WBDSLA_Camp.git
-> ```
->
+E digite no seu terminal:
+```bash
+#git clone <enlace a tu repo>
+
+git clone git@github.com:AJVelezRueda/WBDSLA_Camp.git
+```
 
 📑 [**NOTA**]: Se precisar de mais informações, consulte a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
 
