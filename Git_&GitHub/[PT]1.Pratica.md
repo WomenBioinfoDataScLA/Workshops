@@ -68,6 +68,17 @@ Para enviar todas os `commits` locais para o repositório remoto:
 git push origin main
 ```
 
+Se tudo correr bem, você verá a seguinte mensagem no seu terminal:
+
+```
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 218.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/<seu login>/WBDS_LA_Camp.git
+ * [new branch]      main -> main
+```
+
 💡 Para pensar: De que forma você verificaria se as alterações foram carregadas no repositório remoto?
 
 Agora vamos fazer algumas alterações no arquivo `README.md`. Adicione o seguinte texto ao arquivo e salve:
