@@ -97,7 +97,7 @@ git config --global user.name <seu login>
 git config --global user.email <seu email>
 ```
 
-📑 [**NOTA**]: Se você precisar de mais informações, cheque a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories).
+Agora vamos autenticar a sua conta e criar uma conexão entre o git da sua máquina e a sua conta no Github.
 
 Primeiro vamos checar se você já tem chaves SSH em sua máquina:
 
@@ -127,6 +127,29 @@ cat <caminho para arquivo onde está a chave>
 Pronto! Agora só precisamos adicionar essa chave na sua conta do Github. Para isso, vá nas [configurações da sua conta do github](https://github.com/settings/profile), clique em "SSH and GPG keys" à esquerda e depois em "New SSH key" à direita. Adicione um label à chave como "Meu Computador Pessoal" e depois cole a chave no local indicado.
 
 ![](./assets/paste_ssh.png)
+
+Vamos testar a conexão, só pra ver se deu tudo certo? No terminal, corra:
+
+```bash
+ssh -T git@github.com
+```
+
+Você deve ver um aviso como este:
+
+```
+> The authenticity of host 'github.com (IP ADDRESS)' can't be established.
+> RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+> Are you sure you want to continue connecting (yes/no)?
+```
+
+Digite `yes`. Se disser algo como o seguinte, funcionou:
+
+```
+Hi <seu login>! You've successfully authenticated, but Github does
+not provide shell access.
+```
+
+📑 [**NOTA**]: Se você precisar de mais informações, cheque a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories).
 
 ## *Onde armazenar meus repositórios?*
 
