@@ -121,7 +121,7 @@ Your public key has been saved in <caminho para arquivo .pub>
 Agora abra o arquivo contendo a chave, **selecione** todo o seu conteúdo e **copie** para o seu **clipboard**.
 
 ```bash
-cat <caminho arquivo onde está a chave> 
+cat <caminho para arquivo onde está a chave> 
 ```
 
 Pronto! Agora só precisamos adicionar essa chave na sua conta do Github. Para isso, vá nas [configurações da sua conta do github](https://github.com/settings/profile), clique em "SSH and GPG keys" à esquerda e depois em "New SSH key" à direita. Adicione um label à chave como "Meu Computador Pessoal" e depois cole a chave no local indicado.
