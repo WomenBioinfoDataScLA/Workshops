@@ -60,7 +60,7 @@ touch README.md
 > 🏅 Desafio IV: Adicione essa alteração ao índice e envie as alterações para seu repositório remoto
 >
 
-📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório. Quando queremos documentar permanentemente as alterações no repositório, fazemos um `git commit`. É importante que esse `commit` acompanhe uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m` seguido da mensagem entre aspas. Use `git push` para enviar o commit.
+📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório. Quando queremos documentar permanentemente as alterações no repositório, fazemos um `git commit`. É importante que esse `commit` acompanhe uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m` seguido da mensagem entre aspas. Use `git push origin main` para enviar o commit.
 
 💡 Para pensar: De que forma você verificaria se as alterações foram carregadas no repositório remoto?
 
