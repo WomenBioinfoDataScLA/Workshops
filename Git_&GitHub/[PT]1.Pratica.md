@@ -92,8 +92,8 @@ Vamos então adicionar as alterações ao espaço `index`, mas desta vez, verifi
 git add -p
 ```
 
-Veamos qué nos dice Git:
-
+Vamos ver o que o Git nos diz:
+   
 ```bash
 diff --git a/README.md b/README.md
 index e69de29..092eda1 100644
