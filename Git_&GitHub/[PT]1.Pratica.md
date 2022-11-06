@@ -49,7 +49,7 @@ Agora que temos o clone do nosso repositório remoto, vamos começar a trabalhar
 
 ```bash 
 ## Primeiro entramos na pasta que clonamos
-## lembre-se de passar o caminho da sua pasta para o comando cd
+## Lembre-se de passar o caminho da sua pasta para o comando cd
 cd WBDSLA_Camp
 
 ## criamos um arquivo README.md
