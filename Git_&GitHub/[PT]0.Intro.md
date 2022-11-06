@@ -118,7 +118,7 @@ Dentre as mensagens que serão mostradas na tela, uma indicará onde a chave foi
 Your public key has been saved in /c/Users/Pichau/.ssh/id_rsa.pub
 ```
 
-Agora abra o arquivo contendo a chave, **selecione** todo o seu conteúdo e **copie** para o seu clipboard.
+Agora abra o arquivo contendo a chave, **selecione** todo o seu conteúdo e **copie** para o seu **clipboard**.
 
 ```bash
 cat <caminho arquivo onde está a chave> 
