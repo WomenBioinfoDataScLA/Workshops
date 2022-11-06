@@ -63,20 +63,7 @@ touch README.md
 
 📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório.
 
-Se tudo correr bem, você verá a seguinte mensagem no seu terminal:
-
-```bash
-Counting objects: 8, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 246.61 KiB | 1.88 MiB/s, done.
-Total 8 (delta 4), reused 0 (delta 0)
-remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
-To github.com:WomenBioinfoDataScLA/Workshops.git
-   d2ba9b7..af541bb  master -> master
-```
-
-💡 Para pensar: De que outra forma você verificaria se as alterações foram realmente carregadas no repositório remoto?
+💡 Para pensar: De que forma você verificaria se as alterações foram carregadas no repositório remoto?
 
 Agora vamos fazer algumas alterações no arquivo `README.md`. Adicione o seguinte texto ao arquivo e salve:
 
@@ -138,7 +125,7 @@ Stage this hunk [y,n,q,a,d,e,?]? n
 Antes de confirmar nossas alterações, vamos adicionar alguns detalhes à nossa documentação:
 
 >
-> 🏅 Desafio VII: Adicione o seguinte texto `Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina.` e depois de salvar digite o comando `git diff` no terminal.
+> 🏅 Desafio VII: Adicione o seguinte texto `Lorem ipsum é o texto que é comumente usado em design gráfico em demonstrações de tipografia ou rascunhos para testar o design visual antes de inserir o texto fino.` e depois de salvar digite o comando `git diff` no terminal.
 >
 
 💡 Para pensar: Para que serve este comando?
