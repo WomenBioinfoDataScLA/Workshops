@@ -66,9 +66,7 @@ Para enviar todas os `commits` locais para o repositório remoto:
 
 ```
 git push origin main
-
 ```
-
 
 💡 Para pensar: De que forma você verificaria se as alterações foram carregadas no repositório remoto?
 
