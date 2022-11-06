@@ -20,7 +20,7 @@ Cada registro dessas mudanças é chamado de `commit` e mantém metadados úteis
 
 ![Git commits img](./assets/%5BPT%5DCONTROL_DE_VERSIONES_schema1.png)
 
-Continuando com a analogia do vídeo, podemos pensar em cada `commit` como um quadro em nosso vídeo, sendo este todo o histórico de alterações de um arquivo ou diretório. Mas antes de tirar a foto, não seria uma má ideia preparar nossos personagens e apontar a câmera corretamente para que ela seja capaz de capturar essas mudanças. Então, quando fazemos `git add` o que fazemos é especificar quais movimentos de caracteres serão gravados na próxima foto (colocando as coisas na área `index` do Git), como gritar `cheeese` para que ninguém saia mal na foto. E então quando fazemos `git commit` dizemos ao Git que é hora de tirar uma foto e registrar de forma permanentemente os movimentos ou mudanças de nossos personagens.
+Continuando com a analogia do vídeo, podemos pensar em cada `commit` como um quadro em nosso vídeo, sendo este todo o histórico de alterações de um arquivo ou diretório. Mas antes de tirar a foto, não seria uma má ideia preparar nossos personagens e apontar a câmera corretamente para que ela seja capaz de capturar essas mudanças, né? Então, quando fazemos `git add` o que fazemos é especificar quais movimentos de caracteres serão gravados na próxima foto (colocando as coisas na área `index` do Git), como gritar `cheeese` para que ninguém saia mal na foto. E então quando fazemos `git commit` dizemos ao Git que é hora de tirar uma foto e registrar de forma permanentemente os movimentos ou mudanças de nossos personagens.
 
 ![Git areas](./assets/%5BES%5DCONTROL_DE_VERSIONES_git_areas.png)
 
@@ -50,9 +50,9 @@ Para usá-los você deve se registrar e criar uma conta.
 
 Para seguir acompanhando este tutorial, você precisará ter o Git instalado em seu computador e o GitHub configurado corretamente. 
 
-No material de [Primeiros Passos](https://github.com/WomenBioinfoDataScLA/WBDSLA_PreCamp_PT/blob/main/%5BPT%5DPrimeiros_Passos.md), explicamos como baixar e instalar o `Git Bash`, no caso de você ter o Sistema Operacional Windows em seu computador. Esse programa já vem com o Git instalado.
+No material de [Primeiros Passos](https://github.com/WomenBioinfoDataScLA/WBDSLA_PreCamp_PT/blob/main/%5BPT%5DPrimeiros_Passos.md), explicamos como baixar e instalar o `Git Bash`, no caso de você ter o Sistema Operacional **Windows** em seu computador. Esse programa já vem com o Git instalado.
 
-Se você têm o Sistema Operacional Linux ou macOS em seu computador, abra um `terminal`.
+Se você têm o Sistema Operacional **Linux ou macOS** em seu computador, abra um `terminal`.
 
 Com o GitBash ou um terminal aberto, vamos primeiro checar se você já têm o Git instalado. Para isso, cole o comando abaixo no terminal e aperte enter. Uma das formas de colar um texto no terminal é apertando o botão direito do mouse e depois clicar em `Paste` ou `Colar`. 
 
@@ -89,10 +89,10 @@ sudo apt-get install git
 Para ter certeza que a instalação funcionou, corra `git --version` novamente e veja se dessa vez aparece uma informação sobre a versão instalada.
 
 ## *Configurar seus dados*
-Com o git instalado em seu computador, agora vamos configurar seu e-mail e nome de usuário utilizando os comandos a seguir. Mas lembre-se de substituir `<seu usuário>` com seu nome e `<seu email>` com o seu email pessoal.
+Com o git instalado em seu computador, agora vamos configurar seu e-mail e nome de usuário utilizando os comandos a seguir. Mas lembre-se de substituir `<seu login>` com seu nome e `<seu email>` com o seu email pessoal.
 
 ```bash
-git config --global user.name <seu usuário>
+git config --global user.name <seu login>
 
 git config --global user.email <seu email>
 ```
