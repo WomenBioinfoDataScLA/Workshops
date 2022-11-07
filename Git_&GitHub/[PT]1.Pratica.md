@@ -160,7 +160,7 @@ Agora adicione o seguinte texto no README: `O WBDS LA Camp é um curso de treina
 > 🏅 Desafio IX: Digite o comando `git diff`. O quê os símbolos `+` e `-` marcam? Onde estão as mudanças que descartamos?
 > 
 
-Corra `git add .`, faça um novo `commit` e corra `git stash apply`. Agora veja como está o arquivo `README.md` agora.
+Adicione as alterações ao `index`, faça um novo `commit` e corra `git stash apply`. Veja como está o arquivo `README.md` agora.
 
 >
 > 🏅 Desafio X: Use os comandos apropriados para fazer com que seu repositório remoto fique assim (mas com o seu nome):
@@ -179,7 +179,7 @@ O WBDS LA Camp é um curso de treinamento intensivo gratuito para estudantes de 
 >
 
 >
-> 🏅 Desafio XI: Adicionar mais uma seção à nossa documentação que contenha informações sobre nosso trabalho. 
+> 🏅 Desafio XI: Adicione mais uma seção à nossa documentação que contenha informações sobre nosso trabalho, adicione essa alteração ao `index`, faça um novo `commit` e `push`.
 >
 
 ## Sobre mim
