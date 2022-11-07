@@ -26,7 +26,6 @@ Siguiendo con la analogía del video, podemos pensar cada `commit` como un fotog
 
 En resumen, Git tiene un área de preparación `index` a la que podemos agregar elementos con `git add`. Los cambios no se documentan de forma permanentehasta que los confirmamos con `git commit`. Los cambios se gestionan como una unidad, al generar un `commit`, y quedan registrados al hacer `git commit`. Esto nos permite enviar grupos específicos de archivos al mismo tiempo o separados, según lo que deseemos.
 
-
 📑 [**NOTA**]: Es muy importante especificar los cambios realizados en cada `commit`, esto nos ayudará a rastrear cualquier cambio al querer volver atrás.
 
 Ahora bien ¿Qué pasa si alguno de los cambios que hicimos no nos sirve? Bueno, como en pasa en la vida real, las cosas pueden "malir sal" y vamos a necesitar volver a empezar. Pero por su puesto que no vamos a comenzar desde cero si llevamos buen rato trabajando en el proyecto.. ehem! ¡mejor dicho, en la película! Es por eso que quizás nos venga bien guardar las fotos que nos pueden servir en un futuro en una cajita que llamaremos `stash`, haciendo `git stash`. Pero ojo, que siempre se puede reutilizar aquello que dejamos `stasheado` haciendo `git stash apply`. 
@@ -51,9 +50,9 @@ Para usarlos deberás registrarte y crear una cuenta.
 
 Para continuar con este tutorial, deberá tener Git instalado en su computadora y GitHub configurado correctamente.
 
-En el material de [Primeros Pasos](https://github.com/WomenBioinfoDataScLA/WBDSLA_PreCamp_PT/blob/main/%5BES%5DPrimeros_Pasos.md), te explicamos cómo descargar e instalar el `Git Bash`en caso de que tenga Sistema Operativo Windows en su computadora. Este programa ya viene con Git instalado.
+En el material de [Primeros Pasos](https://github.com/WomenBioinfoDataScLA/WBDSLA_PreCamp_PT/blob/main/%5BES%5DPrimeros_Pasos.md), te explicamos cómo descargar e instalar el `Git Bash`en caso de que tenga Sistema Operativo **Windows** en su computadora. Este programa ya viene con Git instalado.
 
-Si tiene un sistema operativo Linux o macOS en su computadora, abra una `terminal`.
+Si tiene un Sistema Operativo **Linux o macOS** en su computadora, abra una `terminal`.
 
 Con GitBash o una terminal abierta, primero verifiquemos si ya tiene Git instalado. Para hacer esto, pegue el siguiente comando en la terminal y presione enter. Una de las formas de pegar un texto en la terminal es presionando el botón derecho del mouse y luego haciendo clic en `Paste` o `Pegar`. 
 
@@ -91,7 +90,6 @@ Para asegurarse de que la instalación funcionó, ejecute `git --version` nuevam
 
 ## *Configura tus datos*
 Con git instalado en su computadora, ahora configuremos su correo electrónico y nombre de usuario usando los siguientes comandos. Pero recuerda reemplazar `<tu login>` con tu nombre y `<tu email>` con tu correo electrónico personal.
-
 
 ```bash
 git config --global user.name <tu login>
