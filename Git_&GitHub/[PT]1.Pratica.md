@@ -133,10 +133,10 @@ Stage this hunk [y,n,q,a,d,e,?]? n
 🤔 Hmmm... Não, não obtive resultados no meu terminal, e você? Será que nada aconteceu?
 
 >
-> 🏅 Desafio VI: Digite o comando `git status` e descubra se o Git se distraiu ou realmente adicionou as alterações ao `index`
+> 🏅 Desafio VI: Digite o comando `git status` e descubra se o Git se distraiu ou realmente adicionou as alterações ao `index`. Em seguida, faça um `commit` e um `push`.
 >
 
-Antes de confirmarmos nossas alterações, vamos adicionar alguns detalhes à nossa documentação:
+Agora vamos adicionar alguns detalhes à nossa documentação:
 
 >
 > 🏅 Desafio VII: Adicione o seguinte texto `Lorem ipsum é o texto que é comumente usado em design gráfico em demonstrações de tipografia ou rascunhos para testar o design visual antes de inserir o texto fino.` e depois de salvar digite o comando `git diff` no terminal.
@@ -160,7 +160,7 @@ Agora adicione o seguinte texto no README: `O WBDS LA Camp é um curso de treina
 > 🏅 Desafio IX: Digite o comando `git diff`. O quê os símbolos `+` e `-` marcam? Onde estão as mudanças que descartamos?
 > 
 
-Corra `git commit -m "Camp no README"` e `git stash apply` e veja como está o arquivo `README.md` agora.
+Corra `git add .`, faça um novo `commit` e corra `git stash apply`. Agora veja como está o arquivo `README.md` agora.
 
 >
 > 🏅 Desafio X: Use os comandos apropriados para fazer com que seu repositório remoto fique assim (mas com o seu nome):
@@ -174,20 +174,17 @@ Corra `git commit -m "Camp no README"` e `git stash apply` e veja como está o a
 ## Sobre o WBDS LA Camp
 O WBDS LA Camp é um curso de treinamento intensivo gratuito para estudantes de graduação e pós-graduação que têm interesse em aprender bioinformática e ciência de dados do zero.
 
-```
-Vamos adicionar mais uma seção à nossa documentação que contenha informações sobre nosso trabalho:
+>
+> Descarte as alterações com `git restore --staged README.md` e `git checkout README.md`
+>
 
-```
+>
+> 🏅 Desafio XI: Adicionar mais uma seção à nossa documentação que contenha informações sobre nosso trabalho. 
+>
 
 ## Sobre mim
 Meu nome é Ana Julia Velez Rueda, sou doutora em bioinformática, formada pela Universidade Nacional de Quilmes na Argentina.
 ```
-
-Que vocês acham disso? Nossa documentação está melhor agora? Hmmm... bem, talvez não e talvez seja melhor parar por aqui, certo?
-
->
-> 🏅 Desafio XI: Para dizer adeus, descarte as alterações com `git checkout README.md` 
->
 
 💡 Para pensar: Como ficou o arquivo `README.md` agora? As alterações podem ser recuperadas?
 
