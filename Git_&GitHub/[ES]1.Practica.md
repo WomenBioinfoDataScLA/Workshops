@@ -12,8 +12,6 @@
 
 ## Manos a la terminal 💻
 
-Podemos también descargar los cambios del repositorio remoto utilizando el comando `git pull`.
-
 🥳 ¡Ahora que sabemos compartir nuestros aportes con el mundo, vamos a crear nuestro primer commit!
 
 Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" del otro (`clones`). Desde el repositorio local haremos cambios, que luego vamos a agregar al repositorio remoto.
@@ -26,22 +24,20 @@ Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" 
 
 La primera vez que nos descargamos localmente un repositorio, se dice que se `clona` en nuestra computadora. Es decir, se hace una copia local de todo lo que contiene la carpeta remota (en la computadora de Don GitHub): archivos y metadatos.
 
-
 >
 > 🏅 Desafío III: Cloná tu repositorio `WBDS_LA_Camp` en tu computadora
 >
-> Para eso copiá el enlace que te genera GitHub para clonar el repositorio:
->
+
+Para eso copiá el enlace que te genera GitHub para clonar el repositorio:
 
 <img src="./assets/%5BES%5DCONTROL_DE_VERSIONES_clone.png" style="width: 500px">
 
-> Y escribí en tu terminal:
-> ```bash
-> #git clone <enlace a tu repo>
->
-> git clone git@github.com:AJVelezRueda/WBDSLA_Camp.git
-> ```
->
+Y escribí en tu terminal:
+```bash
+#git clone <enlace a tu repo>
+
+git clone git@github.com:AJVelezRueda/WBDSLA_Camp.git
+```
 
 📑 [**NOTA**]: Si necesita más información, consulte la documentación en el sitio web de [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
 
@@ -62,7 +58,7 @@ touch README.md
 
 📑 [**NOTA**]: Cuando queremos empujar todo lo que tenemos hasta ahora resulta agregar el argumento `.` al comando `git add`, de esta forma, al hacer `git add .` agregaremos todos los cambios que hicimos hasta aquí en el repositorio. 
    
-Para documentar permanentemente los cambios en el repositorio, hacemos un `git commit`. Es importante que este `commit` acompañe un mensaje describiendo el cambio realizado y para eso usamos el parámetro `-m` seguido del mensaje entre comillas. Podemos hacer una sincronización saliente del repo local al remoto (origin), haciendo `git push`. Este comando envía los commits generados localmente que no se hayan enviado anteriormente.
+Para documentar permanentemente los cambios en el repositorio, hacemos un `git commit`. Este `commit` debe acompañar un mensaje  describiendo el cambio realizado y para eso usamos el parámetro `-m` seguido del mensaje entre comillas. Podemos hacer una sincronización saliente del repo local al remoto (origin), haciendo `git push`. Este comando envía los commits generados localmente que no se hayan enviado anteriormente.
    
 ```bash
 git commit -m "README fue creado"
@@ -81,7 +77,6 @@ To https://github.com/<su login>/WBDS_LA_Camp.git
 ```
 
 💡 Para pensar: ¿De qué otro modo comprobarías que efectivamente los cambios fueron subidos al repositorio remoto?
-
 
 Ahora hagamos algunos cambios sobre el archivo `README.md`. Agregá al archivo el siguiente texto y guardá:
 
@@ -139,8 +134,6 @@ Stage this hunk [y,n,q,a,d,e,?]? n
 > 🏅 Desafío VI: Escribí el comando `git status` y averiguá si Git se distrajo o efectivamente agregó los cambios al `index`
 >
 
-💡 Para pensar: ¿Qué paso nos faltaría para confirmar los cambios? ¡Exácto, ya podés confirmarlos!
-
 Antes de confirmar nuestros cambios vamos a agregar algunos detalles a nuesta documentación:
 
 >
@@ -163,12 +156,13 @@ Ahora agregá el siguiente  texto:`El WBDS LA Camp es un curso de formación int
 
 >
 > 🏅 Desafío IX: Escribí el comando `git diff` ¿Qué marcan los símbolos `+` y `-`? ¿Dónde están los cambios que descartamos?
-   
+>
+
 Hacé `git commit -m "Camp en README"` y `git stash apply` y observá como se ve el archivo `README.md` ahora.
    
 >
+> 🏅 Desafío X: Usá los comandos que correspondan para que tu repositorio remoto se vea del siguiente modo (pero como o tu nombre):
 >
-> 🏅 Desafío X: Usá los comandos que correspondan para que tu repositorio remoto se vea del siguiente modo:
 
 ```
 ### Repositorio de práctica del WBDS LA Camp
@@ -176,7 +170,7 @@ Hacé `git commit -m "Camp en README"` y `git stash apply` y observá como se ve
 **Autora**: Ana Julia Velez Rueda
 
 ## Sobre el WBDS LA Camp
-El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de grado y posgrado que tengan interés ​​en aprender bioinformática y ciencia de datos desde cero.
+El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de grado y posgrado que tengan interés en aprender bioinformática y ciencia de datos desde cero.
 
 ```
 
