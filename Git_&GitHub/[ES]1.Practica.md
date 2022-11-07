@@ -76,6 +76,8 @@ To https://github.com/<su login>/WBDS_LA_Camp.git
  * [new branch]      main -> main
 ```
 
+📑 [**NOTA**]: Podemos también descargar los cambios del repositorio remoto utilizando el comando `git pull`.
+
 💡 Para pensar: ¿De qué otro modo comprobarías que efectivamente los cambios fueron subidos al repositorio remoto?
 
 Ahora hagamos algunos cambios sobre el archivo `README.md`. Agregá al archivo el siguiente texto y guardá:
@@ -190,3 +192,7 @@ Mi nombre es Ana Julia Velez Rueda, soy doctora en bioinformática, gradudada en
 💡 Para pensar: ¿Cómo se ve el archivo `README.md` ahora? ¿Se podrán recuperar los cambios?
 
 👀 Investigá qué devuelven los comandos `git stash show` y `git stash list`
+
+¡Hay un detalle más! 🙈
+
+Habrá situaciones en las que preferirá ignorar archivos o directorios después del `commit`. Para eso se debe crear un archivo llamado `.gitignore` y dentro de él se deben agregar los nombres o patrones de los archivos/directorios a ignorar.
