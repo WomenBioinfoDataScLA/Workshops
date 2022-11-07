@@ -34,9 +34,7 @@ Para isso, copie o link que o GitHub gera para clonar o repositório:
 
 E digite no seu terminal:
 ```bash
-#git clone <enlace a tu repo>
-
-git clone git@github.com:AJVelezRueda/WBDSLA_Camp.git
+git clone git@github.com:<seu login>/WBDS_LA_Camp.git
 ```
 
 📑 [**NOTA**]: Se precisar de mais informações, consulte a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
