@@ -45,10 +45,10 @@ git clone git@github.com:AJVelezRueda/WBDSLA_Camp.git
 
 ```bash 
 ## Ingresamos primero a la carpeta que nos clonamos
-## recordá pasarle al comando cd el path tu carpeta
+## Recordá pasarle al comando cd el path tu carpeta
 cd WBDS_LA_Camp
 
-## creamos un archivo README.md
+## Creamos un archivo README.md
 touch README.md
 ```
 
@@ -133,10 +133,10 @@ Stage this hunk [y,n,q,a,d,e,?]? n
 🤔 Hmmm...No, obtuve ningún resultado en mi terminal ¿Vos sí? ¿Será que no pasó nada? 
 
 >
-> 🏅 Desafío VI: Escribí el comando `git status` y averiguá si Git se distrajo o efectivamente agregó los cambios al `index`
+> 🏅 Desafío VI: Escribí el comando `git status` y averiguá si Git se distrajo o efectivamente agregó los cambios al `index`. Luego haz un `commit` y un `push`.
 >
 
-Antes de confirmar nuestros cambios vamos a agregar algunos detalles a nuesta documentación:
+Ahora agreguemos algunos detalles a nuestra documentación:
 
 >
 > 🏅 Desafío VII: Agregá el siguiente texto `Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto fina.` y luego de guardar escribí el comando `git diff` en la terminal.
@@ -160,7 +160,7 @@ Ahora agregá el siguiente  texto:`El WBDS LA Camp es un curso de formación int
 > 🏅 Desafío IX: Escribí el comando `git diff` ¿Qué marcan los símbolos `+` y `-`? ¿Dónde están los cambios que descartamos?
 >
 
-Hacé `git commit -m "Camp en README"` y `git stash apply` y observá como se ve el archivo `README.md` ahora.
+Agregue los cambios al `index`, haga un nuevo `commit` y ejecute `git stash apply`. Vea cómo se ve el archivo `README.md` ahora.
    
 >
 > 🏅 Desafío X: Usá los comandos que correspondan para que tu repositorio remoto se vea del siguiente modo (pero como o tu nombre):
@@ -173,10 +173,15 @@ Hacé `git commit -m "Camp en README"` y `git stash apply` y observá como se ve
 
 ## Sobre el WBDS LA Camp
 El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de grado y posgrado que tengan interés en aprender bioinformática y ciencia de datos desde cero.
-
 ```
 
-Vamos a agregar una secición más a nuetsra documentación que tenga información sobre nuestro trabajo:
+>
+> Descartá los cambios con `git restore --staged README.md` e `git checkout README.md`
+>
+
+>
+> 🏅 Desafío XI: Agregue una sección más a nuestra documentación que tenga información sobre nuestro trabajo, agregue este cambio al `index`, haga un nuevo `commit` y `push`.
+>
 
 ```
 ## Sobre mí

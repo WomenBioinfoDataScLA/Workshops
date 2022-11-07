@@ -25,7 +25,7 @@ Vamos precisar de um repositório local e um repositório remoto, um dos quais s
 A primeira vez que baixamos um repositório localmente, diz-se que ele está `clonado` no nosso computador. Ou seja, é feita uma cópia local de tudo que está na pasta remota (no computador de Don GitHub): arquivos e metadados.
 
 >
-> 🏅 Desafío III: Clone seu repositório `WBDS_LA_Camp` no seu computador
+> 🏅 Desafio III: Clone seu repositório `WBDS_LA_Camp` no seu computador
 >
 
 Para isso, copie o link que o GitHub gera para clonar o repositório:
@@ -94,6 +94,7 @@ Vamos então adicionar as alterações ao espaço `index`, mas desta vez, verifi
 git add -p
 ```
 
+
 Vamos ver o que o Git nos diz:
    
 ```bash
@@ -128,7 +129,6 @@ Stage this hunk [y,n,q,a,d,e,?]? n
 >
 > 🏅 Desafio V: Adicione os asteriscos de fechamento antes dos dois pontos `:` e adicione novamente as alterações com `git add -p`, mas desta vez usando a flag `y`
 >
-
 
 🤔 Hmmm... Não, não obtive resultados no meu terminal, e você? Será que nada aconteceu?
 
@@ -173,6 +173,7 @@ Adicione as alterações ao `index`, faça um novo `commit` e corra `git stash a
 
 ## Sobre o WBDS LA Camp
 O WBDS LA Camp é um curso de treinamento intensivo gratuito para estudantes de graduação e pós-graduação que têm interesse em aprender bioinformática e ciência de dados do zero.
+```
 
 >
 > Descarte as alterações com `git restore --staged README.md` e `git checkout README.md`
@@ -182,6 +183,7 @@ O WBDS LA Camp é um curso de treinamento intensivo gratuito para estudantes de 
 > 🏅 Desafio XI: Adicione mais uma seção à nossa documentação que contenha informações sobre nosso trabalho, adicione essa alteração ao `index`, faça um novo `commit` e `push`.
 >
 
+```
 ## Sobre mim
 Meu nome é Ana Julia Velez Rueda, sou doutora em bioinformática, formada pela Universidade Nacional de Quilmes na Argentina.
 ```
