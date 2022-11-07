@@ -12,10 +12,6 @@
 
 ## Mãos no terminal 💻
 
-Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
-
-Também podemos extrair alterações do repositório remoto usando o comando `git pull`.
-
 🥳 Agora que sabemos como compartilhar nossas contribuições com o mundo, vamos criar nosso primeiro commit!
 
 Vamos precisar de um repositório local e um repositório remoto, um dos quais será a "réplica" do outro (`clones`). A partir do repositório local, faremos alterações, que serão adicionadas ao repositório remoto.
@@ -62,11 +58,7 @@ touch README.md
 
 📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório. Quando queremos documentar permanentemente as alterações no repositório, fazemos um `git commit`. É importante que esse `commit` acompanhe uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m` seguido da mensagem entre aspas. 
 
-Para enviar todas os `commits` locais para o repositório remoto:
-
-```
-git push origin main
-```
+Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
 
 Se tudo correr bem, você verá a seguinte mensagem no seu terminal:
 
@@ -138,7 +130,9 @@ Stage this hunk [y,n,q,a,d,e,?]? n
 
 💡 Para pensar: Que passo precisaríamos para confirmar as mudanças? Exatamente, você pode confirmá-los agora!
 
-Antes de confirmar nossas alterações, vamos adicionar alguns detalhes à nossa documentação:
+Vamos salvar essas novas alterações, com `git commit -m "autoria no README"` e `git push`.
+
+Agora vamos adicionar mais alguns detalhes à nossa documentação:
 
 >
 > 🏅 Desafio VII: Adicione o seguinte texto `Lorem ipsum é o texto que é comumente usado em design gráfico em demonstrações de tipografia ou rascunhos para testar o design visual antes de inserir o texto fino.` e depois de salvar digite o comando `git diff` no terminal.
@@ -156,13 +150,13 @@ Desculpe, acho que me arrependi 🙈! Talvez não tenha sido uma boa ideia docum
 
 👀 Descubra o que os comandos `git stash show` e `git stash list` fazem
 
-Agora adicione o seguinte texto: `O WBDS LA Camp é um curso de treinamento intensivo gratuito para estudantes de graduação e pós-graduação que têm interesse em aprender bioinformática e ciência de dados do zero.`
+Agora adicione o seguinte texto no README: `O WBDS LA Camp é um curso de treinamento intensivo gratuito para estudantes de graduação e pós-graduação que têm interesse em aprender bioinformática e ciência de dados do zero.`
 
 >
 > 🏅 Desafio IX: Digite o comando `git diff`. O quê os símbolos `+` e `-` marcam? Onde estão as mudanças que descartamos? Corra `git stash apply` e observe como ficou o arquivo `README.md` agora.
 >
 >
-> 🏅 Desafío X: Use os comandos apropriados para fazer com que seu repositório remoto fique assim (mas com o seu nome):
+> 🏅 Desafio X: Use os comandos apropriados para fazer com que seu repositório remoto fique assim (mas com o seu nome):
 
 ```
 ### Repositório de teste do WBDS LA Camp
@@ -189,3 +183,5 @@ Que vocês acham disso? Nossa documentação está melhor agora? Hmmm... bem, ta
 💡 Para pensar: Como ficou o arquivo `README.md` agora? As alterações podem ser recuperadas?
 
 👀 Descubra o que os comandos `git stash show` e `git stash list` retornam
+
+Também podemos extrair alterações do repositório remoto usando o comando `git pull`.
