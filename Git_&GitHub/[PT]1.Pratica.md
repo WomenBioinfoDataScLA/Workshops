@@ -46,7 +46,7 @@ Agora que temos o clone do nosso repositório remoto, vamos começar a trabalhar
 ```bash 
 ## Primeiro entramos na pasta que clonamos
 ## Lembre-se de passar o caminho da sua pasta para o comando cd
-cd WBDSLA_Camp
+cd WBDS_LA_Camp
 
 ## Criamos um arquivo README.md
 touch README.md
@@ -56,9 +56,14 @@ touch README.md
 > 🏅 Desafio IV: Adicione essa alteração ao índice e envie as alterações para seu repositório remoto
 >
 
-📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório. Quando queremos documentar permanentemente as alterações no repositório, fazemos um `git commit`. É importante que esse `commit` acompanhe uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m` seguido da mensagem entre aspas. 
+📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório. 
 
-Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
+Para documentar permanentemente as alterações no repositório, fazemos um `git commit`. É importante que esse `commit` acompanhe uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m` seguido da mensagem entre aspas. Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
+
+```bash
+git commit -m "README foi criado"
+git push
+```
 
 Se tudo correr bem, você verá a seguinte mensagem no seu terminal:
 
