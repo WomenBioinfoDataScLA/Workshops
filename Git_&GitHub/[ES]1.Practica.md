@@ -159,10 +159,13 @@ Antes de confirmar nuestros cambios vamos a agregar algunos detalles a nuesta do
 
 👀 Investigá qué hacen los comandos `git stash show` y `git stash list`
 
-Ahora agregá el siguiente  texto:`El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de grado y posgrado que tengan interés ​​en aprender bioinformática y ciencia de datos desde cero.`
+Ahora agregá el siguiente  texto:`El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de grado y posgrado que tengan interés en aprender bioinformática y ciencia de datos desde cero.`
 
 >
-> 🏅 Desafío IX: Escribí el comando `git diff` ¿Qué marcan los símbolos `+` y `-`? ¿Dónde están los cambios que descartamos?  hacé `git stash apply` y observá como se ve el archivo `README.md` ahora.
+> 🏅 Desafío IX: Escribí el comando `git diff` ¿Qué marcan los símbolos `+` y `-`? ¿Dónde están los cambios que descartamos?
+   
+Hacé `git commit -m "Camp en README"` y `git stash apply` y observá como se ve el archivo `README.md` ahora.
+   
 >
 >
 > 🏅 Desafío X: Usá los comandos que correspondan para que tu repositorio remoto se vea del siguiente modo:
