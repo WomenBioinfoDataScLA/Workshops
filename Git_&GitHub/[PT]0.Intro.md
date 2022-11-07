@@ -121,4 +121,4 @@ git init
 
 ````
 
-😍 Já estamos com tudo pronto para começar de fato a parte prática deste tutorial, que se encontra em [1.Practica.md](%5BPT%5D1.Pratica.md)
+😍 Já estamos com tudo pronto para começar de fato a parte prática deste tutorial, que se encontra em [1.Pratica.md](%5BPT%5D1.Pratica.md)
