@@ -12,8 +12,6 @@
 
 ## Manos a la terminal 💻
 
-Podemos hacer una sincronización saliente del repo local al remoto (origin), haciendo `git push`. Este comando envía los commits generados localmente que no se hayan enviado anteriormente.
-
 Podemos también descargar los cambios del repositorio remoto utilizando el comando `git pull`.
 
 🥳 ¡Ahora que sabemos compartir nuestros aportes con el mundo, vamos a crear nuestro primer commit!
@@ -52,29 +50,34 @@ La primera vez que nos descargamos localmente un repositorio, se dice que se `cl
 ```bash 
 ## Ingresamos primero a la carpeta que nos clonamos
 ## recordá pasarle al comando cd el path tu carpeta
-cd WBDSLA_Camp
+cd WBDS_LA_Camp
 
 ## creamos un archivo README.md
 touch README.md
 ```
 
 >
-> 🏅 Desafío IV: agregá estos cambios al index y empujá los cambios a tu repositorio remoto
+> 🏅 Desafío IV: Agregá estos cambios al index y empujá los cambios a tu repositorio remoto
 >
 
-📑 [**NOTA**]: Cuando queremos empujar todo lo que tenemos hasta ahora resulta agregar el argumento `.` al comando `git add`, de esta forma, al hacer `git add .` agregaremos todos los cambios que hicimos hasta aquí en el repositorio.
+📑 [**NOTA**]: Cuando queremos empujar todo lo que tenemos hasta ahora resulta agregar el argumento `.` al comando `git add`, de esta forma, al hacer `git add .` agregaremos todos los cambios que hicimos hasta aquí en el repositorio. 
+   
+Para documentar permanentemente los cambios en el repositorio, hacemos un `git commit`. Es importante que este `commit` acompañe un mensaje describiendo el cambio realizado y para eso usamos el parámetro `-m` seguido del mensaje entre comillas. Podemos hacer una sincronización saliente del repo local al remoto (origin), haciendo `git push`. Este comando envía los commits generados localmente que no se hayan enviado anteriormente.
+   
+```bash
+git commit -m "README fue creado"
+git push
+```
 
 Si todo sale bien vas a ver en tu terminal el siguiente mensaje:
 
-```bash
-Counting objects: 8, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (8/8), 246.61 KiB | 1.88 MiB/s, done.
-Total 8 (delta 4), reused 0 (delta 0)
-remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
-To github.com:WomenBioinfoDataScLA/Workshops.git
-   d2ba9b7..af541bb  master -> master
+```
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 218 bytes | 218.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/<su login>/WBDS_LA_Camp.git
+ * [new branch]      main -> main
 ```
 
 💡 Para pensar: ¿De qué otro modo comprobarías que efectivamente los cambios fueron subidos al repositorio remoto?
