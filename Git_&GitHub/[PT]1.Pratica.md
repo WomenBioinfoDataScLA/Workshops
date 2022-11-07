@@ -1,4 +1,4 @@
-### CONTROL DE VERSIONES
+### CONTROLE DE VERSÕES
 
 🚨 Este material foi criado pela Dra. Ana Julia Velez Rueda e Dra. Liliane Conteville
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
@@ -58,7 +58,7 @@ touch README.md
 
 📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório. 
 
-Para documentar permanentemente as alterações no repositório, fazemos um `git commit`. É importante que esse `commit` acompanhe uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m` seguido da mensagem entre aspas. Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
+Para documentar permanentemente as alterações no repositório, fazemos um `git commit`. Esse `commit` deve acompanhar uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m` seguido da mensagem entre aspas. Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
 
 ```bash
 git commit -m "README foi criado"
@@ -127,17 +127,14 @@ Stage this hunk [y,n,q,a,d,e,?]? n
 > 🏅 Desafio V: Adicione os asteriscos de fechamento antes dos dois pontos `:` e adicione novamente as alterações com `git add -p`, mas desta vez usando a flag `y`
 >
 
+
 🤔 Hmmm... Não, não obtive resultados no meu terminal, e você? Será que nada aconteceu?
 
 >
 > 🏅 Desafio VI: Digite o comando `git status` e descubra se o Git se distraiu ou realmente adicionou as alterações ao `index`
 >
 
-💡 Para pensar: Que passo precisaríamos para confirmar as mudanças? Exatamente, você pode confirmá-los agora!
-
-Vamos salvar essas novas alterações, com `git commit -m "autoria no README"` e `git push`.
-
-Agora vamos adicionar mais alguns detalhes à nossa documentação:
+Antes de confirmarmos nossas alterações, vamos adicionar alguns detalhes à nossa documentação:
 
 >
 > 🏅 Desafio VII: Adicione o seguinte texto `Lorem ipsum é o texto que é comumente usado em design gráfico em demonstrações de tipografia ou rascunhos para testar o design visual antes de inserir o texto fino.` e depois de salvar digite o comando `git diff` no terminal.
@@ -158,10 +155,14 @@ Desculpe, acho que me arrependi 🙈! Talvez não tenha sido uma boa ideia docum
 Agora adicione o seguinte texto no README: `O WBDS LA Camp é um curso de treinamento intensivo gratuito para estudantes de graduação e pós-graduação que têm interesse em aprender bioinformática e ciência de dados do zero.`
 
 >
-> 🏅 Desafio IX: Digite o comando `git diff`. O quê os símbolos `+` e `-` marcam? Onde estão as mudanças que descartamos? Corra `git stash apply` e observe como ficou o arquivo `README.md` agora.
->
+> 🏅 Desafio IX: Digite o comando `git diff`. O quê os símbolos `+` e `-` marcam? Onde estão as mudanças que descartamos?
+> 
+
+Corra `git commit -m "Camp no README"` e `git stash apply` e veja como está o arquivo `README.md` agora.
+
 >
 > 🏅 Desafio X: Use os comandos apropriados para fazer com que seu repositório remoto fique assim (mas com o seu nome):
+>
 
 ```
 ### Repositório de teste do WBDS LA Camp
@@ -175,6 +176,7 @@ O WBDS LA Camp é um curso de treinamento intensivo gratuito para estudantes de 
 Vamos adicionar mais uma seção à nossa documentação que contenha informações sobre nosso trabalho:
 
 ```
+
 ## Sobre mim
 Meu nome é Ana Julia Velez Rueda, sou doutora em bioinformática, formada pela Universidade Nacional de Quilmes na Argentina.
 ```
