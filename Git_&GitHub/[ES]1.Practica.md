@@ -154,7 +154,7 @@ Ahora agreguemos algunos detalles a nuestra documentación:
 
 👀 Investigá qué hacen los comandos `git stash show` y `git stash list`
 
-Ahora agregá el siguiente  texto:`El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de grado y posgrado que tengan interés en aprender bioinformática y ciencia de datos desde cero.`
+Ahora agregá el siguiente  texto: `El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de grado y posgrado que tengan interés en aprender bioinformática y ciencia de datos desde cero.`
 
 >
 > 🏅 Desafío IX: Escribí el comando `git diff` ¿Qué marcan los símbolos `+` y `-`? ¿Dónde están los cambios que descartamos?
@@ -187,12 +187,6 @@ El WBDS LA Camp es un curso de formación intensivo gratuito para estudiantes de
 ## Sobre mí
 Mi nombre es Ana Julia Velez Rueda, soy doctora en bioinformática, gradudada en la Universidad Nacional de Quilmes de Argentina.
 ```
-
-¿Qué les parece? ¿Quedó mejor ahora nuestra documentación? Hmmm...bueno tal vez no y quizás sea mejor frenar acá ¿no? 
-
->
-> 🏅 Desafío XI: Para despedirnos, descartá los cambios con `git checkout README.md` 
->
 
 💡 Para pensar: ¿Cómo se ve el archivo `README.md` ahora? ¿Se podrán recuperar los cambios?
 
