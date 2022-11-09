@@ -20,7 +20,7 @@ Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" 
 > 🏅 Desafío II: Creá un repositorio en GitHub con el nombre `WBDS_LA_Camp`
 >
 
-<img src="./assets/%5BES%5DCONTROL_DE_VERSIONES_create_a_repo.png" style="width: 500px">
+![](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/assets/%5BES%5DCONTROL_DE_VERSIONES_create_a_repo.png)
 
 La primera vez que nos descargamos localmente un repositorio, se dice que se `clona` en nuestra computadora. Es decir, se hace una copia local de todo lo que contiene la carpeta remota (en la computadora de Don GitHub): archivos y metadatos.
 
@@ -30,7 +30,7 @@ La primera vez que nos descargamos localmente un repositorio, se dice que se `cl
 
 Para eso copiá el enlace que te genera GitHub para clonar el repositorio:
 
-<img src="./assets/%5BES%5DCONTROL_DE_VERSIONES_clone.png" style="width: 500px">
+![](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/assets/%5BES%5DCONTROL_DE_VERSIONES_clone.png)
 
 Y escribí en tu terminal:
 ```bash

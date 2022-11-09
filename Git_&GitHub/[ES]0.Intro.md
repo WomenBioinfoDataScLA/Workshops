@@ -18,11 +18,11 @@ Para comprender mejor qué hace Git se podría pensar que es un artista que inte
 
 Cada registro de estos cambios se denomina `commit` y mantiene metadatos (referencias temporales y de autorías, etc) útiles sobre ellos. El historial completo de `commits` para un proyecto en particular y sus metadatos forman un `repositorio`. 
 
-![Git commits img](./assets/%5BES%5DCONTROL_DE_VERSIONES_schema1.png)
+![Git commits img](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/%5BES%5DCONTROL_DE_VERSIONES_schema1.png)
 
 Siguiendo con la analogía del video, podemos pensar cada `commit` como un fotograma en nuestro video, siendo este el historial completo de cambios de un archivo o directorio. Pero antes de tomar la foto, no sería mala idea preparar a nuestros personajes y apuntar la cámara adecuadamente para que sea capaz de capturar estos cambios adecuadamente. Entonces, al hacer `git add` lo que hacemos es especificar qué movimientos de los personajes quedarán registrados en la próxima foto (colocando las cosas en el área `index` de Git), algo así como gritar `cheeese` para que nadie salga con mala cara. Y luego, cuando hacemos `git commit` le indicamos a Git que es momensto de tomar la foto y registrar de forma permanente los movimientos o cambios en el estado de nuestros personajes.
 
-![Git areas](./assets/%5BES%5DCONTROL_DE_VERSIONES_git_areas.png)
+![Git areas](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/%5BES%5DCONTROL_DE_VERSIONES_git_areas.png)
 
 En resumen, Git tiene un área de preparación `index` a la que podemos agregar elementos con `git add`. Los cambios no se documentan de forma permanentehasta que los confirmamos con `git commit`. Los cambios se gestionan como una unidad, al generar un `commit`, y quedan registrados al hacer `git commit`. Esto nos permite enviar grupos específicos de archivos al mismo tiempo o separados, según lo que deseemos.
 
@@ -60,8 +60,7 @@ Con GitBash o una terminal abierta, primero verifiquemos si ya tiene Git instala
 git --version
 ```
 
-<img src="./assets/git_version.gif" style="width: 500px">
-
+![](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/git_version.gif)
 
 Si aparece un mensaje como: `git version 2.38.1`, ya tienes Git instalado, así que omite ese paso de instalación y ve al paso de configuración en este tutorial.
 
@@ -70,7 +69,7 @@ Si no vio un mensaje con su versión de git después de ejecutar `git --version`
 ### macOS
 Git para macOS se puede descargar [aquí](https://sourceforge.net/projects/git-osx-installer/files/).
 
-<img src="./assets/git_for_mac.png" style="width: 500px">
+![](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/git_for_mac.png)
 
 Abra el archivo descargado para iniciar el instalador. Siga los pasos de instalación hasta que se complete con éxito. Luego abre el programa.
 
