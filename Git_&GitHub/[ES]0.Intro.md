@@ -45,5 +45,5 @@ Para usarlos deberás registrarte y crear una cuenta.
 >
 >🏅 Desafío I: Creá tu cuenta en [GitHub](https://github.com/) ¡Tené a mano tu nombre de usuarie y contraseña, lo vas a necesitar!
 >
->🏅 Desafío II: Configurá e instalá tu [Git]() en tu computadora!
+>🏅 Desafío II: Configurá e instalá tu [Git](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5DGit_and_GitHub_setup.md) en tu computadora!
 >

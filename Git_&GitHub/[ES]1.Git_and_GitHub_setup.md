@@ -2,7 +2,10 @@
 ## Contenido
 
 1. [Instalación de Git](#instalación-de-git)
-2. [Configura tus datos](#configura-tus-datos)
+2. [Instalación para macOS](#instalación-para-linux)
+3. [Instalación para Linux](#instalación-para-linux)
+4. [Configura tus datos](#configura-tus-datos)
+4. [Instalación para macOS](#instalación-para-linux)
 
 ## *Instalación de Git*
 
@@ -48,8 +51,9 @@ sudo apt-get install git
 
 Para asegurarse de que la instalación funcionó, ejecute `git --version` nuevamente y vea si esta vez hay información sobre la versión instalada.
 
-## *Configura tus datos*
-Con git instalado en su computadora, ahora configuremos su correo electrónico y nombre de usuario usando los siguientes comandos. Pero recuerda reemplazar `<tu login>` con tu nombre y `<tu email>` con tu correo electrónico personal.
+### Configura tus datos
+Con `Git` instalado en tu computadora, solo nos queda configurarlo para poder usarlo. Para ello usaremos los siguientes comandos:
+
 
 ```bash
 git config --global user.name <tu login>
@@ -57,28 +61,36 @@ git config --global user.name <tu login>
 git config --global user.email <tu email>
 ```
 
-📑 [**NOTA**]: Si necesita más información, consulte la documentación en el sitio web [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
+✅ [TIP] Recordá reemplazar `<tu login>` con tu nombre y `<tu email>` con tu correo electrónico, el mismo que usaste para crear `GitHub`.
 
-## *¿Dónde guardar mis repositorios?*
 
-Como se mencionó anteriormente, Git funciona con un repositorio local que está en su computadora. Luego, debemos mostrarle dónde queremos almacenar nuestros repositorios en nuestra máquina.
+<details>
+  <summary> 🤓 LEE MÁS AQUÍ </summary>
+ Podés leer más sobre cómo configurar tu Git [aquí](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
 
-Comencemos por crear una carpeta donde se almacenarán los repositorios. Para esto, usaremos algunos comandos aprendidos en el tutorial de Bash/Linux:
+</details>
+
+
+
+
+## `Init`ializando proyectos
+
+Como mencionamos [anteriormente](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md), `Git` funciona con un repositorio local que está en su computadora. Luego, debemos mostrarle dónde queremos almacenar nuestros repositorios en nuestra máquina.
+
+Comencemos por crear una carpeta donde se almacenarán nuestros los repositorios que crearemos para el `WBDS LA Camp`. Para esto, usaremos algunos comandos aprendidos en el tutorial de [Bash/Linux]():
 
 ```bash
 cd ~/Desktop
 
-mkdir Proyectos
+mkdir WBDSLA_Camp
 
-cd Proyectos
+cd WBDSLA_Camp
 ```
 
-Ahora que estamos dentro de la carpeta `Proyectos`, inicialicemos un repositorio git en la raíz de la carpeta, ejecute el siguiente comando:
+Ahora que estamos dentro de la carpeta `WBDSLA_Camp`, inicializaremos un repositorio git en la raíz de la carpeta, ejecutando el siguiente comando:
 
 ```bash
-
 git init
-
 ````
 
 😍 Ahora estamos con todo listo para comenzar la parte práctica de este tutorial, que se puede encontrar en [1.Practica.md](%5BES%5D1.Practica.md)
