@@ -14,7 +14,7 @@
 
 🥳 ¡Ahora que sabemos compartir nuestros aportes con el mundo, vamos a crear nuestro primer commit!
 
-Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" del otro (`clones`). Desde el repositorio local haremos cambios, que luego vamos a agregar al repositorio remoto.
+Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" del otro (`clones`). Desde el repositorio local haremos cambios, que luego vamos a agregar al repositorio remoto. Previamente aprendiste a crear inicializar un repositorio de manera local, vamos a probar ahora de otra forma:
 
 >
 > 🏅 Desafío II: Creá un repositorio en GitHub con el nombre `WBDS_LA_Camp`
@@ -39,8 +39,6 @@ Y escribí en tu terminal:
 git clone git@github.com:AJVelezRueda/WBDSLA_Camp.git
 ```
 
-📑 [**NOTA**]: Si necesita más información, consulte la documentación en el sitio web de [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
-
 ¡Ahora que tenemos el clon de nuestro repositorio remoto, vamos a comenzar a trabajar en el proyecto! Creá un archivo dentro de la carpeta `WBDS_LA_Camp` de tu computadora:
 
 ```bash 
@@ -52,18 +50,21 @@ cd WBDS_LA_Camp
 touch README.md
 ```
 
->
-> 🏅 Desafío IV: Agregá estos cambios al index y empujá los cambios a tu repositorio remoto
->
+¡Vamos a agregar estos cambios al index y empujá los cambios a tu repositorio remoto!
 
-📑 [**NOTA**]: Cuando queremos empujar todo lo que tenemos hasta ahora resulta agregar el argumento `.` al comando `git add`, de esta forma, al hacer `git add .` agregaremos todos los cambios que hicimos hasta aquí en el repositorio. 
-   
-Para documentar permanentemente los cambios en el repositorio, hacemos un `git commit`. Este `commit` debe acompañar un mensaje  describiendo el cambio realizado y para eso usamos el parámetro `-m` seguido del mensaje entre comillas. Podemos hacer una sincronización saliente del repo local al remoto (origin), haciendo `git push`. Este comando envía los commits generados localmente que no se hayan enviado anteriormente.
+[Recordá](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md#introducci%C3%B3n) que para registrar los cambios, primero debemos agregarlos. Cuando queremos agregar todo los cambios que hicimos hasta ahora podemos utilizar el argumento `.` al comando `git add`, de esta forma, al hacer `git add .` agregaremos al seguimiento de git todos los archivos generados hasta el momento y todos el resto de los cambios que hicimos hasta aquí en el repositorio. 
    
 ```bash
-git commit -m "README fue creado"
-git push
+git add .
 ```
+
+Una vez agregados los cambios debemos utilizar el comando `git commit`, para registrar permanentemente los cambios hechos en el repositorio. Este `commit` debe acompañarse de un mensaje que describe las características del cambio realizado, el cual podemos definir utilizando el parámetro `-m` seguido del mensaje entre comillas:
+
+```bash
+git commit -m "README fue creado"
+```
+
+Ahora podemos sincronizar el repositorio remoto (origin) con el local, haciendo `git push`. Como vimos en la [teoría](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md), este comando envía todos los commits generados localmente que no se hayan enviado anteriormente.
 
 Si todo sale bien vas a ver en tu terminal el siguiente mensaje:
 
@@ -75,8 +76,6 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/<su login>/WBDS_LA_Camp.git
  * [new branch]      main -> main
 ```
-
-📑 [**NOTA**]: Podemos también descargar los cambios del repositorio remoto utilizando el comando `git pull`.
 
 💡 Para pensar: ¿De qué otro modo comprobarías que efectivamente los cambios fueron subidos al repositorio remoto?
 

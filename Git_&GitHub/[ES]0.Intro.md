@@ -47,3 +47,12 @@ Para usarlos deberás registrarte y crear una cuenta.
 >
 >🏅 Desafío II: Configurá e instalá tu [Git](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5DGit_and_GitHub_setup.md) en tu computadora!
 >
+
+Una vez creado un repositorio localmente, este podrá ser continuamente sincronizado con un repositorio remoto análogo al creado localmente. Esta sincornización se suele hacer desde el repositorio local utilizando los comandos:
+- `git clone`: para clonar o descargar un repositorio remoto a nuestra computadora. Este comando se usa una única vez, una vez descargado se podrá actualizar usando los comandos detallados abajo.
+
+- `git push`: para empujar los `commits` hechos localmente hasta el momento 
+
+- `git pull`: para bajar los cambios que puedan existir en el repositorio remoto (`origin`).
+
+Pero como `mejor que decir es hacer`, ¡vamos a ponernos manos a la obra con algunos ejercicios [prácticos](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D2.Practica.md)!

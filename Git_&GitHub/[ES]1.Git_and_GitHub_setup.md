@@ -93,4 +93,4 @@ Ahora que estamos dentro de la carpeta `WBDSLA_Camp`, inicializaremos un reposit
 git init
 ````
 
-😍 Ahora estamos con todo listo para comenzar la parte práctica de este tutorial, que se puede encontrar en [1.Practica.md](%5BES%5D1.Practica.md)
+😍 Ahora tenemos todo listo para comenzar la parte [práctica](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D2.Practica.md) de este tutorial.
