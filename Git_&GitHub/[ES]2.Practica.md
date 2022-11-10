@@ -194,3 +194,7 @@ Mi nombre es Ana Julia Velez Rueda, soy doctora en bioinformática, gradudada en
 ¡Hay un detalle más! 🙈
 
 Habrá situaciones en las que preferirá ignorar archivos o directorios después del `commit`. Para eso se debe crear un archivo llamado `.gitignore` y dentro de él se deben agregar los nombres o patrones de los archivos/directorios a ignorar.
+
+>
+> 🏅 Desafío X: Generá un archivo `basura.txt` e ignoralo utilizando un archivo `.gitignore` 
+>
