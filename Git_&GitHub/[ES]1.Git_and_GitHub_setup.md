@@ -1,3 +1,13 @@
+# CONTROL DE VERSIONES
+
+🚨 Este material fue creado por la Dra. Ana Julia Velez Rueda y Dra. Liliane Conteville
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 ## Contenido
 
@@ -15,7 +25,7 @@ En el material de [Primeros Pasos](https://github.com/WomenBioinfoDataScLA/WBDSL
 
 Si estás usando una computadora con **Linux** o **macOS** tendrás que corroborar que `Git` se encuentra isntalado, vamos a por ello! 
 
-Abrí una `terminal` y verificá si ya está `Git` instalado en la computadora... ¡Quien sabe, atl vez tenemos suerte! Para ello, usaremos el siguiente comando:
+Abrí una `terminal` y verificá si ya está `Git` instalado en la computadora... ¡Quien sabe, talvez tenemos suerte! Para ello, usaremos el siguiente comando:
 
 ```bash
 git --version

@@ -20,7 +20,7 @@ Cada registro de estos cambios se denomina `commit` y mantiene metadatos (refere
 
 ![Git commits img](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/%5BES%5DCONTROL_DE_VERSIONES_schema1.png)
 
-Siguiendo con la analogía del video, podemos pensar cada `commit` como un fotograma en nuestro video, siendo este el historial completo de cambios de un archivo o directorio. Pero antes de tomar la foto, no sería mala idea preparar a nuestros personajes y apuntar la cámara adecuadamente para que sea capaz de capturar estos cambios adecuadamente. Entonces, al hacer `git add` lo que hacemos es especificar qué movimientos de los personajes quedarán registrados en la próxima foto (colocando las cosas en el área `index` de Git), algo así como gritar `cheeese` para que nadie salga con mala cara. Y luego, cuando hacemos `git commit` le indicamos a Git que es momensto de tomar la foto y registrar de forma permanente los movimientos o cambios en el estado de nuestros personajes.
+Siguiendo con la analogía del video, podemos pensar cada `commit` como un fotograma en nuestro video, siendo este el historial completo de cambios de un archivo o directorio. Pero antes de tomar la foto, no sería mala idea preparar a nuestros personajes y apuntar la cámara adecuadamente para que sea capaz de capturar estos cambios adecuadamente. Entonces, al hacer `git add` lo que hacemos es especificar qué movimientos de los personajes quedarán registrados en la próxima foto (colocando las cosas en el área `index` de Git), algo así como gritar `cheeese` para que nadie salga con mala cara. Y luego, cuando hacemos `git commit` le indicamos a Git que es momento de tomar la foto y registrar de forma permanente los movimientos o cambios en el estado de nuestros personajes.
 
 ![Git areas](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/%5BES%5DCONTROL_DE_VERSIONES_git_areas.png)
 
@@ -34,7 +34,7 @@ Ahora bien ¿Qué pasa si alguno de los cambios que hicimos no nos sirve? Bueno,
 
 Git trabaja con un repositorio local que está en tu computadora, donde vas a ir agregando tus commits y uno remoto (en la nube) en el cual podes subir tus commits, compartirlos con alguien más o bajarte los commits que haya subido alguien.
 
-Existen varios varios servicios para almacenar repositorios remotamente:
+Existen varios servicios para almacenar repositorios remotamente:
 
 - [Github](https://github.com) 
 - [Bitbucket](https://bitbucket.com)

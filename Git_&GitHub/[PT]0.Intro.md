@@ -32,7 +32,7 @@ Agora, o que acontece se alguma das alterações que fizemos não funcionar para
 
 ## Git ao infinito e além...
 
-O Git funciona com um repositório local que está no seu computador, onde você vai adicionar seus commits e um repositório remoto (na nuvem) no qual você pode fazer upload de seus commits, compartilhá-los com outra pessoa ou baixar os commits que alguém carregou .
+O Git funciona com um repositório local que está no seu computador, onde você vai adicionar seus commits e um repositório remoto (na nuvem) no qual você pode fazer upload de seus commits, compartilhá-los com outra pessoa ou baixar os commits que alguém carregou.
 
 Existem vários serviços para armazenar repositórios remotamente:
 
@@ -45,80 +45,14 @@ Para usá-los você deve se registrar e criar uma conta.
 >
 >🏅 Desafio I: Crie sua conta no [GitHub](https://github.com/). Tenha seu login e senha à mão, você vai precisar!
 >
+>🏅 Desafio II: Configure e instale seu [Git](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BPT%5D1.Git_and_GitHub_setup.md) em seu computador!
+>
 
-## *Instalar o Git*
+Uma vez que um repositório é criado localmente, ele pode ser continuamente sincronizado com um repositório remoto análogo ao criado localmente. Essa sincronização geralmente é feita a partir do repositório local usando os comandos:
+- `git clone`: para clonar ou baixar um repositório remoto para o nosso computador. Este comando é usado apenas uma vez, uma vez baixado pode ser atualizado usando os comandos detalhados abaixo.
 
-Para seguir acompanhando este tutorial, você precisará ter o Git instalado em seu computador e o GitHub configurado corretamente. 
+- `git push`: para enviar os `commits` feitos localmente até agora
 
-No material de [Primeiros Passos](https://github.com/WomenBioinfoDataScLA/WBDSLA_PreCamp_PT/blob/main/%5BPT%5DPrimeiros_Passos.md), explicamos como baixar e instalar o `Git Bash`, no caso de você ter o Sistema Operacional **Windows** em seu computador. Esse programa já vem com o Git instalado.
+- `git pull`: para baixar as alterações que possam existir no repositório remoto (`origin`).
 
-Se você têm o Sistema Operacional **Linux ou macOS** em seu computador, abra um `terminal`.
-
-Com o GitBash ou um terminal aberto, vamos primeiro checar se você já têm o Git instalado. Para isso, cole o comando abaixo no terminal e aperte enter. Uma das formas de colar um texto no terminal é apertando o botão direito do mouse e depois clicar em `Paste` ou `Colar`. 
-
-```bash
-git --version
-```
-
-![](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/git_version.gif)
-
-
-Se apareceu uma mensagem como: `git version 2.38.1`, você já têm o Git instalado, então pule essa etapa de instalação e vá para a etapa de configuração neste tutorial.
-
-Se não apareceu uma mensagem com a versão de seu git após correr `git --version`, siga os próximos passos para realizar a instalação.
-
-### macOS
-O Git para macOS pode ser baixado [aqui](https://sourceforge.net/projects/git-osx-installer/files/).
-
-![](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/git_for_mac.png)
-
-Abra o arquivo baixado para iniciar o instalador. Siga os passos de instalação até concluir com êxito. Em seguida, abra o programa.
-
-Confirme que a instalação funcionou correndo `git --version` novamente e veja se dessa vez aparece uma informação sobre a versão instalada.
-
-### Linux
-
-Com o terminal aberto, corra os seguintes comandos:
-
-```bash
-sudo apt-get update 
-
-sudo apt-get install git
-```
-
-Para ter certeza que a instalação funcionou, corra `git --version` novamente e veja se dessa vez aparece uma informação sobre a versão instalada.
-
-## *Configurar seus dados*
-Com o git instalado em seu computador, agora vamos configurar seu e-mail e nome de usuário utilizando os comandos a seguir. Mas lembre-se de substituir `<seu login>` com seu nome e `<seu email>` com o seu email pessoal.
-
-```bash
-git config --global user.name <seu login>
-
-git config --global user.email <seu email>
-```
-
-📑 [**NOTA**]: Se você precisar de mais informações, cheque a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
-
-## *Onde armazenar meus repositórios?*
-
-Como foi dito anteriormente, o Git funciona com um repositório local que está no seu computador. Então precisamos mostrar para ele aonde queremos armazenar os nossos repositórios em nossa máquina.
-
-Vamos começar criando uma pasta em que os repositórios serão armazeados. Para isso, vamos utilizar alguns comandos aprendidos no tutorial de Bash/Linux: 
-
-```bash
-cd ~/Desktop
-
-mkdir Projetos
-
-cd Projetos
-```
-
-Agora que estamos dentro da pasta `Projetos`, vamos inicializar um repositório git na raiz da pasta, execute o comando a seguir:
-
-```bash
-
-git init
-
-````
-
-😍 Já estamos com tudo pronto para começar de fato a parte prática deste tutorial, que se encontra em [1.Pratica.md](%5BPT%5D1.Pratica.md)
+Mas já que `melhor que falar é fazer`, vamos ao que interessa com alguns exercícios [práticos](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BPT%5D2.Pratica.md)!
