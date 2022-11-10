@@ -11,7 +11,7 @@
 
 Para continuar con este tutorial, deberás tener Git instalado en tu computadora y GitHub configurado correctamente.
 
-En el material de [Primeros Pasos](https://github.com/WomenBioinfoDataScLA/WBDSLA_PreCamp_PT/blob/main/%5BES%5DPrimeros_Pasos.md), te explicamos cómo descargar e instalar el `Git Bash`en caso de que tenga Sistema Operativo **Windows** en su computadora. Este programa ya viene con `Git` instalado.
+En el material de [Primeros Pasos](https://github.com/WomenBioinfoDataScLA/WBDSLA_PreCamp_setup/blob/main/%5BES%5DPrimeros_Pasos.md), te explicamos cómo descargar e instalar el `Git Bash`en caso de que tenga Sistema Operativo **Windows** en su computadora. Este programa ya viene con `Git` instalado.
 
 Si estás usando una computadora con **Linux** o **macOS** tendrás que corroborar que `Git` se encuentra isntalado, vamos a por ello! 
 
