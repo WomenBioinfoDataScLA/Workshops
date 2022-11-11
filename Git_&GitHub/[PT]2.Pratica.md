@@ -14,7 +14,7 @@
 
 🥳 Agora que sabemos como compartilhar nossas contribuições com o mundo, vamos criar nosso primeiro commit!
 
-Vamos precisar de um repositório local e um repositório remoto, um dos quais será a "réplica" do outro (`clones`). A partir do repositório local, faremos alterações, que serão adicionadas ao repositório remoto.
+Vamos precisar de um repositório local e um repositório remoto, um dos quais será a "réplica" do outro (`clones`). A partir do repositório local, faremos alterações que serão adicionadas ao repositório remoto.
 
 >
 > 🏅 Desafio III: Crie um repositório no GitHub com o nome `WBDS_LA_Camp`
@@ -52,7 +52,7 @@ touch README.md
 
 Vamos adicionar essas alterações ao índice e enviar as alterações para seu repositório remoto!
 
-[Lembre-se](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md#introducci%C3%B3n) que para registrar as alterações, devemos primeiro adicioná-las. Quando quisermos adicionar todas as alterações que fizemos até agora podemos usar o argumento `.` para o comando `git add`, desta forma, quando fizermos `git add .` adicionaremos todos os arquivos gerados até agora e todas as outras alterações que fizemos até agora no repositório.
+[Lembre-se](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BPT%5D0.Intro.md) que para registrar as alterações, devemos primeiro adicioná-las. Quando quisermos adicionar todas as alterações que fizemos até agora podemos usar o argumento `.` para o comando `git add`, desta forma, quando fizermos `git add .` adicionaremos todos os arquivos gerados até agora e todas as outras alterações que fizemos até agora no repositório.
 
 ```bash
 git add .
