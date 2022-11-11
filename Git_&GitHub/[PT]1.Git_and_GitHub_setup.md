@@ -12,10 +12,10 @@
 ## Contenido
 
 1. [Instalação do Git](#instalação-do-git)
-2. [Instalação para macOS](#instalação-em-macOS)
-3. [Instalação para Linux](#instalação-em-linux)
+2. [Instalação em macOS](#instalação-em-macos)
+3. [Instalação em Linux](#instalação-em-linux)
 4. [Configure seus datos](#configure-seus-datos)
-4. [Instalação para macOS](#instalação-para-linux)
+5. [Initializando Projetos](#initializando-projetos)
 
 ## *Instalação do Git*
 
@@ -51,7 +51,7 @@ Após baixá-lo, você deve clicar duas vezes no arquivo para iniciar o instalad
 
 ### Instalação em Linux
 
-Com o terminal aberto, execute os seguientes comandos:
+Com o terminal aberto, execute os seguintes comandos:
 
 ```bash
 sudo apt-get update 
@@ -81,7 +81,7 @@ git config --global user.email <seu email>
 </details>
 
 
-## `Init`ializando proyectos
+## `Init`ializando projetos
 
 Como mencionamos [anteriormente](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md), `Git` funciona com um repositório local que está no seu computador. Assim, precisamos mostrar onde queremos armazenar nossos repositórios em nossa máquina.
 
