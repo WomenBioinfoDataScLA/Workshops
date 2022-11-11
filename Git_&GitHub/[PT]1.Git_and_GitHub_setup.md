@@ -12,8 +12,8 @@
 ## Contenido
 
 1. [Instalação do Git](#instalação-do-git)
-2. [Instalação para macOS](#instalação-para-linux)
-3. [Instalação para Linux](#instalação-para-linux)
+2. [Instalação para macOS](#instalação-em-macOS)
+3. [Instalação para Linux](#instalação-em-linux)
 4. [Configure seus datos](#configure-seus-datos)
 4. [Instalação para macOS](#instalação-para-linux)
 
