@@ -40,18 +40,18 @@ git --version
 
 Se você não recebeu nenhuma mensagem a mostrada acima, precisará instalar o `Git` no seu computador 🥺. Não se desespere, aqui vamos nós!
 
-### Instalação para macOS
-`Git` para macOS pode ser baixado [aqui](https://sourceforge.net/projects/git-osx-installer/files/).
+### Instalação em macOS
+O `Git` para macOS pode ser baixado [aqui](https://sourceforge.net/projects/git-osx-installer/files/).
 
 ![](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/git_for_mac.png)
 
 Após baixá-lo, você deve clicar duas vezes no arquivo para iniciar o instalador. Você só precisa seguir as etapas de instalação até que seja concluída com sucesso e Voilà! Agora você pode abrir o programa para usá-lo.
 
-✅ [DICA] Confirmá que la instalação funcionó ejecutando `git --version` en la terminal, esta vez deberías obtener la informação sobre lala versión recientemente instalada.
+✅ [DICA] Confirme se a instalação funcionou executando `git --version` no terminal, desta vez você deve obter as informações sobre a versão instalada recentemente.
 
 ### Instalação em Linux
 
-Con la terminal abierta, ejecuta los siguientes comandos:
+Com o terminal aberto, execute os seguientes comandos:
 
 ```bash
 sudo apt-get update 
