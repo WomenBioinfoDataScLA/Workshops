@@ -47,9 +47,9 @@ Se você não recebeu nenhuma mensagem a mostrada acima, precisará instalar o `
 
 Após baixá-lo, você deve clicar duas vezes no arquivo para iniciar o instalador. Você só precisa seguir as etapas de instalação até que seja concluída com sucesso e Voilà! Agora você pode abrir o programa para usá-lo.
 
-✅ [TIP] Confirmá que la instalação funcionó ejecutando `git --version` en la terminal, esta vez deberías obtener la informação sobre lala versión recientemente instalada.
+✅ [DICA] Confirmá que la instalação funcionó ejecutando `git --version` en la terminal, esta vez deberías obtener la informação sobre lala versión recientemente instalada.
 
-### Instalação para Linux
+### Instalação em Linux
 
 Con la terminal abierta, ejecuta los siguientes comandos:
 
@@ -59,35 +59,33 @@ sudo apt-get update
 sudo apt-get install git
 ```
 
-Para asegurarse de que la instalação funcionó, ejecute `git --version` nuevamente y vea si esta vez hay informação sobre la versión instalada.
+Para ter certeza de que a instalação funcionou, execute `git --version` novamente e veja se há informações sobre a versão instalada desta vez.
 
-### Configura tus datos
-Con `Git` instalado en tu computadora, solo nos queda configurarlo para poder usarlo. Para ello usaremos los siguientes comandos:
+### Configure seus datos
+Com o `Git` instalado em seu computador, tudo o que precisamos fazer é configurá-lo para que possamos usá-lo. Para isso, usaremos os seguintes comandos:
 
 
 ```bash
-git config --global user.name <tu login>
+git config --global user.name <seu login>
 
-git config --global user.email <tu email>
+git config --global user.email <seu email>
 ```
 
-✅ [TIP] Recordá reemplazar `<tu login>` con tu nombre y `<tu email>` con tu correo electrónico, el mismo que usaste para crear `GitHub`.
+✅ [DICA] Lembre-se de substituir `<seu login>` pelo seu nome e `<seu e-mail>` pelo seu e-mail, o mesmo que você usou para criar a sua conta no `GitHub`.
 
 
 <details>
-  <summary> 🤓 LEE MÁS AQUÍ </summary>
- Podés leer más sobre cómo configurar tu Git [aquí](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
+  <summary> 🤓 LEIA MAIS AQUI </summary>
+ Você pode ler mais sobre como configurar seu Git [aqui](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
 
 </details>
 
 
-
-
 ## `Init`ializando proyectos
 
-Como mencionamos [anteriormente](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md), `Git` funciona con un repositorio local que está en su computadora. Luego, debemos mostrarle dónde queremos almacenar nuestros repositorios en nuestra máquina.
+Como mencionamos [anteriormente](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md), `Git` funciona com um repositório local que está no seu computador. Assim, precisamos mostrar onde queremos armazenar nossos repositórios em nossa máquina.
 
-Comencemos por crear una carpeta donde se almacenarán nuestros los repositorios que crearemos para el `WBDS LA Camp`. Para esto, usaremos algunos comandos aprendidos en el tutorial de [Bash/Linux]():
+Vamos começar criando uma pasta onde serão armazenados nossos repositórios que vamos criar para o `WBDS LA Camp`. Para isso, usaremos alguns comandos aprendidos no tutorial de [Bash/Linux]():
 
 ```bash
 cd ~/Desktop
@@ -97,68 +95,11 @@ mkdir WBDSLA_Camp
 cd WBDSLA_Camp
 ```
 
-Ahora que estamos dentro de la carpeta `WBDSLA_Camp`, inicializaremos un repositorio git en la raíz de la carpeta, ejecutando el siguiente comando:
+Agora que estamos dentro da pasta `WBDSLA_Camp`, vamos inicializar um repositório git na raiz da pasta, executando o seguinte comando:
 
 ```bash
 git init
 ````
 
-😍 Ahora tenemos todo listo para comenzar la parte [práctica](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D2.Practica.md) de este tutorial.
+😍 Agora temos tudo pronto para começar a parte [prática](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BPT%5D2.Pratica.md) deste tutorial.
 
-
-#######################
-
-
-
-
-
-Abra o arquivo baixado para iniciar o instalador. Siga os passos de instalação até concluir com êxito. Em seguida, abra o programa.
-
-Confirme que a instalação funcionou correndo `git --version` novamente e veja se dessa vez aparece uma informação sobre a versão instalada.
-
-### Linux
-
-Com o terminal aberto, corra os seguintes comandos:
-
-```bash
-sudo apt-get update 
-
-sudo apt-get install git
-```
-
-Para ter certeza que a instalação funcionou, corra `git --version` novamente e veja se dessa vez aparece uma informação sobre a versão instalada.
-
-## *Configurar seus dados*
-Com o git instalado em seu computador, agora vamos configurar seu e-mail e nome de usuário utilizando os comandos a seguir. Mas lembre-se de substituir `<seu login>` com seu nome e `<seu email>` com o seu email pessoal.
-
-```bash
-git config --global user.name <seu login>
-
-git config --global user.email <seu email>
-```
-
-📑 [**NOTA**]: Se você precisar de mais informações, cheque a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
-
-## *Onde armazenar meus repositórios?*
-
-Como foi dito anteriormente, o Git funciona com um repositório local que está no seu computador. Então precisamos mostrar para ele aonde queremos armazenar os nossos repositórios em nossa máquina.
-
-Vamos começar criando uma pasta em que os repositórios serão armazeados. Para isso, vamos utilizar alguns comandos aprendidos no tutorial de Bash/Linux: 
-
-```bash
-cd ~/Desktop
-
-mkdir Projetos
-
-cd Projetos
-```
-
-Agora que estamos dentro da pasta `Projetos`, vamos inicializar um repositório git na raiz da pasta, execute o comando a seguir:
-
-```bash
-
-git init
-
-````
-
-😍 Já estamos com tudo pronto para começar de fato a parte prática deste tutorial, que se encontra em [1.Pratica.md](%5BPT%5D1.Pratica.md)

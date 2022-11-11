@@ -17,7 +17,7 @@
 Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" del otro (`clones`). Desde el repositorio local haremos cambios, que luego vamos a agregar al repositorio remoto. Previamente aprendiste a crear inicializar un repositorio de manera local, vamos a probar ahora de otra forma:
 
 >
-> 🏅 Desafío II: Creá un repositorio en GitHub con el nombre `WBDS_LA_Camp`
+> 🏅 Desafío III: Creá un repositorio en GitHub con el nombre `WBDS_LA_Camp`
 >
 
 ![](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/assets/%5BES%5DCONTROL_DE_VERSIONES_create_a_repo.png)
@@ -25,7 +25,7 @@ Necesitaremos un repositorio local y uno remoto, que van a ser uno la "replica" 
 La primera vez que nos descargamos localmente un repositorio, se dice que se `clona` en nuestra computadora. Es decir, se hace una copia local de todo lo que contiene la carpeta remota (en la computadora de Don GitHub): archivos y metadatos.
 
 >
-> 🏅 Desafío III: Cloná tu repositorio `WBDS_LA_Camp` en tu computadora
+> 🏅 Desafío IV: Cloná tu repositorio `WBDS_LA_Camp` en tu computadora
 >
 
 Para eso copiá el enlace que te genera GitHub para clonar el repositorio:

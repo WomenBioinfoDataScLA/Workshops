@@ -17,7 +17,7 @@
 Vamos precisar de um repositório local e um repositório remoto, um dos quais será a "réplica" do outro (`clones`). A partir do repositório local, faremos alterações, que serão adicionadas ao repositório remoto.
 
 >
-> 🏅 Desafio II: Crie um repositório no GitHub com o nome `WBDS_LA_Camp`
+> 🏅 Desafio III: Crie um repositório no GitHub com o nome `WBDS_LA_Camp`
 >
 
 ![](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/%5BES%5DCONTROL_DE_VERSIONES_create_a_repo.png)
@@ -25,7 +25,7 @@ Vamos precisar de um repositório local e um repositório remoto, um dos quais s
 A primeira vez que baixamos um repositório localmente, diz-se que ele está `clonado` no nosso computador. Ou seja, é feita uma cópia local de tudo que está na pasta remota (no computador de Don GitHub): arquivos e metadados.
 
 >
-> 🏅 Desafio III: Clone seu repositório `WBDS_LA_Camp` no seu computador
+> 🏅 Desafio IV: Clone seu repositório `WBDS_LA_Camp` no seu computador
 >
 
 Para isso, copie o link que o GitHub gera para clonar o repositório:
@@ -34,12 +34,12 @@ Para isso, copie o link que o GitHub gera para clonar o repositório:
 
 E digite no seu terminal:
 ```bash
+#git clone <link do seu repositório>
+
 git clone git@github.com:<seu login>/WBDS_LA_Camp.git
 ```
 
-📑 [**NOTA**]: Se precisar de mais informações, consulte a documentação no site do [github](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-ssh-urls).
-
-Agora que temos o clone do nosso repositório remoto, vamos começar a trabalhar no projeto! Crie um arquivo dentro da pasta `WBDS_LA_Camp` do seu computador:
+Agora que temos o clone do nosso repositório remoto, vamos começar a trabalhar no projeto! Crie um arquivo dentro da pasta `WBDS_LA_Camp` em seu computador:
 
 ```bash 
 ## Primeiro entramos na pasta que clonamos
@@ -50,18 +50,21 @@ cd WBDS_LA_Camp
 touch README.md
 ```
 
->
-> 🏅 Desafio IV: Adicione essa alteração ao índice e envie as alterações para seu repositório remoto
->
+Vamos adicionar essas alterações ao índice e enviar as alterações para seu repositório remoto!
 
-📑 [**NOTA**]: Quando queremos empurrar tudo o que temos até agora, adicionamos o argumento `.` ao comando `git add`, desta forma, ao correr `git add .` adicionaremos todas as alterações que fizemos até agora ao repositório. 
+[Lembre-se](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md#introducci%C3%B3n) que para registrar as alterações, devemos primeiro adicioná-las. Quando quisermos adicionar todas as alterações que fizemos até agora podemos usar o argumento `.` para o comando `git add`, desta forma, quando fizermos `git add .` adicionaremos todos os arquivos gerados até agora e todas as outras alterações que fizemos até agora no repositório.
 
-Para documentar permanentemente as alterações no repositório, fazemos um `git commit`. Esse `commit` deve acompanhar uma mensagem descrevendo a alteração realizada e para isso utilizamos o parâmetro `-m` seguido da mensagem entre aspas. Podemos fazer uma sincronização de saída do repositório local para o remoto (origem), fazendo `git push`. Este comando envia todos os commits gerados localmente que não foram confirmados anteriormente.
+```bash
+git add .
+```
+
+Uma vez que as alterações foram adicionadas, devemos usar o comando `git commit` para gravar permanentemente as alterações feitas no repositório. Este `commit` deve ser acompanhado de uma mensagem que descreva as características da alteração realizada, que podemos definir usando o parâmetro `-m` seguido da mensagem entre aspas:
 
 ```bash
 git commit -m "README foi criado"
-git push
 ```
+
+Agora podemos sincronizar o repositório remoto (origem) com o local, fazendo `git push`. Como vimos na [teoria](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BPT%5D0.Intro.md), este comando envia todos os commits gerados localmente e que não foram enviados anteriormente.
 
 Se tudo correr bem, você verá a seguinte mensagem no seu terminal:
 
@@ -74,8 +77,6 @@ To https://github.com/<seu login>/WBDS_LA_Camp.git
  * [new branch]      main -> main
 ```
 
-📑 [**NOTA**]: Também podemos extrair alterações de repositórios remotos usando o comando `git pull`.
-
 💡 Para pensar: De que forma você verificaria se as alterações foram carregadas no repositório remoto?
 
 Agora vamos fazer algumas alterações no arquivo `README.md`. Adicione o seguinte texto ao arquivo e salve:
@@ -86,12 +87,12 @@ Agora vamos fazer algumas alterações no arquivo `README.md`. Adicione o seguin
 **Autor/a/e: <seu nome>
 ```
 
+
 Vamos então adicionar as alterações ao espaço `index`, mas desta vez, verificando cada uma das alterações, para ter certeza de que não cometemos nenhum erro nas alterações que adicionamos:
 
 ```bash
 git add -p
 ```
-
 
 Vamos ver o que o Git nos diz:
    
@@ -193,3 +194,7 @@ Meu nome é Ana Julia Velez Rueda, sou doutora em bioinformática, formada pela 
 Tem mais um detalhe! 🙈
 
 Haverão situações em que você vai preferir ignorar arquivos ou diretórios após o `commit`. Para isso, um arquivo chamado `.gitignore` deve ser criado e dentro dele devem ser adicionados os nomes ou padrões dos arquivos/diretórios a serem ignorados.
+
+>
+> 🏅 Desafio X: Gere um arquivo `lixo.txt` e ignore-o usando um arquivo `.gitignore`
+>

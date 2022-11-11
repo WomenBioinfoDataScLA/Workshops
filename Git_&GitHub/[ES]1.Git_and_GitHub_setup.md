@@ -81,8 +81,6 @@ git config --global user.email <tu email>
 </details>
 
 
-
-
 ## `Init`ializando proyectos
 
 Como mencionamos [anteriormente](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BES%5D0.Intro.md), `Git` funciona con un repositorio local que está en su computadora. Luego, debemos mostrarle dónde queremos almacenar nuestros repositorios en nuestra máquina.
