@@ -205,12 +205,24 @@ Veamos rápidamente algunos comandos básicos muy útiles, con algunas opciones 
 
 	Aquí en lugar de mostrarse la concatenación de _archivo1_ y _archivo2_ en la pantalla esto pasa a ser la entrada del comando `wc` y con la opción `-l` obtiene la cantidad de líneas, lo cual es lo que se termina mostrando en la pantalla.
 
-- `grep` es un comando muy útil que busca un patrón que le pasemos en un archivo dado. De forma básica se puede usar para buscar la ocurrencia de palabras en un archivo de texto. Una opción útil para este caso es `-o` con la cual aparece la cantidad de ocurrencias en forma de lista.
+- `grep` es un comando muy útil que busca un patrón que le pasemos en un archivo dado:
+
+	a. De forma básica se puede usar para buscar la ocurrencia de palabras en un archivo de texto. 
 
 	```bash
 	grep "palabra" archivo
+	```	
+	b. Una opción útil para este caso es `-o` con la cual aparece la cantidad de ocurrencias en forma de lista.
+
+	```bash
 	grep -o "palabra" archivo
 	```
+	b. Otra opción útil puede `-v` que nos permite excluir las líneas que incluyen dicha palabra que pasando como parámetro
+
+	```bash
+	grep -v "palabra" archivo
+	```
+
 
 - Ya vimos un comando para concatenar archivos uno debajo del otro, pero también existe la posibilidad de pegarlos uno al costado del otro, cosa que resulta muy útil cuando trabajamos con archivos que contengan columnas y las queramos concatenar una al lado de la otra. El comando que se usa para esto es `paste`, donde una opción muy útil es `-d` con el cual podemos definir el delimitador entre los archivos (por defecto es una tabulación)
 
@@ -236,7 +248,26 @@ Veamos rápidamente algunos comandos básicos muy útiles, con algunas opciones 
 	```bash
 	cat *.txt
 	```
+- Otro comando útil cuando manipulamos texto es `sort`, que se usa para ordenar un archivo, organizando los registros en un orden particular. Si no especificamos otra cosa, el comando `sort` ordena el archivo asumiendo que el contenido es ASCII
+	```bash
+	sort archivo.txt
+	```
+	
+	a. Una opción útil es `-o` que nos permite redireccionar la salida a un archivo:
+	
+	```bash
+	sort -o salida.txt archivo.txt
+	```
 
+	b. Otra opción útil es `-k` que nos permite ordenar teniendo en cuenta una columna en partiular
+	```bash
+	sort -k 4 archivo.txt
+	```
+
+	c. Con la opción `-r` podemos además ordenar el archivo de forma inversa (descendiente por defecto):
+	```bash
+	sort -r archivo.txt
+	```
 
 ## [Scripting](#scripting)
 
