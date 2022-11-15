@@ -302,6 +302,3 @@ Por último, si queremos ejecutar un archivo que tenga permisos de ejecución te
 	/home/guillermo/scripts/nombre_script.sh #ruta absoluta
 	./nombre_script.sh #ruta relativa
 	```
-
-Para poner en práctica todo esto vamos a realizar un ejercicio, hacé click en el link y cloná (o descargá):
-### ¡El [Bashaton](#)!
