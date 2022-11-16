@@ -1,36 +1,47 @@
-Ahora autentiquemos su cuenta y creemos una conexión entre el git de su máquina y su cuenta de Github.
+## Verificación de Cuenta de GitHub via SSH
 
-Primero, verifiquemos si ya tiene claves SSH en su máquina:
+Vamos a autenticar tu cuenta, para poder crear una conexión entre el `Git` de local y tu cuenta de `Github`.
+
+Primero, verifiquemos si ya tenes una claves SSH en tu máquina:
 
 ```bash
 ls -al ~/.ssh
 ```
 
-Si recibe un error que dice que ~/.ssh no existe, no tiene claves SSH, por lo que debemos crear una nueva con el siguiente comando. Tenga en cuenta que su dirección de correo electrónico debe estar entre comillas.
+Este comando arroja un error del estilo de `~/.ssh no existe`, quiere decir que no tenés claves `SSH`, por lo que debemos crear una nueva con el siguiente comando:
 
 ```bash
+<<<<<<< HEAD
 ssh-keygen -t rsa -C "<su email>"
+=======
+#Tu dirección de correo electrónico debe estar entre comillas
+ssh-keygen -t rsa -C "<tu email>"
+>>>>>>> a7032ae (tutorial translation)
 ```
 
-Cuando se le solicite "Ingrese el archivo en el que guardar la clave", presione Entrar para aceptar la ubicación predeterminada para guardar el archivo con la clave. Luego se le pedirá que "Ingrese la frase de contraseña", y en la terminal, ingrese una contraseña segura.
+Cuando aparezca el mensaje `Ingrese el archivo en el que guardar la clave`, presioná la tecla `Enter` para aceptar la ubicación predeterminada y para guardar el archivo con la clave. Luego se te pedirá que `Ingreses la frase de contraseña`, y deberás ingresas una clave segura en la terminal.
 
-Entre los mensajes que se mostrarán en la pantalla, uno indicará dónde se guardó la clave. Busque algo como:
+Entre los mensajes que se mostrarán en la terminal, uno indicará dónde se guardó la clave. Buscá algo como:
 
 ```
 Your public key has been saved in <ruta al archivo .pub>
 ```
 
-Ahora abra el archivo que contiene la clave, **seleccione** todo su contenido y **cópielo** en su **clipboard**.
+Ahora abrí el archivo que contiene la clave, **seleccione** todo su contenido y **copialo** en tu **portapapeles**.
 
 ```bash
+<<<<<<< HEAD
 cat <ruta al archivo donde está la clave> 
+=======
+cat <ctura al archivo donde está la clave> 
+>>>>>>> a7032ae (tutorial translation)
 ```
 
-¡Listo! Ahora solo necesitamos agregar esta clave a su cuenta de Github. Para hacer esto, vaya a [la configuración de su cuenta de github] (https://github.com/settings/profile), haga clic en "Claves SSH y GPG" a la izquierda, luego "Nueva clave SSH" a la derecha. Agregue una etiqueta a la clave como "Mi computadora personal" y luego pegue la clave en la ubicación indicada.
+¡Listo! 🥳 Ahora solo necesitamos agregar esta clave a tu cuenta de Github. Para hacer esto, andá a [la configuración de su cuenta de github](https://github.com/settings/profile), hacé click en el botón  `Claves SSH y GPG` que se encuentra a la izquierda, luego `Nueva clave SSH` que se encuentra a la derecha. Agregá una etiqueta a la clave (podés usar algo como "Mi computadora personal") y luego pegá la clave que tenés en portapapeles en la ubicación indicada.
 
 ![](https://raw.githubusercontent.com/WomenBioinfoDataScLA/Workshops/master/Git_%26GitHub/assets/paste_ssh_es.png)
 
-Probemos la conexión, solo para ver si todo salió bien. En la terminal, ejecuta:
+🌐 Ahora probemos la conexión, para ver si todo salió bien. En la terminal, ejecutá:
 
 ```bash
 ssh -T git@github.com
@@ -44,7 +55,7 @@ Deberías ver una advertencia como esta:
 > Are you sure you want to continue connecting (yes/no)?
 ```
 
-Escribe `yes`. Si dice algo como lo siguiente, funcionó:
+Escribí `yes`. Si dice algo como lo siguiente, funcionó:
 
 ```
 Hi <su login>! You've successfully authenticated, but Github does
