@@ -94,6 +94,8 @@ Vamos então adicionar as alterações ao espaço `index`, mas desta vez, verifi
 git add -p
 ```
 
+✅ [NOTA] Pode ser que após o comando acima você receba uma mensagem de erro se no seu computador não tiver o Perl instalado. Para instalar, siga o comando que o terminal recomendar. Após instalar o Perl, teste rodar o comando acima novamente.
+
 Vamos ver o que o Git nos diz:
    
 ```bash
