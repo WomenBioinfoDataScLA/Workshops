@@ -16,7 +16,7 @@
 3. [Instalação em Linux](#instalação-em-linux)
 4. [Configure seus datos](#configure-seus-datos)
 5. [Initializando Projetos](#initializando-projetos)
-6. [Autenticação da conta]#autenticacao-da-conta-do-gitHub-via-ssh
+6. [Autenticação da conta](#autenticacao-da-conta-do-gitHub-via-ssh)
 
 ## *Instalação do Git*
 
