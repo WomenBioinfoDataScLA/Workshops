@@ -6,7 +6,7 @@ Primeiro vamos checar se você já tem chaves SSH em sua máquina:
 ```bash
 ls -al ~/.ssh
 ```
-Se você receber um erro informando que ~/.ssh não existe, você não tem chaves SSH, então precisamos criar uma nova. Com o comando abaixo. Note que o seu endereço de email deve estar entre aspas.
+Se você receber um erro informando que ~/.ssh não existe, você não tem chaves SSH, então precisamos criar uma nova com o comando abaixo. Note que o seu endereço de email deve estar entre aspas.
 
 ```bash
 ssh-keygen -t rsa -C "<seu email>"
