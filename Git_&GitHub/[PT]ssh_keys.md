@@ -1,4 +1,4 @@
-## Atenticação da conta do GitHub via SSH
+## Autenticação da conta do GitHub via SSH
 
 Agora vamos autenticar a sua conta e criar uma conexão entre o `Git` da sua máquina e a sua conta no `Github`.
 
