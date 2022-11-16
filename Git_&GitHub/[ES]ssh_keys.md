@@ -11,12 +11,8 @@ ls -al ~/.ssh
 Este comando arroja un error del estilo de `~/.ssh no existe`, quiere decir que no tenés claves `SSH`, por lo que debemos crear una nueva con el siguiente comando:
 
 ```bash
-<<<<<<< HEAD
-ssh-keygen -t rsa -C "<su email>"
-=======
 #Tu dirección de correo electrónico debe estar entre comillas
 ssh-keygen -t rsa -C "<tu email>"
->>>>>>> a7032ae (tutorial translation)
 ```
 
 Cuando aparezca el mensaje `Ingrese el archivo en el que guardar la clave`, presioná la tecla `Enter` para aceptar la ubicación predeterminada y para guardar el archivo con la clave. Luego se te pedirá que `Ingreses la frase de contraseña`, y deberás ingresas una clave segura en la terminal.
@@ -30,11 +26,7 @@ Your public key has been saved in <ruta al archivo .pub>
 Ahora abrí el archivo que contiene la clave, **seleccione** todo su contenido y **copialo** en tu **portapapeles**.
 
 ```bash
-<<<<<<< HEAD
-cat <ruta al archivo donde está la clave> 
-=======
 cat <ctura al archivo donde está la clave> 
->>>>>>> a7032ae (tutorial translation)
 ```
 
 ¡Listo! 🥳 Ahora solo necesitamos agregar esta clave a tu cuenta de Github. Para hacer esto, andá a [la configuración de su cuenta de github](https://github.com/settings/profile), hacé click en el botón  `Claves SSH y GPG` que se encuentra a la izquierda, luego `Nueva clave SSH` que se encuentra a la derecha. Agregá una etiqueta a la clave (podés usar algo como "Mi computadora personal") y luego pegá la clave que tenés en portapapeles en la ubicación indicada.
@@ -58,6 +50,5 @@ Deberías ver una advertencia como esta:
 Escribí `yes`. Si dice algo como lo siguiente, funcionó:
 
 ```
-Hi <su login>! You've successfully authenticated, but Github does
-not provide shell access.
+Hi <su login>! You've successfully authenticated, but Github does not provide shell access.
 ```
