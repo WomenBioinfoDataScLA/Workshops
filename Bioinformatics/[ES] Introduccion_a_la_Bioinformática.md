@@ -18,7 +18,9 @@
   * [3. Proteínas](#3_proteinas)
   * [4. Ácidos Nucleicos](#4_acnuc)
   * [5. Barrilete cósmico ¿De qué planeta viniste?](#5_barrilete)
-  * [6. Bibliografía](#6_citas)
+    [6. Uniprot](#6_uniprot)
+  * [7. Bibliografía](#7_citas)
+
 
 [1. Una introducción a la Introducción](#1_intro)
 
@@ -115,18 +117,28 @@ Existen diferencias en las estructuras del ADN y ARN, el primero será una caden
 
 Ahora bien, no es una cuestión menor la obtención de la información biológica para su procesamiento computacional ¿De dónde viene esa información? ¿Dónde encontramos las secuencias de proteínas o su función en la célula; o inclusive información relativa a pacientes infectados con CODVID-19? 😱
 
-En términos generales científic@s de todo el mundo desarrollan diversos conocimientos relacionados con los seres vivos. Estos conocimientos se obtienen a base de observaciones y experimentación. Los datos y conclusiones obtenidos son compartidos entre científicos de forma organizada, ya sea por medio de publicaciones en revistas super-archi-nerds o, por ejemplo, a través de Bases de datos disponibles en internet. Una base de datos (DB por sus siglas en inglés) es una colección estructurada de datos; en particular, una base de datos biológica es una colección de información relacionada con seres vivos. Estos datos provienen de experimentos científicos, literatura publicada, análisis computacional, etc. 
+En términos generales científic@s de todo el mundo desarrollan diversos conocimientos relacionados con los seres vivos. Estos conocimientos se obtienen a base de observaciones y experimentación. Los datos y conclusiones obtenidos son compartidos entre científicos de forma organizada, ya sea por medio de publicaciones en revistas super-archi-nerds o, por ejemplo, a través de **Bases de datos** disponibles en internet. Una base de datos  (DB por sus siglas en inglés) biológica es una colección estructurada de datos; en particular, una base de datos biológica es una colección de información relacionada con seres vivos. Estos datos provienen de experimentos científicos, literatura publicada, análisis computacional, etc. En la mayoría de los casos será necesario realizar algún tipo de procesamiento sobre los datos para su interpretación. 
 
-La información contenida en bases de datos biológicas puede incluir, por ejemplo: funciones, estructura y localización de proteínas o genes, efectos clínicos de mutaciones, así como similitudes de secuencias o distancias evolutivas, etc. Entre las bases de datos más utilizadas por científicos de todo el mundo, bioinformáticos o no, se encuentran GenBank (colección de todas las secuencias biológicas estudiadas) y PDB (que guarda la información estructural disponible acerca de ácidos nucleicos y proteínas).
+En bioinformática, resulta fundamental comprender la diferencia entre dato e información. Mientras que a partir de conjuntos de datos se puede derivar la información directamente, los datos son algo así como la masa cruda de pan 🥖🍞  antes de entrar en el horno, tienen todo para poder llegar a ser un pan, pero les falta cocción. Como en la cocina🍴, el tipo de procesamiento de los datos dependerá de la pregunta que queremos responder y del material inicial de partida, aí como su análisis dependerá del contexto de la información que obtengamos. Es decir, no vamos a procesar igual una imagen que una secuencia. Y aún cuando una secuencia proteica puede ser pensada como un string (o palabra), la información que deribemos de su procesamiento no podrá ser interpretado del mismo modo que un cuento de [Mariana Enríquez](https://es.wikipedia.org/wiki/Mariana_Enr%C3%ADquez). En síntesis, habrá que meterle cabeza para pasar de simples letras a comprender los fenómenos que subyacen a la naturaleza que nos rodea.
+
+
+[6. Uniprot](#6_uniprot)
+
+Los datos contenidos en las bases de datos biológicas puede incluir, por ejemplo: funciones, estructura y localización de proteínas o genes, efectos clínicos de mutaciones, así como similitudes de secuencias o distancias evolutivas, etc. Entre las bases de datos más utilizadas por científicos de todo el mundo, bioinformáticos o no, se encuentran [GenBank](https://www.ncbi.nlm.nih.gov/genbank/) (colección de todas las secuencias biológicas estudiadas), [PDB](https://www.rcsb.org/) (que guarda la información estructural disponible acerca de ácidos nucleicos y proteínas) y Uniprot (que almacena información sobre proteínas).
+
+Veamos un poco cómo funciona y qué es [Uniprot](https://www.uniprot.org/). La base de datos UniProt (UniProtKB) hace accesible, de forma estructurada y gratuita, datos de secuencias de proteínas con anotaciones funcionales, precisas, coherentes y ricas en secuencias. Las bases de datos suelen cambiar su fachada o UI (user interface), por lo que aquí vamos a hacer hincapié en su contenido.
+
+**UniProt** está dividida en dos secciones o subsets de datos: **Swiss-Prot**, que es la sección de registros anotados manualmente. Esta incorpora información extraída de la literatura y análisis computacionales evaluados por curadores de todo el mundo. **TrEMBL** por su parte es la sección con registros analizados computacionalmente que esperan una anotación manual completa.
 
 >
-> 🧗🏻‍♀️ DESAFÍO VII: 
+> 🧗🏻‍♀️ DESAFÍO VII: ¿Buscá la cantidad de entradas que contiene una y otra sección de **Uniprot**
 >
 
 
 
 
-[6. Bibliografía](#6_citas)
+
+[7. Bibliografía](#7_citas)
 
 
 Anfinsen, C.B., Haber, E., Sela, M., and White, F.H. (1961). The kinetics of formation of native ribonuclease during oxidation of the reduced polypeptide chain. Proc Natl Acad Sci USA 47, 1309–1314.
