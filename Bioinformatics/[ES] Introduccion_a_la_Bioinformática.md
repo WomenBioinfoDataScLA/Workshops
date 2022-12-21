@@ -133,10 +133,13 @@ Veamos un poco cómo funciona y qué es [Uniprot](https://www.uniprot.org/). La 
 >
 > 🧗🏻‍♀️ DESAFÍO VII: ¿Buscá la cantidad de entradas que contiene una y otra sección de **Uniprot**
 >
-
-
-
-
+> 🧗🏻‍♀️ DESAFÍO VII:  Usando el código LPXA_ECOLI como texto de búsqueda en la base de datos [Uniprot](https://www.uniprot.org/): 
+>                   a) Identificá el tipo de proteína: ¿Es una enzima? Si es así diga cuál es su actividad.
+>                   b) Identificá el organismo de procedencia de la proteína
+>                   c) Analizá los “GO terms”: anotá el proceso biológico, la función y el lugar donde la LPXA_ECOLI lleva a cabo su rol 
+>                   biológico.
+>                   d) ¿Está cristalizada la proteína? ¿Que código de entradas PDB tiene? ¿Para qué sirviría entonces la base de datos PDB?
+>
 
 [7. Bibliografía](#7_citas)
 

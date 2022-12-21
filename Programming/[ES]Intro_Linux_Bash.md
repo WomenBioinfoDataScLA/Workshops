@@ -299,6 +299,6 @@ Por último, si queremos ejecutar un archivo que tenga permisos de ejecución te
 - Si estamos en la carpeta donde se encuentra el archivo podemos usar el `.`
 
 	```bash
-	/home/guillermo/scripts/nombre_script.sh #ruta absoluta
+	/home/ana/scripts/nombre_script.sh #ruta absoluta
 	./nombre_script.sh #ruta relativa
 	```
