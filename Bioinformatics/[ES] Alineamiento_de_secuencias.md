@@ -102,10 +102,8 @@ Ahora bien, aún cuando seamos capaces de encontrar el mejor puntaje para nuestr
 👀 ¡Es importante tener en cuenta, que una significación estadı́stica no garantiza certeza!
  
 [Tipo de alineamientos](#Alineamientos)
-### ¿Entonces qué?
 
-
-En resumen, podemos decir que un alineamiento de secuencias consiste en una comparación de secuencias biológicas (ácidos nucleicos o proteínas), con el fin de observar sus similitudes y diferencias, buscando maximizar las similitudes entre ellas, y de la forma más razonable desde un punto de vista biológico. Debemos recordar que un alineamiento generada por un software representará solo uno de los muchas alineamientos posibles. 
+**¿Entonces qué?** En resumen, podemos decir que un alineamiento de secuencias consiste en una comparación de secuencias biológicas (ácidos nucleicos o proteínas), con el fin de observar sus similitudes y diferencias, buscando maximizar las similitudes entre ellas, y de la forma más razonable desde un punto de vista biológico. Debemos recordar que un alineamiento generada por un software representará solo uno de los muchas alineamientos posibles. 
 
 Este procedimiento consiste en buscar series de caracteres individuales que se encuentran en el mismo orden en las secuencias a comparar.Los caracteres idénticos se ubican en la misma columna (match), mientras que  los caracteres no-idénticos se pueden ubicar en la misma columna (mismatch) o bien  alineados con lo que llamamos “gap” (indel). 
 
@@ -166,12 +164,12 @@ BLAST (Basic Local Alignment Search Tool) (S. Henikoff and J. G. Henikoff, 1992)
 Asumiendo que una secuencia similar contendrá alguna de estas palabras o k-meros, extiende el alineamiento hacia ambos lados mediante el algoritmo de programación dinámica de Smith–Waterman (D. States, W. Gish, and S. Altschul, 1991), buscando nalaizar la coincidencia global de ambas secuecias. 
 
 
-Existe una gran familia de programas derivados de este algoritmo. 
+Existe una gran familia de programas derivados de este algoritmo, que toman distintos tipos de secuencia como secuencia de búsqueda. ¡Vamos a exploráarlos! 
 
 >**PARA PENSAR** 🤔: Ingresá al servidor del NCBI y mirá los distintos programas derivados del BLAST que se ofrecen ¿Para qué sirve cada uno? ¿En qué casos usarías cada uno?   
 Vamos a explorar esta herramienta!
 >
->🧗🏻‍♀️DESAFIO VII: calculá el E-value y % identidad utilizando el programa Blast de la siguiente secuencia input usando 20000 hits, un e-value de 100 y tomando aquellos hits con un mínimo de 70% cobertura. Observe y discuta el comportamiento de : E-value vs. % id, Score vs % id,  Score vs E-value
+>🧗🏻‍♀️DESAFIO VII: Utilizando el programa BlastP calculá el E-value y % identidad de la secuencia como input usando 20000 hits, un e-value de 100 y tomando aquellos hits con un mínimo de 70% cobertura. Observe y discuta el comportamiento de : E-value vs. % id, Score vs % id,  Score vs E-value
 >
 >VVGGLGGYMLGSAMSRPIIHFGSDYEDRYYRENMHRYPNQVYYRPMDEYSNQNNFVHDCVNITIKQHTVTTTTKGENFTETDVKMMERVVEQMCITQYERESQAYYQRGSSMVLFSSPPVILLISFLIFLIVG
 >
@@ -180,10 +178,22 @@ Vamos a explorar esta herramienta!
 >🧗🏻‍♀️DESAFIO VIII: Realizá nuevas búsquedas usando la mitad de la secuencia problema y para un cuarto de la secuencia original. Compará los gráficos obtenidos. ¿Qué conclusiones puede sacas?
 >
 
-A partir de los resultados de una búsqueda con BLAST se pueden inferir relaciones funcionales o estructurales entre secuencias homólogas. Ya que esta búsqueda asume una relación evolutiva, es posible de este modo identificar nuevos miembros de una familia de genes o de proteínas o encontrar secuencias idénticas, con una significancia estadística. 
+A partir de los resultados de una búsqueda con BLAST se pueden inferir relaciones funcionales o estructurales entre secuencias homólogas. Ya que esta búsqueda asume una relación evolutiva, es posible de este modo identificar nuevos miembros de una familia de genes o de proteínas o encontrar secuencias idénticas, con una significancia estadística. Así mismo, es una herramienta muy utilizada para inferir la identificación de secuencias sin identificación. 
+
+Pero como pudieron observar, las búsquedas arrojan muchos posibles `hits`, que inclusipueden tener las mismas puntuaciones, por lo que es necesario diferenciar comprender los diferentes niveles de confianza que describen cada parámetro para elegir los mejores `hits` o secuencias para los análisis posteriores:
+
+- `Maximum Score`: es la puntuación de alineación más alta (bit-score) entre la secuencia de consulta y los segmentos de la base de datos. Es una especie de inversamente proporcional al `valor-e` o `e-value`. Cuanto más grande, menos probable de que esta coincidencia o similitud sea al azar.
+
+- `Total score`: es la suma de las puntuaciones de alineación de todas las secuencias de la misma base de datos
+
+- `Percent Query Coverage`: es el porcentaje de la longitud de la consulta que se incluye en los segmentos alineados. Cuanto más pequeño, más probable que las coincidencias sean al azar.
+
+- `E-value` representa la probabilidad de que la similitud de la secuencia no sea aleatoria. Cuanto menor sea el valor E, mayor la probabilidad. Valores inferiores a 1e-3 representa coincidencias de muy alta calidad.
+
+- `Porcentaje de identidad`: como dijimos anteriormente, describe qué tan similar es la consulta a las secuencias alineadas.
 
 
->🧗🏻‍♀️DESAFIO IX: Utilizando BLAST utilice búsquedas de similitud secuencial para identificar a la siguiente proteína:
+>🧗🏻‍♀️DESAFIO IX: Utilizando BLAST utilizá búsquedas de similitud secuencial para identificar a la siguiente proteína:
 >
 >MIDKSAFVHPTAIVEEGASIGANAHIGPFCIVGPHVEIGEGTVLKSHVVVNGHTKIGRDNEIYQFASIGEVNQDLKYAGEPTRVEIGDRNRIRESVTIHRGTVQGGGLTKVGSDNLLMINAHIAHDCTVGNRCILANNATLAGHVSVDDFAIIGGMTAVHQFCIIGAHVMVGGCSGVAQDVPPYVIAQGNHATPFGVNIEGLKRRGFSREAITAIRNAYKLIYRSGKTLDEVKPEIAELAETYPEVKAFTDFFARSTRGLIR
 >
