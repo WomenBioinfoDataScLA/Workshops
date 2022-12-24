@@ -1,7 +1,9 @@
 # La vida en tres dimensiones: introducción a la Bioinformática Estructural
 
 ##### Autora: Dra. Ana Julia Velez Rueda
+>
 > Material basado en el material de [Introducción a la Bioinformática de AJVeleRueda](https://github.com/AJVelezRueda/Introduccion_a_la_Bioinformatica)
+>
 > **LICENSE**: This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 >
