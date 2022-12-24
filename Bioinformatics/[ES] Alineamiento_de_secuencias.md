@@ -52,9 +52,11 @@ Como se explicó anteriormente, la forma de encontrar relaciones evolutivas entr
 >☑️ PREGUNTAS DISPARADORAS: ¿Existe una única forma de alinearlas? ¿Es alguno de los posibles alineamientos mejor que otro? Si así fuera ¿Por qué?
 >
 
-Ahora bien, como bien dijimos el objetivo de alinear secuencias es el de poder inferir relaciones evolutivas entre ellas y evaluar su parecido. Sin embargo, poder evaluar el parecido entre dos secuencias puede conllevar algunas dificultades, como viste en el ejemplo, ya que no existe una única forma de alinear dos secuencias y será por lo tanto necesario definir criterios que nos permitan identificar el mejor alineamiento.
+Ahora bien, como bien dijimos el objetivo de alinear secuencias es el de poder inferir relaciones evolutivas entre ellas y evaluar su parecido. Sin embargo, poder evaluar el parecido entre dos secuencias puede conllevar algunas dificultades, como viste en el ejemplo, ya que no existe una única forma de alinear dos secuencias y será por lo tanto necesario definir criterios que nos permitan identificar el mejor alineamiento. 
 
-En primera instancia definamos un concepto que nos puede ser útil en este sentido, la identidad. Este se define como la suma de residuos idénticos en posiciones equivalentes en dos secuencias alineadas.
+
+La puntuación más directa para evaluar qué tan estrechamente relacionadas están dos secuencias puede basarse en la cantidad de caracteres idénticos en posiciones equivalentes en dos secuencias alineadas. Así, podemos evaluar el porcentaje de residuos idénticos, o `porcentaje de identidad` de secuencia. Cuanto mayor sea este porcentaje, más cercanas serán las secuencias comparadas en términos de su origen evolutivo.
+
  
 >🧗🏻‍♀️DESAFIO II: En la siguiente [tabla interactiva](https://flbulgarelli.github.io/umi/#una-palabra-no-dice-nada-y-al-mismo-tiempo-lo-dice-todo)  distintos alineamientos para las palabras "ANA" y "ANANA". Verás que en el margen superior izquierdo aparece un valor de identidad calculado para cada alineamiento que intentes.
 >
@@ -62,18 +64,19 @@ En primera instancia definamos un concepto que nos puede ser útil en este senti
 > 
 >☑️ PREGUNTAS DISPARADORAS: ¿Son todos los valores iguales? ¿Qué consideraciones deberían tenerse en cuenta a la hora de realizar el cálculo? ¿Se te ocurre, distintas formas de calcularlo? ¿Serán todas ellas igualmente válidas en Biología?
 
-Hemos definido la identidad y hemos comenzado a entender las implicancias de introducir esos guiones, que de ahora en más llamaremos "gaps". La presencia de gaps, que introducen huecos en el alineamiento, representan las inserciones y deleciones. Y cómo pueden intuir, la apertura de un gap en una u otra posición o la persistencia de más de un gap en el alineamiento, tiene sus implicancias.
+Hemos definido la `identidad` y hemos comenzado a entender las implicancias de introducir esos guiones, que de ahora en más llamaremos `gaps`. La presencia de gaps representan las inserciones y deleciones en las secuencias, y si bien nos ayudan a encontrar una mayor número de coincidencias entre las secuencias, introducen huecos en el alineamiento. Cómo seguramente pueden intuir, la apertura de un gap en una u otra posición o la presencia de más de un gap en el alineamiento, tiene sus implicancias y requiere de nuestro cuidado. Vamos a analizar los interrogantes que surgen de este nuevo concepto:
 
 >
 >🧗🏻‍♀️DESAFIO III: Probá en  [tabla interactiva](https://flbulgarelli.github.io/umi/#una-palabra-no-dice-nada-y-al-mismo-tiempo-lo-dice-todo) distintos alineamientos para las palabras "ANA" y "ANANA". Verás que en el margen superior izquierdo aparece un valor de identidad calculado para cada alineamiento que intentes y un botón para cambiar la penalidad que se le otorga a dicho para el cálculo de identidad.
 > 
 >Probá varias combinaciones, tomá nota de los valores de identidad observados y de las conclusiones que se desprendan de estas observaciones.
 >
->☑️ PREGUNTAS DISPARADORAS: ¿Cómo se relacionan los valores de identidad obtenidos con las penalizaciones que se imponen al gap? ¿Qué implicancias crees que tiene una mayor penalización de gaps? ¿Se te ocurre alguna otra forma de penalización que no haya sido tenido en cuenta en este ejemplo?
+>☑️ PREGUNTAS DISPARADORAS:  ¿Cuántos gaps podemos introducir? ¿Es razonable dar como equivalentes un gap con otro caracter o letra? ¿Cómo se relacionan los valores de identidad obtenidos con las penalizaciones que se imponen al gap? ¿Qué implicancias crees que tiene una mayor penalización de gaps? ¿Se te ocurre alguna otra forma de penalización que no haya sido tenido en cuenta en este ejemplo?
 >
 
+Como bien viste en el simulador, existe la posibilidad de dar como equivalente gap con cualquier otro caracter, sin embargo eso no necesariamente representa mejor la realidad. Sin embargo a la hora de considerarlos como una especie de `mismatch`, introduciendo una penalidad tampoco resulta del todo sencillo encontrar el mejor alineamiento posible. Es por eso que  debemos situarnos nuevamente en el contexto biológico específicamente. 
 
-Ahora que pudimos pensar en forma general las implicancias de abrir gaps en un alineamiento, situémonos nuevamente en el contexto biológico. Cómo bien sabemos, en 1958 Crick plantea el dogma central de la genética, donde establece que el flujo de información va del ADN al ARN, y de éste a las proteínas. La expresión génica, con sus pasos de transcripción y traducción, permite obtener proteínas a partir de la información codificada en el ADN. Sabemos, además, que el código genético consiste en 64 combinaciones de tripletes (codones) de nucleótidos, que se corresponden con los distintos aminoácidos, y que guía la decodificación del "mensaje" o "información" que aportan los genes para la síntesis de proteínas.
+Cómo bien sabemos, en 1958 Crick plantea el dogma central de la genética, donde establece que el flujo de información va del ADN al ARN, y de éste a las proteínas. La expresión génica, con sus pasos de transcripción y traducción, permite obtener proteínas a partir de la información codificada en el ADN. Sabemos, además, que el código genético consiste en 64 combinaciones de tripletes (codones) de nucleótidos, que se corresponden con los distintos aminoácidos, y que guía la decodificación del "mensaje" o "información" que aportan los genes para la síntesis de proteínas. Aún cuando una estrategia posible es introducir los gaps solo si aumentan sustancialmente el puntaje total del alineamiento, es importante no perder de vista la Biología a la hora de evaluar en qué casos y cuán costoso debe ser introducir un gap.
 
 >**PARA PENSAR** 🤔: Entonces, pensando en un alineamiento de ácidos nucleicos ¿Cuáles te parece que son las implicancias de abrir un gap en el alineamiento? ¿Qué implicaría la inserción o deleción de una región de más de un residuo?
 >
@@ -102,7 +105,7 @@ Ahora bien, aún cuando seamos capaces de encontrar el mejor puntaje para nuestr
 ### ¿Entonces qué?
 
 
-En resumen, podemos decir que un alineamiento de secuencias consiste en una comparación de secuencias biológicas (ácidos nucleicos o proteínas), con el fin de observar sus similitudes y diferencias, buscando maximizar las similitudes entre ellas, y de la forma más razonable desde un punto de vista biológico.
+En resumen, podemos decir que un alineamiento de secuencias consiste en una comparación de secuencias biológicas (ácidos nucleicos o proteínas), con el fin de observar sus similitudes y diferencias, buscando maximizar las similitudes entre ellas, y de la forma más razonable desde un punto de vista biológico. Debemos recordar que un alineamiento generada por un software representará solo uno de los muchas alineamientos posibles. 
 
 Este procedimiento consiste en buscar series de caracteres individuales que se encuentran en el mismo orden en las secuencias a comparar.Los caracteres idénticos se ubican en la misma columna (match), mientras que  los caracteres no-idénticos se pueden ubicar en la misma columna (mismatch) o bien  alineados con lo que llamamos “gap” (indel). 
 
@@ -117,7 +120,7 @@ Existen distintas herramientas para alinear secuencias, que podríamos clasifica
  
 - **Local**: cuando sólo nos interesa alinear regiones similares entre secuencias. **Se utiliza cuando las secuencias a comparar son diferentes en tamaño o poseen regiones no conservadas**.
  
-Un de los más importantes algoritmos para encontrar alineamientos globales es el de Needleman-Wunsch. Este es un ejemplo de algoritmo de programación dinámica, que subdivide los problemas de cálculo, asegurando encontrar la solución óptima para 2 secuencias dadas. Este utiliza una matriz cuadrada para asignar puntuación para los distintos alineamientos posibles, dada una puntuación para matches, mismatches y gaps; y luego retrocediendo a lo largo de la mejor alineación posible (de mayor puntuación).
+Uno de los algoritmos más utilizados para encontrar alineamientos globales es el de Needleman-Wunsch. Este es un ejemplo de algoritmo de programación dinámica, que subdivide los problemas de cálculo, asegurando encontrar la solución óptima para 2 secuencias dadas. Este utiliza una matriz cuadrada para asignar puntuación para los distintos alineamientos posibles, dada una puntuación para matches, mismatches y gaps; y luego retrocediendo a lo largo de la mejor alineación posible (de mayor puntuación).
 
 
 >🧗🏻‍♀️DESAFIO V: Estuvimos viendo que el alineamiento de secuencias no es trivial y requiere contemplar los múltiples caminos posibles, teniendo en cuenta al mismo tiempo la información biológica que restringe ese universo de posibilidades. 
@@ -158,7 +161,12 @@ En ambos casos el alineamiento puede ser local o global, lo que supondrá alguna
 [Búsqueda de similitud secuencial](#Blast)
 
 
-BLAST (Basic Local Alignment Search Tool) (S. Henikoff and J. G. Henikoff, 1992) es la herramienta más utilizada en ciencia para realizar búsquedas por similitud secuencial.  Esta basa su funcionamiento en la construcción de alineamientos locales. Este algoritmo heurı́stico compara una secuencia problema contra secuencias de distintas bases de datos, buscando alinear subsecuencias (k-meros) de longitud más corta (3 amino ácidos o 28 nucleótidos por defecto) con las secuencias de la base de datos. Asumiendo que una secuencia similar contendrá alguna de estas palabras o k-meros, extiende el alineamiento hacia ambos lados mediante el algoritmo de programación dinámica de Smith–Waterman (D. States, W. Gish, and S. Altschul, 1991). Existe una gran familia de programas derivados de este algoritmo. 
+BLAST (Basic Local Alignment Search Tool) (S. Henikoff and J. G. Henikoff, 1992) es la herramienta más utilizada en ciencia para realizar búsquedas por similitud secuencial.  Esta basa su funcionamiento en la construcción de alineamientos locales. Este algoritmo heurı́stico compara una secuencia problema contra secuencias de distintas bases de datos, buscando alinear subsecuencias (k-meros) de longitud más corta (3 amino ácidos o 28 nucleótidos por defecto) con las secuencias de la base de datos. 
+
+Asumiendo que una secuencia similar contendrá alguna de estas palabras o k-meros, extiende el alineamiento hacia ambos lados mediante el algoritmo de programación dinámica de Smith–Waterman (D. States, W. Gish, and S. Altschul, 1991), buscando nalaizar la coincidencia global de ambas secuecias. 
+
+
+Existe una gran familia de programas derivados de este algoritmo. 
 
 >**PARA PENSAR** 🤔: Ingresá al servidor del NCBI y mirá los distintos programas derivados del BLAST que se ofrecen ¿Para qué sirve cada uno? ¿En qué casos usarías cada uno?   
 Vamos a explorar esta herramienta!
