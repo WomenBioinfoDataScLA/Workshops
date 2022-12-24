@@ -1,4 +1,4 @@
-# Biomoléculas: una breve introducción al nuestro mundo interior
+# Bioinformática: una breve introducción 
 
 ##### Autora: Dra. Ana Julia Velez Rueda
 > Material basado en el material de [Introducción a la Bioinformática de AJVeleRueda](https://github.com/AJVelezRueda/Introduccion_a_la_Bioinformatica)
