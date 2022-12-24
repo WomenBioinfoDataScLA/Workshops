@@ -143,7 +143,6 @@ Veamos un poco cómo funciona y qué es [Uniprot](https://www.uniprot.org/). La 
 
 [7. Bibliografía](#7_citas)
 
-
 Anfinsen, C.B., Haber, E., Sela, M., and White, F.H. (1961). The kinetics of formation of native ribonuclease during oxidation of the reduced polypeptide chain. Proc Natl Acad Sci USA 47, 1309–1314.
 
 Frauenfelder, H., Sligar, S.G., and Wolynes, P.G. (1991). The energy landscapes and motions of proteins. Science 254, 1598–1603.
