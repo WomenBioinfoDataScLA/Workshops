@@ -150,7 +150,7 @@ Mirsky, AE e Pauling, L. (1936). Sobre a estrutura de proteínas nativas, desnat
 
 Watson, JD e Crick, FH (1953). Estrutura molecular dos ácidos nucleicos; uma estrutura para o ácido nucleico de desoxirribose. Natureza 171, 737–738.
 
-Wei, G., Xi, W., Nussinov, R. e Ma, B. (2016). Conjuntos de proteínas: como a natureza aproveita as flutuações termodinâmicas para a vida? os diversos papéis funcionais dos conjuntos conformacionais na célula. Chem. Rev. 116, 6516-6551.
+Wei, G., Xi, W., Nussinov, R. e Ma, B. (2016). Conjuntos de proteínas: como a natureza aproveita as flutuações termodinâmicas para a vida? Os diversos papéis funcionais dos conjuntos conformacionais na célula. Chem. Rev. 116, 6516-6551.
 
 Zhuravlev, PI, Materese, CK e Papoian, GA (2009). Desconstruindo o estado nativo: paisagens energéticas, função e dinâmica das proteínas globulares. J. Phys. Chem. B 113, 8800–8812.
 
