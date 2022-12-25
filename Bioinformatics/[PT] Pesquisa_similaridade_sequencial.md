@@ -56,3 +56,4 @@ Mas como você pode ver, as pesquisas retornam muitos possíveis hits, que podem
 >
 >🧗🏻‍♀️X DESAFIO: Realize uma nova execução do BLASTp, usando a mesma sequência, mas agora contra o banco de dados PDB. Você obtém os mesmos resultados? Que tipo de resultados (hits) são recuperados? Quando esse modo de correr pode ser útil para nós?
 >
+
