@@ -81,7 +81,7 @@ Desde el punto de vista menos Bio y más informático, las proteínas (y veremos
 Dijimos que el hecho de que una proteína adquiera una u otra estructura depende de la composición de aminoácidos que la conforman (estructura primaria). Se ha estudiado en detalle la frecuencia de aparición de los distintos aminoácidos en una dada estructura secundaria y se observó que estos no se encuentran distribuidos de igual modo, si no que algunos aminoácidos predominan en ciertas estructuras. Es decir que conociendo la secuencia de una proteína y la preferencia de cada uno de los 20 aminoácidos para formar parte de una u otra estructura podríamos predecir qué disposición en el espacio adoptará una dada proteína. 
 
 >
->🧗🏻‍♀️ DESAFÍO V: Escribí un scrip en Python que calcule el porcetnaje total de aminoácidad cargados del siguiente péptido, utilizando para clasificarlos la tabla periódica de aminoácidos: ""
+>🧗🏻‍♀️ DESAFÍO V: Escribí un scrip en Python que calcule el porcentaje total de aminoácidad cargados del siguiente péptido, utilizando para clasificarlos la tabla periódica de aminoácidos: ""
 >
 
 
