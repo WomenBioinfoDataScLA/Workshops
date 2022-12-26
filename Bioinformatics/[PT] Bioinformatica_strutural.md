@@ -19,7 +19,7 @@ A Bioinformática Estrutural se concentra principalmente em explorar a relação
 
 Uma aproximação a esse grande mundo da bioinformática estrutural pode ser feita a partir do estudo particular, mas muito amplo, das proteínas.
 
-## Uma solução no seu bolso
+## Um problema em três dimensões
 
 As proteínas são as unidades funcionais, estruturais e evolutivas das células. Sabemos pelos primeiros trabalhos realizados por Anfinsen que **existe uma forte relação entre estrutura e função**, ou seja, que a atividade biológica de uma proteína depende do arranjo espacial de sua cadeia polipeptídica. Um grande número de proteínas requer uma certa estrutura terciária (como chamamos sua estrutura tridimensional) para cumprir suas funções biológicas. Quatro níveis diferentes são definidos, conhecidos como estrutura primária, secundária, terciária e quaternária, e cada um deles é constituído a partir do anterior.
 
@@ -107,22 +107,6 @@ Rosalind Franklin é uma ciência muito relevante, que fez menos reconhecimento 
 
 
 ## Uma solução no bolso
-
-Por suposto, é difícil entender o que consiste a estrutura de uma molécula simplesmente olhando o conteúdo de um arquivo PDB. Você sabe que existem formas de representar a informação tridimensional no computador. Existe uma multiplicidade de aplicativos gratuitos que nos permitem visualizar a estrutura de uma proteína e que nos permitem também explorar as subestruturas proteicas mais profundamente.
-
-Como dijimos interiormente, as proteínas são as unidades funcionais, estruturais e evolutivas das células. Sabemos desde os primeiros trabalhos realizados por Anfinsen, que **existem uma forte relação entre estrutura e função**, es decir que a atividade biológica de uma proteína depende da disposição espacial de sua cadeia polipeptídica.
-
-Las proteínas no son un ovillo, sino que la mayoría adopta una estrutura dada en el espacio. Se definem quatro níveis distintos, conhecidos como estrutura primária, secundária, terciária e cuaternária, e cada um deles se constitui a partir do anterior. Hoje em dia sabemos que ainda adotamos uma estrutura definida, as proteínas não estão quietas e que existem muitas possibilidades que explicam sua funcionalidade.
-
-Em sua superfície, as proteínas têm forma de cavidades e protuberâncias numerosas que criam microambientes únicos para a união de ligandos ou a catálise. E como as proteínas se mudam, as cavidades também têm topologias dinâmicas, com características que também podem mudar de uma conformação para outra.
-
-A dinâmica destas cavidades é fundamental para compreender a função das proteínas.
-Existe uma grande variedade de softwares capazes de prever a localização dessas subestruturas proteicas e suas propriedades. E esta informação combinada com a informação evolutiva y sequencial, pode ser de grande utilidade nos campos de aplicação dos mais diversos, desde o design de fármacos, até o desenvolvimento de alimentos.
-
-¡Vamos adentrarnos na anatomia das proteínas!
-
-
-## O futuro chegou 📍
 
 O estudo estrutural de proteínas nos proporciona múltiplos campos de aplicação, por exemplo um dos mais explorados atualmente é o desenho racional de fármacos. Conhecendo-se a base biológica de uma doença, ou seja, conhecendo-se as moléculas envolvidas, é possível projetar drogas que interajam com a molécula responsável, de forma que esta a modifique e modifique o quadro patológico. Em outras palavras, o design racional de medicamentos consiste na aplicação do conhecimento biológico e estrutural dos receptores (proteínas envolvidas em uma determinada doença) para projetar moléculas que interajam apenas com eles... tanto quanto possível!
 

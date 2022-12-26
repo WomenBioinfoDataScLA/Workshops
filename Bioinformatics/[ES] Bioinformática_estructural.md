@@ -18,7 +18,7 @@ La Bioinformática Estructural se centra principalmente en la exploración de la
 
 Una aproximación a este gran mundo de la bioinformática estructural puede hacerse desde el estudio particular, pero amplísimo, de las proteínas.Y es desde allí que comenzaremos a explorar este mundo... 
 
-## Una solución en el bolsillo
+## Un problema en tres dimensiones
 
 Las proteínas son las unidades funcionales, estructurales y evolutivas de las células. Sabemos desde los primeros trabajos realizados por Anfinsen, que **existe una fuerte relación entre estructura y función**, es decir que la actividad biológica de una proteína depende de la disposición espacial de su cadena polipeptídica. Un gran número de proteínas requieren una determinada estructura terciaria (como llamamos a su estructura tridimensional) para cumplir con sus funciones biológicas. Se definen cuatro niveles distintos, conocidos como estructura primaria, secundaria, terciaria, y cuaternaria, y, cada uno de ellos se constituye a partir del anterior. 
 
@@ -104,7 +104,7 @@ Podemos explorar el contenido del archivo que acabamos de descargar si lo observ
 Rosalind Franklin es una científica muy relevante, que tuvo menos reconocimiento del merecido. Contanos sobre los procedimientos que puso Rosalind.
 
 
-## El futuro está aquí 📍
+## Una solución en el bolsillo
 
 El estudio estructural de proteínas nos proporciona múltiples campos de aplicación, por ejemplo uno de los más explorados en la actualidad es el diseño racional de fármacos. Si se conoce la base biológica de una enfermedad, es decir se conocen las moléculas implicadas, es posible diseñar medicamentos que interactúen con la molécula responsable, de tal forma que la modifique y se modifique el cuadro patológico. En otras palabras, el diseño racional de fármacos consiste en la aplicación del conocimiento biológico y estructural de los receptores (proteínas involucradas en una dada enfermedad) para diseñar moléculas que interactúen sólo con estos… dentro de lo posible!
 
