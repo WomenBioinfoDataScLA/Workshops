@@ -13,15 +13,40 @@
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
-## Origami molecular
+## origami molecular
 
-As proteínas são as unidades funcionais, estruturais e evolutivas das células. Sabemos desde os primeiros trabalhos realizados por Anfinsen, que existe uma forte relação entre estrutura e função. Um grande número de proteínas requer uma determinada estrutura terciária (como ligamos a sua estrutura tridimensional) para cumprir com suas funções biológicas. Pauling y Mirsky, em seu trabalho publicado em 1936, definem o estado nativo das proteínas como um plegamiento ou conformação característico, que confiere às proteínas sua função, y cuya pérdida denominaron desnaturalización (Mirsky y Pauling, 1936).
+A Bioinformática Estrutural se concentra principalmente em explorar a relação entre a estrutura e a função de macromoléculas biológicas e promove o desenvolvimento de ferramentas computacionais para elucidar as bases estruturais da função biológica. Como entidades dinâmicas, a relação estrutura-função em macromoléculas biológicas, como proteínas ou ácidos nucléicos, mais especificamente, é formulada como uma relação estrutura-dinâmica-função. É por isso que esta disciplina é fundamental para a compreensão de vários tópicos que vão desde o design racional de medicamentos até a regulação da expressão gênica. Esta área da bioinformática só pode contribuir do ponto de vista conceitual, aumentando nosso conhecimento sobre as bases mecanicistas de um determinado sistema, mas a Bioinformática Estrutural também está intimamente ligada aos desenvolvimentos Biotecnológicos, Farmacêuticos e Medicinais.
 
-Hoje em dia sabemos que existem muitos exercícios possíveis que explicam a funcionalidade da proteína, é decir que o estado nativo não é único, se não que se descreve atualmente como um conjunto de conformações em equilíbrio dinâmico. A distribuição relativa dos diferentes confórmeros pode variar por mudanças no ambiente protegido (presença de ligantes, flutuações de pH, modificações pós-traducionais, etc.) (Kumar et al., 2000; Rueda et al., 2018). A magnitude da diversidade conformacional observada nas proteínas pode ser abarcada desde a flutuação nas cadeias laterais, até reordenações globais da estrutura terciária (Böttcher et al., 2000; Koshland, 1998;Plapp, 2010). Alguns pequenos câmbios conformacionais geram diferenças nas estruturas proteicas (cavidades e túneis) que se descrevem na estrutura tridimensional tendo efeitos sobre sua função.
+Uma aproximação a esse grande mundo da bioinformática estrutural pode ser feita a partir do estudo particular, mas muito amplo, das proteínas.
 
-Existem muitas formas de estudar a relação entre a estrutura e a função proteica e as implicações dessa relação, por isso, neste ponto, tentaremos retomar alguns aspectos básicos da análise estrutural.
+## Uma solução no seu bolso
+
+As proteínas são as unidades funcionais, estruturais e evolutivas das células. Sabemos pelos primeiros trabalhos realizados por Anfinsen que **existe uma forte relação entre estrutura e função**, ou seja, que a atividade biológica de uma proteína depende do arranjo espacial de sua cadeia polipeptídica. Um grande número de proteínas requer uma certa estrutura terciária (como chamamos sua estrutura tridimensional) para cumprir suas funções biológicas. Quatro níveis diferentes são definidos, conhecidos como estrutura primária, secundária, terciária e quaternária, e cada um deles é constituído a partir do anterior.
+
+Hoje sabemos que, embora as proteínas possam adotar uma estrutura definida, elas não o são e que existem muitos enovelamentos possíveis que explicam sua funcionalidade. Em um dos primeiros trabalhos que estudaram a relação entre estrutura e função das proteínas, Pauling e Mirsky definiram o estado nativo das proteínas como um dobramento ou conformação característica, que confere às proteínas sua função, e cuja perda chamou de desnaturação (Mirsky e Pauling, 1936). .
+
+Em sua superfície, as proteínas são moldadas em numerosas cavidades e protuberâncias que criam microambientes exclusivos para ligação de ligantes ou catálise. E como as proteínas se movem, as cavidades também têm topologias dinâmicas, com características que também podem mudar de uma conformação para outra. A dinâmica dessas cavidades é crítica para entender a função da proteína.
+
+
+Hoje sabemos que existem muitos enovelamentos possíveis que explicam a funcionalidade da proteína, ou seja, que o estado nativo não é único, mas que atualmente é descrito como um conjunto de conformações em equilíbrio dinâmico. A distribuição relativa dos diferentes confôrmeros pode variar devido a mudanças no ambiente da proteína (presença de ligantes, flutuações de pH, modificações pós-traducionais, etc.) (Kumar et al., 2000; Rueda et al., 2018). A magnitude da diversidade conformacional observada nas proteínas pode variar desde flutuações nas cadeias laterais até rearranjos globais da estrutura terciária (Böttcher et al., 2000; Koshland, 1998;Plapp, 2010). Mesmo pequenas mudanças conformacionais geram diferenças nas estruturas das proteínas (cavidades e túneis) que são descritas na estrutura tridimensional, tendo efeitos em sua função.
+
+Mas é claro que saber em que consiste a estrutura de uma proteína de maneira computacional apresenta certas complexidades. Eles existem em formas de representar a informação tridimensional de uma molécula no computador. Existe uma infinidade de aplicativos gratuitos que nos permitem visualizar desde a estrutura de uma pequena molécula até uma proteína, e que também nos permitem explorar com mais profundidade as subestruturas das proteínas. Vamos começar com uma exploração de uma estrutura tridimensional de uma molécula simples:
+
+>
+> 🧗🏻‍♀️ Desafio I: Vamos explorar como passamos de um plano, uma sequência ou um desenho para uma estrutura tridimensional. Abra a ferramenta [MolView](https://molview.org/) em seu navegador e mova a molécula visualizada na ferramenta
+>
+> 🧗🏻‍♀️Desafio II: agora digite `N-Butan` no buscador para ver o que a ferramenta te atrai, depois tente `1-butene` e `1-Butyne`, que diferenças você vê entre essas moléculas em sua disposição no espaço? Como você imagina que a informação deve ser armazenada em um computador para poder ir do plano para algo tridimensional?
+>
+
+Como você deve se lembrar na geometria, um sistema de coordenadas é um sistema de referência que usa números para determinar a posição de um objeto ou ponto no espaço. Para armazenar informações estruturais sobre uma molécula de maneira computacional, devemos recorrer a esse conhecimento básico de geometria para fornecer ao computador uma maneira fácil de interpretar os dados espacialmente.
+
+Como você deve ter notado, ao utilizarmos o plano, na tela à esquerda da ferramenta, obtemos duas coordenadas para descrever a posição de cada espaço. Porém, quando passamos para uma figura tridimensional, apenas duas coordenadas dificultam a determinação da localização do ponto (ou neste caso, átomo) no espaço; e torna-se necessário mover para um eixo de 3 coordenadas. Existe um tipo de arquivo muito comum em bioinformática, que é comumente usado para armazenar esse tipo de informação geométrica, que é conhecido como arquivo `PDB` e no qual muitas ferramentas começam a realizar as diferentes análises estruturais que podemos vai ver abaixo. .
+
+
+Existem muitas maneiras de estudar a relação entre estrutura e função da proteína e as implicações dessa relação, portanto, nesta nota, tentaremos resumir alguns aspectos básicos da análise.
 
 ## Um problema estrutural
+
 Mas como melhor que decir es hacer, vamos nos enforcar agora em um sistema concreto para estudar suas características estruturais. A ubiquitina (ubiquitina em inglês) é uma proteína pequeña que foi encontrada em todas as células eucariotas (de allí viene seu nome: ubiquo significa onipresente). Esta proteína é a encargada da marcación química das proteínas que não são necessárias, para que sejam reconhecidas e destruídas por outras proteínas.
 
 >**PARA PENSAR** 🤔:Por que uma célula quer destruir suas próprias proteínas?
@@ -97,25 +122,28 @@ Existe uma grande variedade de softwares capazes de prever a localização dessa
 ¡Vamos adentrarnos na anatomia das proteínas!
 
 
-## El futuro está aqui 📍
+## O futuro chegou 📍
 
-O estudo estrutural de proteínas nos fornece múltiplos campos de aplicação, por exemplo um dos mais exploradores na atualidade é o design racional de fármacos. Si se conhece a base biológica de uma enfermedad, es decir se conocen las listas implicadas, é possível conceber medicamentos que interajam com a molécula responsável, de tal forma que a modifique y se modifique o cuadro patológico. Em outras palavras, o design racional de fármacos consiste na aplicação do conhecimento biológico e estrutural dos receptores (proteínas envolvidas em uma dada doença) para projetar a transmissão que interage apenas com estes… dentro do possível!
+O estudo estrutural de proteínas nos proporciona múltiplos campos de aplicação, por exemplo um dos mais explorados atualmente é o desenho racional de fármacos. Conhecendo-se a base biológica de uma doença, ou seja, conhecendo-se as moléculas envolvidas, é possível projetar drogas que interajam com a molécula responsável, de forma que esta a modifique e modifique o quadro patológico. Em outras palavras, o design racional de medicamentos consiste na aplicação do conhecimento biológico e estrutural dos receptores (proteínas envolvidas em uma determinada doença) para projetar moléculas que interajam apenas com eles... tanto quanto possível!
 
-Um caso de estudo interessante é o [EGFR](https://www.uniprot.org/uniprotkb/P00533/entry) é um dos principais marcadores de câncer de pulmão. Para estudar esta proteína, usaremos [CaviDB](https://cavidb.org), uma base de dados on-line gratuita que fornece informações sobre as cavidades proteicas e suas propriedades.
-Sabemos que a estrutura 1M14 corresponde a um confórmero ativo, é uma estrutura com atividade, enquanto que a estrutura 3W32 corresponde a uma conformação inativa.
+Um estudo de caso interessante é que [EGFR](https://www.uniprot.org/uniprotkb/P00533/entry) é um dos principais marcadores de câncer de pulmão. Que apresenta características diferenciais entre as conformações ativas e inativas que tentaremos explorar computacionalmente.
+
+Existe uma grande variedade de softwares capazes de prever a localização dessas subestruturas proteicas e suas propriedades. E esta informação, combinada com informação evolutiva e sequencial, pode ser muito útil para entender a natureza da função da proteína. Todas essas informações são combinadas de forma simples de visualizar e processar no [CaviDB](https://cavidb.org). [CaviDB](https://cavidb.org), um banco de dados on-line gratuito que fornece informações sobre cavidades de proteínas e suas propriedades, o que também permite estudar a diversidade conformacional de cavidades de proteínas.
+
+Vamos começar estudando essa proteína, analisando as diferenças e semelhanças de duas conformações ativas e inativas da proteína:
+
+         - A estrutura 1M14 corresponde a um conformador ativo: ou seja, uma estrutura com atividade
+
+         - A estrutura 3W32 corresponde a uma conformação inativa.
 
 >
->🧗🏻‍♀️DESAFÍO I: Compará el sitio ativo de ambos confórmeros (posição 837) así como también los tamaños de los pockets. O que você observou?
+>🧗🏻‍♀️DESAFIO II: Compare o sítio ativo de ambos os confôrmeros (posição 837), bem como os tamanhos das bolsas. O que você observa?
 >
-
-As variantes de AKR1C4 estão associadas com o trastorno bipolar e outros trastornos do estado de ânimo e resistência aos medicamentos.
-
+>🧗🏻‍♀️DESAFIO III: Pesquise mais sobre a proteína usando o banco de dados [Uniprot](https://www.uniprot.org/) e anote os sites biologicamente relevantes
 >
->🧗🏻‍♀️DESAFÍO II: Investigá la proteína usando la base de datos [Uniprot](https://www.uniprot.org/) y anotá los sitios relevantes biologicamente
+> 🧗🏻‍♀️DESAFIO IV: Algum sítio de relevância biológica coincide com outras cavidades previstas nas conformações ativa e inativa?
 >
-> 🧗🏻‍♀️DESAFÍO III :Analizá la estructura PDB [2FVLB](https://www.cavidb.org/chains/62b9e24ad5e54dd8755ed134?q=2FVLB)) ¿Cuántas cavidades fueron predichas para dicha estructura? ¿Hay alguna cavidad drogable? Coincide com algum local de relavancia biológica?
->
-> 💡 Para investigar: Investigá en qué consiste el docking, en qué ideias basa su operaiento ¿Como podría aprovecharse este método para tratar esta patologia?
+> 💡 Investigar: Investigar em que consiste o docking, em que ideias se baseia o seu funcionamento Como poderia este método ser utilizado para tratar o cancro?
 >
 
 
