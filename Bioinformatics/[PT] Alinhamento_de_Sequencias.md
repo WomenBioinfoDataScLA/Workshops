@@ -1,7 +1,6 @@
-# Alinhamentos Sequencial
-> Material baseado no tutorial [Sequence Alignment](https://github.com/AJVelezRueda/Introduccion_a_la_Bioinformatica/blob/master/Teorico_Practicos/Bioinform%C3%A1tica_Primeros_pasos/Alineamientos_secuenciales.md) de la Dra. Ana Julia Velez Rueda) da Dra. Ana Julia Velez Rueda
+# Alinhamento de Sequências
+> Material baseado no tutorial [Sequence Alignment](https://github.com/AJVelezRueda/Introduccion_a_la_Bioinformatica/blob/master/Teorico_Practicos/Bioinform%C3%A1tica_Primeros_pasos/Alineamientos_secuenciales.md) da Dra. Ana Julia Velez Rueda
 >
-> LICENÇA : Este trabalho está licenciado sob uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional .
 >
 > **LICENSE**: This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
@@ -12,6 +11,7 @@
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
+
 ### Índice
    * [Uma palavra não diz nada e ao mesmo tempo diz tudo](#Intro)
    * [Juntas pares](#juntas_a_la_mesmo)
@@ -20,7 +20,7 @@
 
 
 ## [Uma palavra não diz nada e ao mesmo tempo diz tudo](#Intro)
-Desde o trabalho realizado por Kossel em 1898 (Kossel, 1898)​ em que ele descreve que a função das proteínas poderia estar relacionada ao tipo de aminoácidos que a compõem e seu arranjo espacial, uma possível relação entre a função da proteína, sua composição de aminoácidos. Após décadas de experimentos, Anfinsen finalmente confirmou que a sequência de aminoácidos continha a informação necessária para o enovelamento de uma proteína em uma conformação biologicamente ativa (Anfinsen et al., 1961). Neste estudo, Anfinsen e outros postularam que a conformação biologicamente ativa ou estrutura terciária poderia ser prevista a partir da estrutura primária de uma proteína. Também recentemente na história, mais precisamente em 1953, Watson e Crick propõem um arranjo que estabiliza a estrutura primária do DNA e que, a posteriori, permitiria explicar os diferentes mecanismos celulares envolvidos na expressão gênica (Watson e Crick 1953). Hoje sabemos que tanto a estrutura primária da proteína quanto a dos ácidos nucléicos fornecem informações não apenas sobre sua estrutura e função, mas também informações sobre as características de um determinado organismo e sua relação evolutiva com outros organismos.
+Desde o trabalho realizado por Kossel em 1898 (Kossel, 1898) em que ele descreve que a função das proteínas poderia estar relacionada ao tipo de aminoácidos que a compõem e sua disposição espacial, uma possível relação entre a função da proteína e sua composição de aminoácidos começa a ser intuída. Após décadas de experimentos, Anfinsen finalmente confirmou que a sequência de aminoácidos continha a informação necessária para o enovelamento de uma proteína em uma conformação biologicamente ativa (Anfinsen et al., 1961). Neste estudo, Anfinsen e outros postularam que a conformação biologicamente ativa ou estrutura terciária poderia ser prevista a partir da estrutura primária de uma proteína. Também recentemente na história, mais precisamente em 1953, Watson e Crick propõem um arranjo que estabiliza a estrutura primária do DNA e que, a posteriori, permitiria explicar os diferentes mecanismos celulares envolvidos na expressão gênica (Watson e Crick 1953). Hoje sabemos que tanto a estrutura primária da proteína quanto a dos ácidos nucléicos fornecem informações não apenas sobre sua estrutura e função, mas também informações sobre as características de um determinado organismo e sua relação evolutiva com outros organismos.
 
 Existem diferentes mecanismos que explicam a biodiversidade, como mutações, duplicação de genes, reorganização de genomas e trocas genéticas, como recombinação, rearranjo e transferência lateral de genes. Variações aleatórias ocorrem em populações entre organismos individuais, variações não causadas pelo ambiente, que em alguns casos podem ser hereditárias. A interação de variações aleatórias e o ambiente determina o grau significativo em que os organismos se reproduzem e sobrevivem (seleção natural) e, portanto, as características da população. Dado tempo suficiente, a seleção natural leva ao acúmulo de mudanças que diferenciam grupos de organismos.
 
