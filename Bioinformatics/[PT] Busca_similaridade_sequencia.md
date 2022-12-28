@@ -1,7 +1,6 @@
 # Pesquisa de similaridade sequencial
-> Material baseado no tutorial [Sequence Alignment](https://github.com/AJVelezRueda/Introduccion_a_la_Bioinformatica/blob/master/Teorico_Practicos/Bioinform%C3%A1tica_Primeros_pasos/Alineamientos_secuenciales.md) de la Dra. Ana Julia Velez Rueda) da Dra. Ana Julia Velez Rueda
+> Material baseado no tutorial [Sequence Alignment](https://github.com/AJVelezRueda/Introduccion_a_la_Bioinformatica/blob/master/Teorico_Practicos/Bioinform%C3%A1tica_Primeros_pasos/Alineamientos_secuenciales.md) da Dra. Ana Julia Velez Rueda
 >
-> LICENÇA : Este trabalho está licenciado sob uma Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional .
 >
 > **LICENSE**: This work is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
@@ -13,9 +12,9 @@
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 
-## [Pesquisa de similaridade sequencial](#Blast)
+## [Busca por similaridade de sequências](#Blast)
 
-BLAST (Basic Local Alignment Search Tool) (S. Henikoff e JG Henikoff, 1992) é a ferramenta mais amplamente utilizada na ciência para pesquisar similaridades sequenciais. Isso baseia sua operação na construção de alinhamentos locais. Este algoritmo heurístico compara uma sequência de consulta com sequências de diferentes bancos de dados, buscando alinhar subsequências (k-mers) de menor comprimento (3 aminoácidos ou 28 nucleotídeos por padrão) com as sequências do banco de dados.
+BLAST (Basic Local Alignment Search Tool) (S. Henikoff e JG Henikoff, 1992) é a ferramenta mais amplamente utilizada na ciência para pesquisar similaridades entre sequências. Isso baseia sua operação na construção de alinhamentos locais. Este algoritmo heurístico compara uma sequência de consulta com sequências de diferentes bancos de dados, buscando alinhar subsequências (k-mers) de menor comprimento (3 aminoácidos ou 28 nucleotídeos por padrão) com as sequências do banco de dados.
 
 Supondo que uma sequência semelhante conterá qualquer uma dessas palavras ou k-mers, estende-se o alinhamento para ambos os lados usando o algoritmo de programação dinâmica de Smith–Waterman (D. States, W. Gish e S. Altschul, 1991), buscando finalizar a coincidência global de ambas as sequências.
 
