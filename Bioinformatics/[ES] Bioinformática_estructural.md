@@ -27,7 +27,7 @@ Hoy en día sabemos que aunque las proteínas pueden adoptar una estructura defi
 En su superficie, las proteínas tienen forma de numerosas cavidades y protuberancias que crean microambientes únicos para la unión de ligandos o la catálisis. Y como las proteínas se mueven, las cavidades también tienen topologías dinámicas, con características que también podrán cambiar de una conformación a otra. La dinámica de estas cavidades es fundamental para comprender la función de las proteínas. 
 
 
-Hoy en día sabemos que existen muchos plegamientos posibles que explican la funcionalidad de la proteína, es decir que el estado nativo no es único, si no que se describe actualmente como un conjunto de conformaciones en equilibrio dinámico. La distribución relativa de los distintos confórmeros puede variar por cambios en el entorno proteico (presencia de ligandos, fluctuaciones de pH, modificaciones postraduccionales, etc) (Kumar et al., 2000; Rueda et al., 2018). La magnitud de la diversidad conformacional observada en las proteínas puede abarcar desde la fluctuación en las cadenas laterales, hasta reordenamientos globales de la estructura terciaria (Böttcher et al., 2000; Koshland, 1998;Plapp, 2010). Aún pequeños cambios conformacionales generan diferencias en las estructuras proteicas (cavidades y túneles) que se describen en la estructura tridimensional teniendo efectos sobre su función. 
+Hoy en día sabemos que existen muchos plegamientos posibles que explican la funcionalidad de la proteína, es decir que el estado nativo no es único, si no que se describe actualmente como un conjunto de conformaciones en equilibrio dinámico. La distribución relativa de los distintos confórmeros puede variar por cambios en el entorno proteico (presencia de ligandos, fluctuaciones de pH, modificaciones postraduccionales, etc) (Kumar et al., 2000; Rueda et al., 2018). La magnitud de la diversidad conformacional observada en las proteínas puede abarcar desde la fluctuación en las cadenas laterales, hasta reordenamientos globales de la estructura terciaria (Böttcher et al., 2000; Koshland, 1998; Plapp, 2010). Aún pequeños cambios conformacionales generan diferencias en las estructuras proteicas (cavidades y túneles) que se describen en la estructura tridimensional teniendo efectos sobre su función. 
 
 Pero por supuesto, conocer en qué consiste la estructura de una proteína de un modo computacional presenta ciertas complejidades. Existen en formas de representar la información tridimensional de una molécula en la computadora. Existen una multiplicidad de aplicaciones gratuitas que nos permita visualizar desde la estructura de una molécula pequeña, hasta una proteína, y que nos permiten además explorar las subestructuras proteicas más en profundidad. Vamos a comenzar con una exploración de una estructura tridimencional de una molécula sencilla:
 
@@ -49,7 +49,7 @@ Existen múchas formas de estudiar la relación entre la estructura y la funció
 
 
 ## Un problema estructural
-Pero como mejor que decir es hacer, vamos a enforcarnos ahora en un sistema concreto para estudiar sus características estructurales. La ubiquitina (ubiquitin en inglés) es una proteína pequeña que ha sido encontrada en casi todas las células eucariotas (de allí viene su nombre: ubiquo significa omnipresente). Esta proteína es la encargada de la marcación química de las proteínas que ya no son necesarias, para que sean reconocidas y destruidas por otras proteínas. 
+Pero como mejor que decir es hacer, vamos a enfocarnos ahora en un sistema concreto para estudiar sus características estructurales. La ubiquitina (ubiquitin en inglés) es una proteína pequeña que ha sido encontrada en casi todas las células eucariotas (de allí viene su nombre: "ubiquo" significa omnipresente). Esta proteína es la encargada de la marcación química de las proteínas que ya no son necesarias, para que sean reconocidas y destruidas por otras proteínas. 
 
 >**PARA PENSAR** 🤔:¿Por qué una célula querría destruir sus propias proteínas?
 
@@ -65,7 +65,6 @@ La página correspondiente a la 1UBQ contiene toda la información disponible so
 >**PARA PENSAR** 🤔:¿Qué información nos provee esta página?
 >
 >**PARA PENSAR** 🤔:¿Cómo se determinó la estructura de esta proteína?
->A la izquierda vemos una representación de la estructura de ubiquitina. ¿Qué significan las cintas, las flechas y las regiones angostas?
 >
 >**PARA PENSAR** 🤔:¿Representa esa imagen a la realidad del sistema biológico?
 >
@@ -112,7 +111,7 @@ Un caso de estudio interesante es el [EGFR](https://www.uniprot.org/uniprotkb/P0
 
 Existen una gran variedad de softwares capaces de predecir la ubicación de estas subestructuras proteicas y sus propiedades. Y esta información combinada con la información evolutiva y secuencial, puede ser de gran utilidad para comprender la naturaleza de la función proteica. Toda esta información se encuentra combinada de una forma sencilla de visualizar y procesar en [CaviDB](https://cavidb.org). [CaviDB](https://cavidb.org),  una base de datos en línea gratuita que provee información sobre las cavidades proteicas y sus propiedades, que permite estudiar también la diversidad conformacional de las cavidades proteicas.  
 
-Comencemos estudiando esta proteína, analizando las diferencias y similitudes de dos conformaciones activas e inactivas de la proteían:
+Comencemos estudiando esta proteína, analizando las diferencias y similitudes de dos conformaciones activas e inactivas de la proteína:
 
         - La estructura 1M14 se corresponde con un confórmero activo: es decir, una estructura con actividad
 
@@ -131,14 +130,14 @@ Comencemos estudiando esta proteína, analizando las diferencias y similitudes d
 
 ## Sobre las huellas de la evolución
 
-Las albúminas son las proteínas sanguíneas más abundantes en los mamíferos y tienen la propiedad principal de unirse y transportar muchos compuestos endógenos y exógenos, en su mayoría hidrofóbicos. La proteína es globular y está compuesta por tres dominios homólogos (I, II y III), cada uno de los cuales contiene dos subdominios  similares (A y B). Las albúminas se conservan a lo largo de los vertebrados y los miembros de esta familia muestran una gran diversidad estructural a pesar de la conservación de la secuencia global. Es decir que, aún cuando su función biológica no es enzimática, se ha probado su capacidad catalítica para varias reacciones. Curiosamente, aunque todas las albúminas de mamíferos comparten la función principal de transporte de ligandos a través de la sangre, difieren en el tipo de reacciones que pueden catalizar. Además, la capacidad catalítica de las albúminas en solventes orgánicos las convierte en candidatas para económicas para manipulación biotecnológica para su aprovechamiento en procesos industriales.
+Las albúminas son las proteínas sanguíneas más abundantes en los mamíferos y tienen la propiedad principal de unirse y transportar muchos compuestos endógenos y exógenos, en su mayoría hidrofóbicos. La proteína es globular y está compuesta por tres dominios homólogos (I, II y III), cada uno de los cuales contiene dos subdominios similares (A y B). Las albúminas se conservan a lo largo de los vertebrados y los miembros de esta familia muestran una gran diversidad estructural a pesar de la conservación de la secuencia global. Es decir que, aún cuando su función biológica no es enzimática, se ha probado su capacidad catalítica para varias reacciones. Curiosamente, aunque todas las albúminas de mamíferos comparten la función principal de transporte de ligandos a través de la sangre, difieren en el tipo de reacciones que pueden catalizar. Además, la capacidad catalítica de las albúminas en solventes orgánicos las convierte en candidatas para económicas para manipulación biotecnológica para su aprovechamiento en procesos industriales.
 
-En particulas la albúmina de suero humano (HSA) es la proteína principal en el plasma, se une a múltiples ligandos y recientemente se la ha descripto como un transportador de fármacos muy importante. Esta proteína monocatenaria tiene varios sitios de unión de fármacos y ácidos grasos, sin embargo, la mayoría de los fse unen a los llamados Sitios I (Met 1 a Asn 111) y II (de Gln 196 a Pro 303). En particular, los residuos Lys 199, Arg 410, Tyr 411, Cys 34 y Lys 195 de HSA se describen como algunos de los más importantes, no solo para la unión de ligandos sino también para las actividades catalíticas descritas para esta proteína. 
+En particular, la albúmina de suero humano (HSA) es la proteína principal en el plasma, se une a múltiples ligandos y recientemente se la ha descripto como un transportador de fármacos muy importante. Esta proteína monocatenaria tiene varios sitios de unión de fármacos y ácidos grasos, sin embargo, la mayoría de los fármacos se unen a los llamados Sitios I (Met 1 a Asn 111) y II (de Gln 196 a Pro 303). En particular, los residuos Lys 199, Arg 410, Tyr 411, Cys 34 y Lys 195 de HSA se describen como algunos de los más importantes, no solo para la unión de ligandos sino también para las actividades catalíticas descritas para esta proteína. 
 
 
 Se sabe que la capacidade catalítica de una cavidad suele asociarse con algunas características estructurales de las mismas, como la presencia de aminoácidos activados (con pKas anormales) en ambientes mayoritariamente hidrofóbicos
 
-> 🧗🏻‍♀️DESAFÍO V: Investigá en [CaviDB](https://cavidb.org) la las características estructurales de la Albúmina Humana sobre la estructura `1AO6A`:
+> 🧗🏻‍♀️DESAFÍO V: Investigá en [CaviDB](https://cavidb.org) las características estructurales de la Albúmina Humana sobre la estructura `1AO6A`:
 >
 > - ¿Cuántas cavidades fueron predichas para dicha estructura? ¿Cuáles son las pricipales cavidades en tanto a tamaño de la proteína? ¿Existen cavidades que se solapen con los residuos descritos como relavantes para la actividad enzimática de la albúmina?
 >
