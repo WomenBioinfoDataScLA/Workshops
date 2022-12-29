@@ -2,8 +2,9 @@
 
 ##### Autora: Dra. Ana Julia Velez Rueda
 > Material baseado no material [_Introducción a la Bioinformática_ de AJVeleRueda](https://github.com/AJVelezRueda/Introduccion_a_la_Bioinformatica )
-> **LICENÇA**: Este trabalho está licenciado sob a
-[Licença Internacional Creative Commons Attribution-ShareAlike 4.0][cc-by-sa].
+> 
+> **LICENSE**: This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 >
 >[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
