@@ -118,11 +118,11 @@ Comencemos estudiando esta proteína, analizando las diferencias y similitudes d
         - La estructura 3W32 se corresponde con una conformación inactiva. 
 
 > 
->🧗🏻‍♀️DESAFÍO II: Compará el sitio activo de ambos confórmeros (posición 837) así como también los tamaños de los pockets. ¿Qué observás?
+>🧗🏻‍♀️DESAFÍO III: Compará el sitio activo de ambos confórmeros (posición 837) así como también los tamaños de los pockets. ¿Qué observás?
 > 
->🧗🏻‍♀️DESAFÍO III: Investigá más sobre la proteína usando la base de datos [Uniprot](https://www.uniprot.org/) y anotá los sitios relevantes biológicamente
+>🧗🏻‍♀️DESAFÍO IV: Investigá más sobre la proteína usando la base de datos [Uniprot](https://www.uniprot.org/) y anotá los sitios relevantes biológicamente
 >
-> 🧗🏻‍♀️DESAFÍO IV:  ¿Coincide algún sitio de relavancia biológica con otras cavidades predichas en las conformaciones activa e inactiva?
+> 🧗🏻‍♀️DESAFÍO V:  ¿Coincide algún sitio de relavancia biológica con otras cavidades predichas en las conformaciones activa e inactiva?
 > 
 > 💡 Para investigar: Investigá en qué consiste el docking, en qué ideas basa su funcionamiento ¿Cómo podría aprovecharse este método para tratar el cancer?
 >
@@ -137,13 +137,13 @@ En particular, la albúmina de suero humano (HSA) es la proteína principal en e
 
 Se sabe que la capacidade catalítica de una cavidad suele asociarse con algunas características estructurales de las mismas, como la presencia de aminoácidos activados (con pKas anormales) en ambientes mayoritariamente hidrofóbicos
 
-> 🧗🏻‍♀️DESAFÍO V: Investigá en [CaviDB](https://cavidb.org) las características estructurales de la Albúmina Humana sobre la estructura `1AO6A`:
+> 🧗🏻‍♀️DESAFÍO VI: Investigá en [CaviDB](https://cavidb.org) las características estructurales de la Albúmina Humana sobre la estructura `1AO6A`:
 >
 > - ¿Cuántas cavidades fueron predichas para dicha estructura? ¿Cuáles son las pricipales cavidades en tanto a tamaño de la proteína? ¿Existen cavidades que se solapen con los residuos descritos como relavantes para la actividad enzimática de la albúmina?
 >
 > - ¿Alguna de las cavidades catalíticamente activas se encuentran activadas? ¿Qué rangos de pKa se observan en dichas cavidades? 
 >
-> 🧗🏻‍♀️DESAFÍO VI: Se sabe que en la albúmina bovina el sitio activo se encuentra corrido respecto del humano, aunque también involucra un aminoácido cargado (Lys 221). Investigá  en [CaviDB](https://cavidb.org) las características estructurales de la estructura de albúmina bovina `4JK4A` y compará las características de su sitio activo con las características del sitio activo de la albúmina humana (Lys 199)
+> 🧗🏻‍♀️DESAFÍO VII: Se sabe que en la albúmina bovina el sitio activo se encuentra corrido respecto del humano, aunque también involucra un aminoácido cargado (Lys 221). Investigá  en [CaviDB](https://cavidb.org) las características estructurales de la estructura de albúmina bovina `4JK4A` y compará las características de su sitio activo con las características del sitio activo de la albúmina humana (Lys 199)
 >
 > 💡 Para investigar: Leé más sobre los [hallazgos](https://www.sciencedirect.com/science/article/abs/pii/S0300908422000426) hechos por l@s investigadores/as de la Universidad Nacional de Quilmes sobre la evolución de albúminas y contrastalo con lo que pusidte observar.
 >
