@@ -76,7 +76,7 @@ A página correspondente ao 1UBQ contém todas as informações disponíveis sob
 Vamos explorar a guia de visualização tridimensional (3D View). Com o mouse podemos girar, aproximar e deslocar a molécula. O menu da direita nos permite alterar o modo de representação.
 Na tela principal, vemos uma representação da estrutura da ubiquitina.
 
-![PBD_database](pdb_protein_page.png)
+![PBD_database](protein_viz.png)
 
 
 >**PARA PENSAR** 🤔: O que significam as fitas, setas e regiões estreitas?
