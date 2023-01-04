@@ -34,7 +34,7 @@ Pero por supuesto, conocer en qué consiste la estructura de una proteína de un
 >
 > 🧗🏻‍♀️ Desafío I: Vamos a explorar como pasamos del plano, una secuencia o un dibujo a una estructura tridimensional. Abrí la herramienta [MolView](https://molview.org/) en tu navegador y mové la molécula que se previsualiza en la herramienta
 >
-> 🧗🏻‍♀️Desafío II: ahora tipeá `N-Butan` en el buscador a ver qué te dibuja la herramienta, probá lugo con el `1-buteno` y `1-Butyne`, ¿qué diferencias ves entre estas moléculas en su disposición en el espacio? ¿Cómo te imaginás que debe almacenarse la información en una computadora para poder pasar del plano a algo tridimensional?
+> 🧗🏻‍♀️Desafío II: ahora tipeá `N-Butan` en el buscador a ver qué te dibuja la herramienta, probá lugo con el `1-butene` y `1-Butyne`, ¿qué diferencias ves entre estas moléculas en su disposición en el espacio? ¿Cómo te imaginás que debe almacenarse la información en una computadora para poder pasar del plano a algo tridimensional?
 >
 
 Como bien recordarás en geometría, un sistema de coordenadas es un sistema de referencia que utiliza números para determinar la posición de un objeto o punto en el espacio. Para almacenar información estructural de una molécula de un modo computacional, debemos echar mano de estos conocimientos básicos de geometría para posibilitarle a la computadora una forma sencilla de interpretar los datos de manera espacial.
