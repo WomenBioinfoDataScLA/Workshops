@@ -13,10 +13,10 @@
 
 
 ### Índice
-   * [Uma palavra não diz nada e ao mesmo tempo diz tudo](#Intro)
-   * [Juntos ao mesmo tempo](#juntas_pares)
-   * [Semelhante não é igual](#Enter_alignments)
-   * [Tipo de alinhamentos](#Alinhamentos)
+   ### [Uma palavra não diz nada e ao mesmo tempo diz tudo](#Intro)
+   ### [Juntos ao mesmo tempo](#juntas_pares)
+   ### [Semelhante não é igual](#Enter_alignments)
+   ### [Tipo de alinhamentos](#Alinhamentos)
 
 
 ## [Uma palavra não diz nada e ao mesmo tempo diz tudo](#Intro)

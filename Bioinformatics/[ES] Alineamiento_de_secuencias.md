@@ -12,10 +12,10 @@
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 ### Indice
-  * [Una palabra no dice nada y al mismo tiempo lo dice Todo](#Intro)
-  * [Juntas a la par](#juntas_a_la_par)
-  * [Parecido no es lo mismo](#Intro_alineamientos)
-  * [Tipo de alineamientos](#Alineamientos)
+  ### [Una palabra no dice nada y al mismo tiempo lo dice Todo](#Intro)
+  ### [Juntas a la par](#juntas_a_la_par)
+  ### [Parecido no es lo mismo](#Intro_alineamientos)
+  ### [Tipo de alineamientos](#Alineamientos)
 
 
 
