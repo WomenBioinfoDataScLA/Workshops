@@ -62,6 +62,8 @@ Y así como buscamos vidas similares a las que conocemos en otros rincones del u
 La asunción de la normalidad es importante para muchas pruebas estadísticas. Si la forma de la distribución de una muestra no tiene la forma típica de campana de la distribución normal, es posible que algunas pruebas estadísticas no sean válidas para anlizar ese conjunto de datos. Pero a pesar de que la distribución normal es teórica, las distribuciones de muchos datos provenientes del mundo real se parecen a la distribución normal. Y es por ello que conocer las características de la misma, nos servirá para inferir si nuestros datos se comportan o no de forma "normal".
 
 
+Ahora que conocemos un poco más sobre distribuciones y estadística, ya podemos comenzar con los contenidos específicos de **Análisis Datos**
+
 <details>
   <summary>  Para pensar más allá de la estadística 🤔 </summary>
 
