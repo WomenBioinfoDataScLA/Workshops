@@ -18,19 +18,39 @@
 
 [¿Qué es la estadística?](#indice)
 
-La estadística es la metodología que han desarrollado cientificxs y matemáticxs para recolectar, analizar, interpretar y sacar conclusiones de los datos recopilados. Todo lo que se ocupa, aunque sea remotamente, de la recopilación, el procesamiento, la interpretación y la presentación de datos pertenece a la dominio de la estadística, al igual que la planificación detallada que precede a todas estas actividades.
+Todo lo que se ocupa, aunque sea remotamente, de la recopilación, el procesamiento, la interpretación y la presentación de datos pertenece a la dominio de la estadística, al igual que la planificación detallada que precede a todas estas actividades.
 
-La estadística nos permitirá entonces obtener información a partir de datos numéricos y categóricos. Los métodos estadísticos se pueden utilizar para encontrar respuestas a preguntas como:
-• ¿Qué tipo y cuántos datos deben recopilarse?
-• ¿Cómo debemos organizar y resumir los datos?
-• ¿Cómo podemos analizar los datos y sacar conclusiones de ellos?
-• ¿Cómo podemos evaluar la solidez de las conclusiones y evaluar su incertidumbre?
-
-Es decir, las estadísticas proporcionan métodos para
+La estadística proporcionan métodos para
 1. Diseño: Planificación y realización de estudios de investigación.
 2. Descripción: Resumir y explorar datos.
 3. Inferencia: hacer predicciones y generalizar sobre los fenómenos representados por los datos.
-Además, la estadística es la ciencia que se ocupa de fenómenos y eventos inciertos. La estadística en la práctica se aplica con éxito para estudiar la efectividad de los tratamientos médicos, la reacción de los consumidores a la publicidad televisiva, las actitudes de los jóvenes hacia el sexo y el matrimonio, y mucho más. Es seguro decir que hoy en día la estadística se usa en todos los campos de la ciencia.
 
+
+
+[Muestra vs Población](#muestra)
+
+Población y muestra son dos conceptos básicos de la estadística. La `población` se puede caracterizar como el conjunto de personas u objetos individuales en los se enfoca una investigación. A veces se obtienen las medidas deseadas para todos los individuos de la población, pero los más común es observar sólo un conjunto de individuos de esa población; lo que se denomina `muestra`. 
 
 [Distribuciones](#distribuciones)
+
+
+En estadística, cuando usamos el término distribución, generalmente nos referimos a una distribución de probabilidad. Una distribución es una función que muestra los posibles valores para una variable y la frecuencia con que estos ocurren.
+
+Tomemos el ejemplo de un dado que tiene seis caras, numeradas del 1 al 6. Cuando tiramos el dado **¿Cuál es la probabilidad de obtener 1?** Es uno de seis, entonces un sexto, ¿verdad? ¿Cuál es la probabilidad de obtener 2? Una vez más, un sexto. Lo mismo vale para 3, 4, 5 y 6. Ahora. **¿Cuál es la probabilidad de sacar un 7?** Es imposible obtener un 7 al lanzar un dado, por lo tanto, la probabilidad es 0.
+
+La distribución de un evento consiste no solo en los valores de entrada que se pueden observar, sino que se compone de todos los valores posibles. Entonces, la distribución del evento `lanzar un dado` tomará los siguientes valores:
+
+|Cara del dado| Probabilidad |
+|  -----------|  ------------|
+| 1 | 0.17|
+| 2 | 0.17|
+| 3 | 0.17|
+| 4 | 0.17|
+| 5 | 0.17|
+| 6 | 0.17|
+| Cualquier otro valor | 0|
+
+
+La probabilidad de obtener cualquiera de los números es de 0,17 (un sexto) y para todos los demás valores, la probabilidad de ocurrencia es 0. Y podrías recorrer todos los valores posibles que puede tomar esta variable calculando sus probabilidades. La suma de probabilidades de todos los valores posibles que toma la variable dado será igual al 1 o 100%. 
+
+Se suele representar gráficamente la distribución de probabilidades de un evento con un gráico que describe la probabilidad de ocurrencia de cada evento. Pero es importante comprender que la distribución está definida por las probabilidades subyacentes y no por el gráfico en sí. El gráfico es solo una representación visual.
