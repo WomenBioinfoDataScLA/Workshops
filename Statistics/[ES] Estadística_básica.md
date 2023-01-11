@@ -28,6 +28,9 @@ Además nos proporciona métodos para entre otras cosas:
 2. Descripción: Resumir y explorar datos.
 3. Inferencia: hacer predicciones y generalizar sobre los fenómenos representados por los datos.
 
+
+
+
 ### 2.[Muestra vs Población](#muestra)
 
 Ahora bien, cuando se recopilan datos para hacer observaciones sobre el mundo, por lo general no es posible recopilar **TODOS** los datos disponibles...  Por ejemplo, si quisieramos saber cuál es la altura más frecuente de un ser Humano a las distintas edades, quizás pueda resultar un poco tedioso medir la altura de todos los individuos que habitan el planeta tierra. Entonces, en lugar de preguntar a cada persona del mundo cuál es su altura y edad, puede que nos resulte más conveniente tomar una `muestra` de la `población` mundíal y luego usarla para hacer inferencias el comportamiento de la `población`.
