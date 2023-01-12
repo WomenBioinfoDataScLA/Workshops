@@ -62,13 +62,13 @@ A suposição de normalidade é importante para muitos testes estatísticos. Se 
 
 A distribuição normal é o único tipo de distribuição com simetria central, isso significa que a frequência dos dados aumenta em direção a um valor no meio do gráfico:
 
-<img src="dist_normal.png" alt="distribution_normal" style="width: 350px">
+<img src="[PT]dist_normal.png" alt="distribution_normal" style="width: 350px">
 
 Esse valor central é conhecido como `mean` ou média aritmética dos valores (ou seja, a soma dos valores dividida pelo número total de valores). Este parâmetro é uma medida de centralidade. Em uma distribuição normal, a `média` coincide com outros parâmetros: a `mediana` (o valor acima e abaixo da metade dos eventos) e a `moda` (o valor com maior frequência)... Em uma distribuição normal, o valor mais frequente é justamente o valor médio.
 
 Agora, o valor mais frequente não é o único possível, não. Uma variável pode assumir valores infinitos a priori... Mas quantos? Muito diferente do mais comum ou frequente? Bom, para responder a essa pergunta podemos ver o quanto os valores estão dispersos em relação ao eixo central (`média`), ou seja, ver até onde eles vão... Essa medida é conhecida como `variância`. Em algumas distribuições, os valores são mais dispersos do que em outras, resultando em curvas mais planas ou esbeltas.
 
-<img src="curtosis.png" alt="kurtosis" style="largura: 350px">
+<img src="[PT]curtosis.png" alt="curtosis" style="largura: 350px">
 
 Esse achatamento ou rebaixamento da distribuição é conhecido como `curtose` e, como você verá, está intimamente relacionado à dispersão dos dados.
 
