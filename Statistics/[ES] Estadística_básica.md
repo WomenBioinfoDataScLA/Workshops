@@ -46,9 +46,7 @@ Es decir que un fenómeno observado a través de sus datos, podría ser expresad
 
 📊 Se suele representar gráficamente la distribución las variables que caracterizan a una muestra con un gráico que describe la probabilidad de ocurrencia de cada evento (frecuencia). Pero es importante comprender que la distribución está definida por las probabilidades subyacentes y no por el gráfico en sí. El gráfico es solo una representación visual que nos facilitará el análisis.
 
-
-![distributions](distributions.png)
-[Fuente](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03892-w)
+<img src="distributions.png" alt="distributions" style="width: 350px">
 
 Hay muchos tipos distintos de distribuciones estadísticas.  Conocer las características de estas distribuciones, nos permitirá caracterizar aquel conjunto de datos que se comporten de manera similar, además de comparar conjuntos de datos de interés. En general las características de una muestra puede resumirse mediante parámetros numéricos que pueden ser inferidos gracias a la estadística. Algunos de estos parámetros seguramente te resulten conocidos, como la `media` (o promedio) o la `mediana`, y los revisaremos más en detalle cuando sea necesario. Pero es importante comprender que son estos parámetros los que nos ayudarán a caracterizar nuestras datos y compararlos con otro conjunto de datos.
 
@@ -57,15 +55,22 @@ Hay muchos tipos distintos de distribuciones estadísticas.  Conocer las caracte
 
 En ciencia nos resulta de gran utilidad contar con sistemas de referencia, de los que tenemos absoluto conocimiento de su funcionamiento para poder contrastar con aquellos completamente nuevo y desconocido. Y esto se relaciona con la forma en la que conocemos y aprendemos los seres humanos... según algunos teóricxs, que plantean que no podemos conocer aquello para de lo que no tenemos una idea previa, porque no tenemos una estructura previa con la cuál establecer relaciones. Algo así como la razón por la que pensamos la vida extraterrestre como seres antropomórficos con cabezas y cerebros grandes 👽, porque sabemos que existe una relación entre el tamaño del cerebro y la inteligencia... y porque creemos que los seres Humanos somos los mejores 😜 
 
-Y así como buscamos vidas similares a las que conocemos en otros rincones del universo, también recurrimos a distribuciones teóricas, con parámetros predecibles, para comparar y comprender como se comportan conjunto de datos desconocidos. La distribución normal es una distribución teórica por demás utilizada en estadística. ¿Qé quiere decir que sea un distribución teórica? simplemente que su distribución de frecuencias deriva de una fórmula en lugar de provenir de observaciones reales.
+Y así como buscamos vidas similares a las que conocemos en otros rincones del universo, también recurrimos a distribuciones teóricas, con parámetros predecibles o esperables, para comparar y comprender como se comportan conjunto de datos desconocidos. La distribución normal es una distribución teórica por demás utilizada en estadística. ¿Qé quiere decir que sea un distribución teórica? simplemente que su distribución de frecuencias deriva de una fórmula en lugar de provenir de observaciones reales.
 
 La asunción de la normalidad es importante para muchas pruebas estadísticas. Si la forma de la distribución de una muestra no tiene la forma típica de campana de la distribución normal, es posible que algunas pruebas estadísticas no sean válidas para anlizar ese conjunto de datos. Pero a pesar de que la distribución normal es teórica, las distribuciones de muchos datos provenientes del mundo real se parecen a la distribución normal. Y es por ello que conocer las características de la misma, nos servirá para inferir si nuestros datos se comportan o no de forma "normal".
 
+La distribución normal es el un tipo de distribución con simetría central, esto quiere decir que la frecuencia de los datos aumenta hacia un valor en medio del gráfico:
+
+<img src="dist_normal.png" alt="distribucion_normal" style="width: 350px">
+
+Ese valor central se conoce como `media` o promedio aritmético de los valores (es decir la suma de los valores dividido el número total de valores). Este parámetro es una medida de centralidad. En una districbución normal la `media` coincide con otros parámetros: la `mediana` (el valor por encima y por debajo del cual se encuentran la mitad de los eventos) y la `moda` (el de mayor frecuencia)... Es decir que en una distribución normal, el valor más frecuente es justamente el valor promedio. 
+
+Ahora bien, el valor más frecuente no es el único posible no. Una variable podría tomar a priori infinitos valores... ¿cuántos? ¿Muy distintos del más común o frecuente? Bueno, para responder esta pregunta podemos ver cuánto se dispersan los valores respecto del eje central (`media`), es decir ver cuán lejos llegan... Esta medida se conoce como `varianza`. 
 
 Ahora que conocemos un poco más sobre distribuciones y estadística, ya podemos comenzar con los contenidos específicos de **Análisis Datos**
 
 <details>
-  <summary>  Para pensar más allá de la estadística 🤔 </summary>
+  <summary>  **Para pensar más allá de la estadística** 🤔 </summary>
 
 Es común escuchar **"la ciencia afirma qué"**, pero no resulta tan común escuchar explicaciones sobre cómo afirma la ciencia. 
 ¿Qué hace a un conocimiento `científico`? ¿Alguna vez te pusiste a pensar cómo conocemos y qué es el conocimiento? La filosofía de la ciencia se enfoca particularmente en esta pregunta. 
