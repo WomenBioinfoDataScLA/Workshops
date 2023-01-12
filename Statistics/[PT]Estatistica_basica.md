@@ -68,7 +68,7 @@ Esse valor central é conhecido como `mean` ou média aritmética dos valores (o
 
 Agora, o valor mais frequente não é o único possível, não. Uma variável pode assumir valores infinitos a priori... Mas quantos? Muito diferente do mais comum ou frequente? Bom, para responder a essa pergunta podemos ver o quanto os valores estão dispersos em relação ao eixo central (`média`), ou seja, ver até onde eles vão... Essa medida é conhecida como `variância`. Em algumas distribuições, os valores são mais dispersos do que em outras, resultando em curvas mais planas ou esbeltas.
 
-<img src="[PT]curtosis.png" alt="curtosis" style="largura: 350px">
+<img src="[PT]curtosis.png" alt="curtosis" style="width: 350px">
 
 Esse achatamento ou rebaixamento da distribuição é conhecido como `curtose` e, como você verá, está intimamente relacionado à dispersão dos dados.
 
