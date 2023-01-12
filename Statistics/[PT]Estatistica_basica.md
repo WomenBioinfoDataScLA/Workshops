@@ -2,8 +2,8 @@
 > Material elaborado pela Dra. Ana Julia Velez Rueda
 >
 >
-> **LICENÇA**: Este trabalho está licenciado sob uma
-[Licença Internacional Creative Commons Attribution-ShareAlike 4.0][cc-by-sa].
+> **LICENSE**: This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 >
 >[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
