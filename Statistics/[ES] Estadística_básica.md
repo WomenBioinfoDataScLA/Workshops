@@ -63,13 +63,13 @@ La asunción de la normalidad es importante para muchas pruebas estadísticas. S
 
 La distribución normal es el un tipo de distribución con simetría central, esto quiere decir que la frecuencia de los datos aumenta hacia un valor en medio del gráfico:
 
-<img src="dist_normal.png" alt="distribucion_normal" style="width: 350px">
+<img src="[ES]dist_normal.png" alt="distribucion_normal" style="width: 350px">
 
 Ese valor central se conoce como `media` o promedio aritmético de los valores (es decir la suma de los valores dividido el número total de valores). Este parámetro es una medida de centralidad. En una districbución normal la `media` coincide con otros parámetros: la `mediana` (el valor por encima y por debajo del cual se encuentran la mitad de los eventos) y la `moda` (el de mayor frecuencia)... Es decir que en una distribución normal, el valor más frecuente es justamente el valor promedio. 
 
 Ahora bien, el valor más frecuente no es el único posible no. Una variable podría tomar a priori infinitos valores... ¿cuántos? ¿Muy distintos del más común o frecuente? Bueno, para responder esta pregunta podemos ver cuánto se dispersan los valores respecto del eje central (`media`), es decir ver cuán lejos llegan... Esta medida se conoce como `varianza`. En algunas distribuciones, los valores están más dispersos que en otras, dando como resultado curvas más aplanadas o más esbeltas
 
-<img src="curtosis.png" alt="kurtosis" style="width: 350px">
+<img src="[ES]curtosis.png" alt="kurtosis" style="width: 350px">
 
 Este achatamiento o aplanamiento de la distribución se conoce como `curtosis` y como verás está muy relacionado con la disperción de los datos.
 
