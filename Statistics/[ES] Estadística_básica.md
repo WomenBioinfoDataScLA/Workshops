@@ -129,4 +129,6 @@ Pero también existe un tipo de variable no numérica o **`cualitativa`**, que c
     - Ordinales: Son aquellas que sí pueden ordenarse en una jerarquía específica. Por ejemplo, los resultados de una encuesta de satisfacción con cierto servicio prestado a clientes (muy insatisfecho, insatisfecho, neutral, satisfecho, muy satisfecho).
 
 
-Es fundamental distinguir los tipos de variables que existen, ya que tienen gran influencia durante el análisis y nos condicionan durante el tratamiento de los datos. Pero como mejor que decir es hacer, ahora que conocemos un poco más sobre distribuciones y estadística, vamos a comenzar con los contenidos específicos de [**Análisis Datos**](https://github.com/AJVelezRueda/Fundamentos_de_informatica/blob/master/Ciencia_de_datos/Analisis_datos_con_pandas.md).
+Es fundamental distinguir los tipos de variables que existen, ya que tienen gran influencia durante el análisis y nos condicionan durante el tratamiento de los datos. 
+
+Pero como mejor que decir es hacer, ahora que conocemos un poco más sobre distribuciones y estadística, vamos a comenzar con los contenidos específicos de [**Análisis Datos**](https://github.com/AJVelezRueda/Fundamentos_de_informatica/blob/master/Ciencia_de_datos/Analisis_datos_con_pandas.md).
