@@ -1,4 +1,4 @@
-# Estatísticas básicas
+# Estatística básica
 > Material elaborado pela Dra. Ana Julia Velez Rueda
 >
 >
