@@ -68,3 +68,6 @@ La mayoría de estos pasos son equivalentes en todos los sistemas operativos y p
     ```
 
 Aunque es claramente más sencilla, esta forma abreviada de ejecución puede tener algunas desventajas respecto de usar todos los pasos anteriores, entre ellas y la más importante es que obliga a quienes utilizan nuestro script a conocer el intérprete contra el que debe ejecutar el script.
+
+
+## IDEs o Entornos de Desarrollo
