@@ -1,14 +1,14 @@
-*Scripting e IDEs
+# *Scripting e IDEs*
 
-Este material foi criado pela Dra. Ana Julia Velez Rueda e Franco Leonardo Bulgarelli. Está licenciado sob
+🚨Este material foi criado pela Dra. Ana Julia Velez Rueda e Franco Leonardo Bulgarelli. Está licenciado sob
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-por-sa]. É necessário elementos de [Python Resources](https://flbulgarelli.github.io/recursos-python/), sob a mesma licença.
 
-CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]][cc-by-sa]] [CC BY-SA 4.0][cc-by-sa-image
 
-[cc-por-sa]: http://creativecommons.org/licenses/by-sa/4.0/
-[cc por imagem]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
-[cc por escudo]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 ## O que é um guião? 💬
 
