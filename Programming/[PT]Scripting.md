@@ -264,4 +264,4 @@ Dentro de qualquer uma destas plataformas, você poderá criar cadernos de notas
 ![colab](Colab[PT].png)
 
 
-:checkered_flag: Depois de ter sido capaz de criar um caderno em Jupyter ou Colab, como mostra a figura, você pode começar a trabalhar nos seus dados 📈 💪
+:checkered_flag: Depois de criar um caderno em Jupyter ou Colab, como mostra a figura, você pode começar a trabalhar nos seus dados 📈 💪
