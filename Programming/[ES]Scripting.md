@@ -1,7 +1,7 @@
 # *Scripting e IDEs*
 
 🚨 Este material fue creado por la Dra. Ana Julia Velez Rueda y Franco Leonardo Bulgarelli. El mismo se encuentra bajo licencia
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa]. Toma elementos de [Recursos Python](https://flbulgarelli.github.io/recursos-python/), bajo la misma licencia.
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
@@ -109,3 +109,122 @@ if __name__ == "__main__":
 ```
 
 ## IDEs o Entornos de Desarrollo
+
+Para escribir cómodamente nuestros scripts vamos a necesitar una herramienta llamada editor de código, que se parece bastante a un editor de texto, pero no sirve para escribir poemas, currículums, o trabajos prácticos de la escuela (donde nos va a importar que nos corrija la ortografía, subrayar, poner negritas o cambiar colores), sino para crear programas complejos. :star_struck:
+
+Muchos de estos editores de código (o editores a secas, de ahora en más) se pueden instalar en tu propia computadora. Algunos de ellos son:
+
+* [Sublime](https://www.sublimetext.com/);
+* [Visual Studio Code](https://code.visualstudio.com/);
+* [Atom](https://atom.io/);
+* [Vim](https://www.vim.org/).
+
+Además, para desarrollar aplicaciones y sistemas más complejos, existen herramientas aún más completas (¡y complejas! :sweat:) que se conocen como Entornos Integrados de Desarrollo (_IDEs_ por sus siglas en inglés). Uno de los más populares es [PyCharm](https://www.jetbrains.com/es-es/pycharm/). También existen IDEs en línea como [Colaboratory](https://colab.research.google.com/) y [Jupyter](https://jupyter.org/) que no requieren que los descarguemos en nuestra computadora. :muscle:
+
+Con la excepción de Colab, para usar cualquiera de estos editores y entornos de desarrollo, vamos a tener que instalarlos en nuestras computadoras. Y con eso ya estaremos en condiciones de programar y ejecutar nuestros scripts, ¿no?
+
+¡No! Porque los editores sólo son herramientas para escribir código, y no vienen con Python 😒. Veamos entonces antes de continuar como instalar todas estas cosas.
+
+## Instalación del entorno local
+
+> Nota: esta guía está orientada a una instalación local en Linux. Si tenés Windows, [acá](https://code.visualstudio.com/docs/python/python-tutorial) encontrarás más información.
+
+Para utilizar Python localmente (es decir, en tu computadora en lugar de en una plataforma online como [Replit](https://replit.com/) o [Mumuki](https://mumuki.io)) vamos a tener que instalar algunos programas. Abrí una terminal. Notarás que aparece algo similar a lo siguiente:
+
+```shell
+mi_nombre@mi_computadora:~$
+```
+
+Esto lo que está indicando es que iniciaste sesión en la computadora `mi_computadora` con un usuario llamado `mi_nombre`. Además, el signo `$` (también llamado prompt) indica que la terminal está lista para aceptar comandos. Por último, el símbolo `~` indica que estás en el directorio principal de `mi_nombre`, también denominado _home_.
+
+¿Y qué comandos podés ejecutar? Estos son algunos de los (tantísimos) disponibles:
+
+  * `cd`: cambia de directorio
+  * `ls`: muestra los contenidos del directorio
+  * `pwd`: muestra el directorio actual
+
+La forma más sencilla para instalar Python en Ubuntu (20.04 o superior) es con el siguiente comando:
+
+```bash
+$ sudo apt install python3 python-is-python3 python3-pip
+```
+
+Visual Code es uno de los editores de código más comunes y flexibles (en 2023). Por eso, en este tutorial vamos a elegirlo. Para instalarlo en Ubuntu ejecutaremos lo siguiente:
+
+```bash
+$ sudo snap install code
+```
+
+O, si este comando genera una advertencia, podremos hacer lo siguiente:
+
+```bash
+$ sudo snap install code --classic
+```
+
+¡Llegó la hora de probar todo! Para editar un archivo, podés abrir Visual Code desde el menú de aplicaciones, o ejecutando en una terminal el comando `code`. Ejemplo:
+
+```bash
+$ code mi_script.py
+```
+
+> Nota: el soporte que Visual Code ofrece para Python por defecto es limitado. Si querés mejorar el soporte podés instalar la extensión oficial para Python, desde el menú de Extensiones (_Extensions_, en la barra lateral izquierda). Allí deberás buscar "Python" y elegir la extensión provista por Microsoft:
+>
+> ![captura de pantalla de visual code](./vs_python_extension.png)
+
+Luego, para ejecutar los contenidos del archivo, podés hacer:
+
+```bash
+$ python3 mi_script.py
+```
+
+
+## Un script más complejo
+
+Como mencionamos anteriormente, los scripts suelen interactuar con el el sistema de archivos (_file system_ o _FS_) y el sistema operativo en general (_Operative System_ u _OS_). Justamente por ello es que [el módulo `os`](https://docs.python.org/es/3.10/library/os.html) de Python nos será de particular ayuda cuando escribamos nuestros scripts. Allí encontraremos operaciones como las siguientes:
+
+  * `os.stat`: nos permite obtener estadísticas de un archivo (como por ejemplo su tamaño)
+  * `os.rename`: nos permite renombrar archivos
+  * `os.rmdir`: nos permite eliminar directorios
+
+De igual forma, [el submódulo `os.path`](https://docs.python.org/3/library/os.path.html) nos dará más funcionalidades para interactuar con archivos y sus rutas:
+
+ * `os.path.dirname`: nos permite obtener el directorio donde un archivo está contenido
+ * `os.path.exists`: nos permite saber si un archivo existe
+ * `os.path.join`: nos permite concatenar rutas (por ejemplo, combinar `/una` y `ruta` para obtener `/una/ruta`)
+
+Por último, [el módulo `sys`](https://docs.python.org/es/3/library/sys.html) nos dará acceso a `sys.argv`: una lista que contiene el nombre del script y los argumentos con los que se ejecutó un programa.
+
+¡Veamos un pequeño ejemplo! Creá el siguiente script `stats.py`
+
+```python
+#!/bin/python3
+
+import os
+import sys
+from datetime import datetime # para transformar fechas
+
+archivo = sys.argv[1] # el primer parámetro se corresponde con la posición 1,
+                      # dado que la posición 0 contiene al nombre del script
+
+print("Obteniendo información del archivo", archivo)
+
+estadisticas = os.stat(archivo)
+print("Pesa:", estadisticas.st_size, "bytes")
+print("Modificado por última vez:", datetime.utcfromtimestamp(estadisticas.st_atime).strftime('%Y-%m-%d %H:%M:%S'))
+```
+
+Para poder hacer ejecutable a nuestro script deberemos hacer lo siguiente:
+
+
+```bash
+chmod u+x stats.py
+```
+
+Y ahora lo podemos ejecutar así:
+
+```bash
+./stats.py '[ES]Scripting.md'
+Obteniendo información del archivo [ES]Scripting.md
+Pesa: 11730 bytes
+Modificado por última vez: 2023-01-15 17:26:31
+```
