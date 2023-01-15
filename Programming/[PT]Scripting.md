@@ -45,13 +45,13 @@ Isto porque quando programamos scripts, preocupamo-nos que a escrita de tais pro
 
 Os scripts têm sempre um único ponto de entrada, ou _main_, que é o que será executado quando invocado a partir do terminal.
 
-Em Python, podemos fazer isto de duas maneiras. Uma delas é a forma mais "básica", que é ter um arquivo normal `.py`, que importa os pacotes necessários e executa as operações. Por exemplo, digamos que fazemos um script que diz simplesmente "olá mundo" e termina. Para isso, criaríamos um arquivo `hello.py` contendo exactamente isto:
+Em Python, podemos fazer isto de duas maneiras. Uma delas é a forma mais "básica", que é ter um arquivo normal `.py`, que importa os pacotes necessários e executa as operações. Por exemplo, digamos que queremos fazer um script que diga simplesmente "olá mundo" e termine. Para isso, criaríamos um arquivo `hello.py` contendo:
 
 ```python
 print("olá mundo")
 ```
 
-Como alternativa, podemos escrevê-lo de uma forma um pouco mais complexa, mas mais "clássica" e conceptualmente correta:
+Como alternativa, podemos escrevê-lo de uma forma um pouco mais complexa, mas mais "clássica" e conceitualmente correta:
 
 ```python
 def main():
@@ -74,9 +74,9 @@ python3 hello.py
 
 Embora claramente mais simples, este atalho pode ter algumas desvantagens em relação à utilização de todos os passos ditos anteriormente, já que obriga quem usa o nosso script a conhecer o intérprete contra o qual o script deve ser executado.
 
-Seria melhor se a pessoa que usa o nosso script não tivesse de saber qual o intérprete contra o qual executar o arquivo, não seria? Em outras palavras, poder simplesmente rodar `./hello.py`. Mas como é que o sistema reconheceria que este arquivo, que à primeira vista parece um arquivo de texto comum, tem de ser executado como um script?
+Seria melhor se a pessoa que usa o nosso script não tivesse que saber qual o intérprete contra o qual executar o arquivo, não seria? Em outras palavras, poder simplesmente rodar `./hello.py`. Mas como é que o sistema reconheceria que este arquivo, que à primeira vista parece um arquivo de texto comum, tem de ser executado como um script?
 
-Em **linux** todos os arquivos de texto simples são apenas texto simples, por isso, não importa a extensão que lhes damos, então temos que dizer de alguma forma que um determinado arquivo é um script contendo comandos a serem executados. Para isso, precisamos:
+Em **linux**, todos os arquivos de texto simples são apenas texto simples, por isso, não importa a extensão que lhes damos. Então temos que dizer de alguma forma que um determinado arquivo é um script contendo comandos a serem executados. Para isso, precisamos:
 
 1) Em primeiro lugar, começar digitado `#!`, que é conhecido como shebang, seguido pelo caminho do intérprete contra o qual o seu script será executado (Python, neste caso). Em sistemas Linux ficaria: `#!/bin/python3`.
 
