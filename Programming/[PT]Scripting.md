@@ -19,7 +19,7 @@ Muito bem, você já entendeu! É que os scripts **são** programas, mas têm al
  1) Normalmente interagem com bibliotecas de sistemas operativos, seja diretamente ou através de comandos bash;
  2) São normalmente executados num terminal (_shell_) e geralmente contra um intérprete;
  3) Normalmente não têm uma interface gráfica, mas todas as interações ocorrem através de entradas e saídas de texto;
- 4) Recebem os seus argumentos a partir do terminal;
+ 4) Recebem argumentos a partir do terminal;
  5) Devolvem um código de saída numérico e inteiro (`0` por padrão e em caso de sucesso);
  6) Operam principalmente contra arquivos e _data streams_, tais como entrada padrão (`stdin`), saída padrão (`stdout`) e erro padrão (`stderr`).
 
