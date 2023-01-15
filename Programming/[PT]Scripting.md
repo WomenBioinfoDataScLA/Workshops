@@ -23,19 +23,19 @@ Muito bem, você já entendeu! É que os scripts **são** programas, mas têm al
  5) Devolvem um código de saída numérico e inteiro (`0` por padrão e em caso de sucesso);
  6) Operam principalmente contra arquivos e _data streams_, tais como entrada padrão (`stdin`), saída padrão (`stdout`) e erro padrão (`stderr`).
 
-Mais concretamente, os scripts são geralmente escritos em texto simples, utilizando uma linguagem de programação _interpretada_, tal como Python, Perl, Ruby ou Bash, e o sua extensão variará de acordo com a sua linguagem. Por exemplo, os scripts em Python utilizam a extensão `.py`, e os escritos em Bash, `.sh` (ou sem qualquer extensão).
+Mais concretamente, os scripts são geralmente escritos em texto simples, utilizando uma linguagem de programação _interpretada_, tal como Python, Perl, Ruby ou Bash, e a sua extensão variará de acordo com a sua linguagem. Por exemplo, os scripts em Python utilizam a extensão `.py`, e os escritos em Bash, `.sh` (ou sem qualquer extensão).
 
 ## Para quê queremos scripts?
 
-Os scripts são particularmente úteis para automatizar tarefas que são executadas periodicamente (também conhecidas como tarefas programadas ou calendarizadas) ou para automatizar situações tediosas como, por exemplo
+Os scripts são particularmente úteis para automatizar tarefas que são executadas periodicamente (também conhecidas como tarefas programadas ou calendarizadas) ou para automatizar situações tediosas como, por exemplo:
 
  * Executar um conjunto de programas e combinar os seus resultados;
  * Baixar, carregar, mover e/ou descompactar arquivos;
  * Realizar conversões de formato;
- * Executar tarefas de construção de projectos de software, tais como compilação, teste e publicação;
+ * Executar tarefas de construção de projetos de software, tais como compilação, teste e publicação;
  * Executar tarefas de manutenção do sistema operativo, tais como instalação e configuração de software, liberação de espaço, etc.
 
-## Que linguagens são usadas para escrever scripts?
+## Quais linguagens são usadas para escrever scripts?
 
 Como já dissemos, as linguagens utilizadas para a escrita são geralmente interpretadas, ou seja, são executadas diretamente contra um programa de interpretação que lê e executa as instruções, em vez de exigir uma compilação prévia (como seria por exemplo o caso de Java, C ou Go).
 
