@@ -79,22 +79,22 @@ Sería mejor que la persona que usa nuestro script no tuviera que saber con qué
 
 En **linux** todos los archivos de texto plano son justamente eso textos planos, por lo que no influye la extensión que le pongamos, por lo cual hay que de alguna manera indicarle que un archivo en particular es un script que contiene comandos que deben ejecutarse. Para esto necesitamos:
 
-    1) En primer lugar, en la primera se suele escribir `#!`, que se conoce como shebang, seguido de la ruta del interprete contra el que se debe ejecutar el programa (python en este caso). En los sistemas Linux es: `#!/bin/python3`
+1) En primer lugar, en la primera se suele escribir `#!`, que se conoce como shebang, seguido de la ruta del interprete contra el que se debe ejecutar el programa (python en este caso). En los sistemas Linux es: `#!/bin/python3`
 
-    2) En segundo lugar el archivo tiene que tener permisos de ejecución. Como ya vimos, esto último se puede hacer usando el comando `chmod` cuyas opciones son:
+2) En segundo lugar el archivo tiene que tener permisos de ejecución. Como ya vimos, esto último se puede hacer usando el comando `chmod` cuyas opciones son:
 
-     `+r`, `+w` o `+x` para darle permisos de lectura, escritura o ejecución a un archivo respectivamente
+    `+r`, `+w` o `+x` para darle permisos de lectura, escritura o ejecución a un archivo respectivamente
 
-     `-r`, `-w` o `-x` para quitárselos.
+    `-r`, `-w` o `-x` para quitárselos.
 
 
-     Estas opciones, se pueden combinar, por lo que si quiero darle todos los permisos a un archivo podría hacer:
+    Estas opciones, se pueden combinar, por lo que si quiero darle todos los permisos a un archivo podría hacer:
 
     ```bash
     chmod +rwx archivo
     ```
 
-    3) Por último, debemos ejecutar el archivo usando la ruta completa (absoluta) al archivo o estando en la carpeta donde se encuentra el archivo podemos usar el `./nombre_script.py`
+3) Por último, debemos ejecutar el archivo usando la ruta completa (absoluta) al archivo o estando en la carpeta donde se encuentra el archivo podemos usar el `./nombre_script.py`
 
 Por ejemplo, en nuestro `hello.py` nos quedará así:
 
