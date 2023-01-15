@@ -87,7 +87,7 @@ Em **linux**, todos os arquivos de texto simples são apenas texto simples, por 
     `-r`, `-w` ou `-x` para os remover.
 
 
-    Estas opções podem ser combinadas. Portanto, se eu quiser dar todas as permissões a um arquivo que eu possa fazer:
+    Estas opções podem ser combinadas. Portanto, se quisermos dar todas as permissões a um arquivo, podemos fazer:
 
     ```bash
     chmod +rwx arquivo
@@ -120,21 +120,21 @@ Muitos destes editores de código (ou editores simples, a partir de agora) podem
 
 Além disso, para desenvolver aplicações e sistemas mais complexos, existem ferramentas ainda mais completas (e complexas! :sweat:) conhecidas como Ambientes de Desenvolvimento Integrado (_IDEs_). Uma das mais populares é o [PyCharm](https://www.jetbrains.com/es-es/pycharm/). Existem também IDEs em linha tais como [Colaboratory](https://colab.research.google.com/) e [Jupyter](https://jupyter.org/) que não precisamos baixar no computador. :músculo:
 
-Com excepção do Colab, para utilizar qualquer um destes editores e ambientes de desenvolvimento, teremos de instalá-los nos nossos computadores. E com isso, seremos capazes de programar e executar os nossos scripts, certo?
+Com excepção do Colab e Jupyter, para utilizar qualquer um destes editores e ambientes de desenvolvimento, teremos de instalá-los nos nossos computadores. E com isso, seremos capazes de programar e executar os nossos scripts, certo?
 
 Não! Porque os editores são apenas ferramentas para escrever código, e não vêm com Python 😒. Vejamos então antes de continuarmos como instalar todas estas coisas.
 
 ### 💻 Instalar o ambiente local 
 
-> Nota: este guia é orientado para uma instalação local no Linux. Se tiver o Windows, [aqui](https://code.visualstudio.com/docs/python/python-tutorial) você encontrará mais informações.
+> Nota: este guia é orientado para uma instalação local no Linux. Se você tiver Windows, [aqui](https://code.visualstudio.com/docs/python/python-tutorial) você encontrará mais informações.
 
-Para utilizar o Python localmente (isto é, no seu computador, em vez de numa plataforma online como [Replit](https://replit.com/) ou [Mumuki](https://mumuki.io)) precisaremos instalar algum software. Abra um terminal. Note que algo semelhante ao que se segue aparece:
+Para utilizar o Python localmente (isto é, no seu computador, em vez de numa plataforma online como [Replit](https://replit.com/) ou [Mumuki](https://mumuki.io)) precisaremos instalar algum software. Abra um terminal. Note que aparece algo semelhante ao que se segue:
 
 ```shell
 meu_nome@meu_computador:~$
 ```
 
-O que isto indica é que está ligado ao computador `meu_computador` com um utilizador chamado `meu_nome`. Além disso, o sinal `$` (também chamado de prompt) indica que o terminal está pronto para aceitar comandos. Finalmente, o símbolo `~` indica que está no directório principal do `meu_nome`, também chamado de _home_.
+O que isto indica é que o terminal está ligado ao computador `meu_computador` com um utilizador chamado `meu_nome`. Além disso, o sinal `$` (também chamado de prompt) indica que o terminal está pronto para aceitar comandos. Finalmente, o símbolo `~` indica que está no diretório principal do `meu_nome`, também chamado de _home_.
 
 E que comandos se pode executar? Aqui estão alguns dos (tantos) disponíveis:
 
@@ -166,7 +166,7 @@ Chegou a hora de testar tudo! Para editar um arquivo, você pode abrir o Visual 
 $ code meu_script.py
 ```
 
-> Nota: O suporte que o Visual Code oferece para Python é limitado (por default). Se você quiser melhorar o supoprte, pode instalar a extensão oficial Python, a partir do menu Extensões (_Extensions_, na barra lateral esquerda). Aí você deve procurar por "Python" e escolher a extensão fornecida pela Microsoft:
+> Nota: O suporte que o Visual Code oferece para Python é limitado (por default). Se você quiser melhorar esse suporte, pode instalar a extensão oficial Python, a partir do menu Extensões (_Extensions_, na barra lateral esquerda). Aí você deve procurar por "Python" e escolher a extensão fornecida pela Microsoft:
 >
 > ![captura de ecrã de código visual](./vs_python_extension.png)
 
@@ -177,7 +177,7 @@ $ python3 meu_script.py
 ```
 ## Um script mais complexo 💪
 
-Agora que temos todas as ferramentas instaladas e sabemos como criar e executar scripts, vamos olhar para um exemplo ligeiramente mais complexo de um script para nos dar uma visão do grande potencial dos script no nosso trabalho diário.
+Agora que temos todas as ferramentas instaladas e sabemos como criar e executar scripts, vamos olhar para um exemplo ligeiramente mais complexo de um script para nos dar uma visão do grande potencial dos scripts no nosso trabalho diário.
 
 Como mencionado anteriormente, os scripts geralmente interagem com o sistema de arquivos (_file system_ ou _FS_) e o sistema operativo em geral (_Operative System_ ou _OS_). É precisamente por esta razão que o módulo 'os' do Python (https://docs.python.org/es/3.10/library/os.html) nos ajudará na escrita dos seus scripts. Nele encontraremos operações como as que se seguem:
 
