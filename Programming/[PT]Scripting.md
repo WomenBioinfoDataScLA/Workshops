@@ -120,7 +120,7 @@ Muitos destes editores de código (ou editores simples, a partir de agora) podem
 
 Além disso, para desenvolver aplicações e sistemas mais complexos, existem ferramentas ainda mais completas (e complexas! :sweat:) conhecidas como Ambientes de Desenvolvimento Integrado (_IDEs_). Uma das mais populares é o [PyCharm](https://www.jetbrains.com/es-es/pycharm/). Existem também IDEs em linha tais como [Colaboratory](https://colab.research.google.com/) e [Jupyter](https://jupyter.org/) que não precisamos baixar no computador. :músculo:
 
-Com excepção do Colab e Jupyter, para utilizar qualquer um destes editores e ambientes de desenvolvimento, teremos de instalá-los nos nossos computadores. E com isso, seremos capazes de programar e executar os nossos scripts, certo?
+Com exceção do Colab e Jupyter, para utilizar qualquer um destes editores e ambientes de desenvolvimento, teremos de instalá-los nos nossos computadores. E com isso, seremos capazes de programar e executar os nossos scripts, certo?
 
 Não! Porque os editores são apenas ferramentas para escrever código, e não vêm com Python 😒. Vejamos então antes de continuarmos como instalar todas estas coisas.
 
@@ -177,19 +177,19 @@ $ python3 meu_script.py
 ```
 ## Um script mais complexo 💪
 
-Agora que temos todas as ferramentas instaladas e sabemos como criar e executar scripts, vamos olhar para um exemplo ligeiramente mais complexo de um script para nos dar uma visão do grande potencial dos scripts no nosso trabalho diário.
+Agora que temos todas as ferramentas instaladas e sabemos como criar e executar scripts, vamos olhar para um exemplo ligeiramente mais complexo para nos dar uma visão do grande potencial dos scripts no nosso trabalho diário.
 
-Como mencionado anteriormente, os scripts geralmente interagem com o sistema de arquivos (_file system_ ou _FS_) e o sistema operativo em geral (_Operative System_ ou _OS_). É precisamente por esta razão que o módulo 'os' do Python (https://docs.python.org/es/3.10/library/os.html) nos ajudará na escrita dos seus scripts. Nele encontraremos operações como as que se seguem:
+Como mencionado anteriormente, os scripts geralmente interagem com o sistema de arquivos (_file system_ ou _FS_) e o sistema operacional em geral (_Operative System_ ou _OS_). É por esta razão que o módulo 'os' do Python (https://docs.python.org/es/3.10/library/os.html) nos ajudará na escrita dos nossos scripts. Nele encontraremos operações como as que se seguem:
 
   * `os.stat`: nos permite obter estatísticas sobre um arquivo (tal como o seu tamanho).
-  * ``os.rename`: nos permite renomear arquivos
+  * `os.rename`: nos permite renomear arquivos
   * `os.rmdir`: nos permite deletar diretórios
 
 Da mesma forma, [o submódulo `os.path`](https://docs.python.org/3/library/os.path.html) nos dá mais funcionalidades para interagir com arquivos e os seus caminhos:
 
  * `os.path.dirname`: nos permite obter o diretório onde um arquivo está contido.
- * 'os.path.exists': nos permite saber se um arquivo existe
- * 'os.path.join': nos permite concatenar caminhos (por exemplo, combinar '/um' e 'caminho' para obter '/um/caminho')
+ * `os.path.exists`: nos permite saber se um arquivo existe
+ * `os.path.join`: nos permite concatenar caminhos (por exemplo, combinar '/um' e 'caminho' para obter '/um/caminho')
 
 Finalmente, [o módulo `sys`](https://docs.python.org/es/3/library/sys.html) nos dá acesso ao `sys.argv`: uma lista contendo o nome do script e os argumentos com os quais ele foi executado.
 
@@ -227,7 +227,7 @@ Peso: 11730 bytes
 Modificado pela última vez em: 2023-01-15 17:26:31 AM
 ```
 
-> 🧗🏻♀️ Desafio final! Criar um script `swap.py` que receba dois nomes de arquivo e renomeie o primeiro com o nome do segundo, e renomeie o segundo com o nome do primeiro. Exemplo:
+> 🧗🏻♀️ Desafio final! Criar um script `swap.py` que receba dois nomes de arquivos e renomeie o primeiro com o nome do segundo, e renomeie o segundo com o nome do primeiro. Exemplo:
 >
 > ```bash
 > $ cat ola.txt
@@ -249,7 +249,7 @@ Modificado pela última vez em: 2023-01-15 17:26:31 AM
 
 Até agora, vimos o que é um script, os seus usos e as ferramentas que podemos utilizar para os desenvolver. No entanto, é importante ter em mente que as ferramentas são apenas isso: ferramentas 🛠️. E tal como acontece com as linguagens de programação, não há uma melhor do que a outra, mas existem ferramentas mais apropriadas do que outras para uma ou outra utilização.
 
-É por isso que para desenvolver scripts usamos IDEs como [Visual Studio Code](https://code.visualstudio.com/), que são particularmente úteis quando estamos a desenvolver certos tipos de projetos como os que fizemos no exemplo, onde não foi necessário mostrar interativamente tabelas ou gráficos 📊.
+É por isso que para desenvolver scripts usamos IDEs como [Visual Studio Code](https://code.visualstudio.com/), que são particularmente úteis quando estamos desenvolvendo certos tipos de projetos como os que fizemos no exemplo, onde não era necessário mostrar interativamente tabelas ou gráficos 📊.
 
 Mas, no mundo dos dados, manipular tabelas e analisar gráficos é uma coisa diária, por isso, neste mundo podemos encontrar outras ferramentas muito úteis que nos permitem explorar e visualizar tabelas e gráficos sem a necessidade de ter milhares de guias abertas.
 
