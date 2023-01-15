@@ -247,21 +247,21 @@ Modificado pela última vez em: 2023-01-15 17:26:31 AM
 
 ## Ninguém tem a última palavra aqui
 
-Até agora, vimos o que é um guião, os seus usos e as ferramentas que podemos utilizar para os desenvolver. No entanto, é importante ter em mente que as ferramentas são apenas isso: ferramentas 🛠️. E tal como acontece com as linguagens de programação, não há uma melhor do que a outra, mas existem ferramentas mais apropriadas do que outras para uma ou outra utilização.
+Até agora, vimos o que é um script, os seus usos e as ferramentas que podemos utilizar para os desenvolver. No entanto, é importante ter em mente que as ferramentas são apenas isso: ferramentas 🛠️. E tal como acontece com as linguagens de programação, não há uma melhor do que a outra, mas existem ferramentas mais apropriadas do que outras para uma ou outra utilização.
 
-É por isso que para desenvolver scripts mostramos IDEs como [Visual Studio Code](https://code.visualstudio.com/), que são particularmente úteis quando estamos a desenvolver certos tipos de projectos como os que fizemos como exemplo, onde não foi necessário mostrar interactivamente tabelas ou gráficos 📊.
+É por isso que para desenvolver scripts usamos IDEs como [Visual Studio Code](https://code.visualstudio.com/), que são particularmente úteis quando estamos a desenvolver certos tipos de projetos como os que fizemos no exemplo, onde não foi necessário mostrar interativamente tabelas ou gráficos 📊.
 
-Mas, no mundo dos dados, manipular tabelas e analisar gráficos é uma coisa diária, por isso, neste mundo podemos encontrar outras ferramentas muito úteis que nos permitem explorar e visualizar tabelas e gráficos sem a necessidade de ter milhares de separadores abertos.
+Mas, no mundo dos dados, manipular tabelas e analisar gráficos é uma coisa diária, por isso, neste mundo podemos encontrar outras ferramentas muito úteis que nos permitem explorar e visualizar tabelas e gráficos sem a necessidade de ter milhares de guias abertas.
 
-Em Python, existem os chamados cadernos interactivos (ou `ipynb`s, para abreviar _ Caderno Interactivo Python_). Este tipo de ficheiro permitir-nos-á resolver problemas mais complexos, tais como os que vimos até agora, mas também os que teremos de fazer quando trabalharmos com dados.
+Em Python, existem os chamados cadernos interativos (ou `ipynb`s, abreviação de _Interactive Python Notebook_). Este tipo de arquivo nos permite resolver problemas mais complexos, tais como os que vimos até agora, mas também os que teremos de fazer quando trabalharmos com dados reais.
 
-Embora no nosso curso iremos utilizar os `Notebooks` para desenvolver código Python, eles podem ser utilizados para desenvolver noutras linguagens de programação também comuns no mundo dos dados: Julia, Python e R.
+Embora no nosso curso iremos utilizar os `Notebooks` para desenvolver códigos em Python, eles podem ser utilizados para outras linguagens de programação também comuns no mundo dos dados: Julia, Python e R.
 
-A forma mais fácil de começar a trabalhar com os cadernos interactivos é utilizando a plataforma [Colab](https://colab.research.google.com) do Google, mas lembre-se que também pode executá-los e criá-los localmente utilizando [Visual Studio Code](https://code.visualstudio.com/) ou outro IDE específico para este tipo de ficheiros como [Juptyer](https://jupyter.org/install) 🔬.
+A forma mais fácil de começar a trabalhar com os cadernos interativos é utilizando a plataforma [Colab](https://colab.research.google.com) do Google, mas lembre-se que também pode executá-los e criá-los localmente utilizando [Visual Studio Code](https://code.visualstudio.com/) ou outro IDE específico para este tipo de arquivos como o [Juptyer](https://jupyter.org/install) 🔬.
 
-Dentro de qualquer uma destas plataformas poderá criar cadernos de notas, nos quais coexistirão fragmentos (chamados _células_) de texto (para tomar notas) e código (para executar experiências):
+Dentro de qualquer uma destas plataformas, você poderá criar cadernos de notas, nos quais coexistirão fragmentos (chamados _células_) de texto (para tomar notas) e código (para executar análises):
 
 ![colab](Colab[PT].png)
 
 
-:checkered_flag: Depois de ter sido capaz de criar um caderno em Juyter ou Colab, como mostra a figura, pode começar a trabalhar nos seus dados 📈 💪
+:checkered_flag: Depois de ter sido capaz de criar um caderno em Jupyter ou Colab, como mostra a figura, você pode começar a trabalhar nos seus dados 📈 💪
