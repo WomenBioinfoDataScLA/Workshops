@@ -233,13 +233,13 @@ Modificado por última vez: 2023-01-15 17:26:31
 > Ejemplo:
 >
 > ```bash
-> cat hola.txt
+> $ cat hola.txt
 > hola
-> cat chau.txt
+> $ cat chau.txt
 > chau
-> ./swap.py hola.txt chau.txt
-> cat hola.txt
+> $ ./swap.py hola.txt chau.txt
+> $ cat hola.txt
 > chau
-> cat chau.txt
+> $ cat chau.txt
 > hola
 > ```
