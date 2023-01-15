@@ -265,4 +265,4 @@ Dentro de cualquiera de estas plataformas vas a poder crear cuadernos, en los qu
 ![colab](Colab[ES].png)
 
 
-:checkered_flag: Una vez que hayas podido crear un cuaderno en Juyter o Colab, como se muestra en la imágen ya podés comenzar a trabajar en con tus datos 📈 💪
+:checkered_flag: Una vez que hayas podido crear un cuaderno en Jupyter o Colab, como se muestra en la imágen ya podés comenzar a trabajar en con tus datos 📈 💪
