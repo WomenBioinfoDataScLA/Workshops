@@ -109,38 +109,38 @@ if __name__ == "__main__":
 
 ## IDEs ou Ambientes de Desenvolvimento 
 
-Para escrever confortavelmente os nossos roteiros precisaremos de uma ferramenta chamada editor de código, que se parece muito com um editor de texto, mas não é para escrever poemas, currículos, ou trabalhos escolares (onde nos preocuparemos com a verificação ortográfica, sublinhado, dobrado, ou mudança de cores), mas sim para criar programas complexos. :star_struck:
+Para escrever confortavelmente os nossos scripts, precisaremos de uma ferramenta chamada editor de código, que se parece muito com um editor de texto, mas não é para escrever poemas, currículos, ou trabalhos escolares (onde nos preocupamos com a verificação ortográfica, sublinhado, negrito, ou mudança de cores), mas sim para criar programas complexos. :star_struck:
 
-Muitos destes editores de código (ou editores simples, a partir de agora) podem ser instalados no seu próprio computador. Algumas delas são:
+Muitos destes editores de código (ou editores simples, a partir de agora) podem ser instalados no seu próprio computador. Alguns deles são:
 
 * [Sublime](https://www.sublimetext.com/);
 * [Visual Studio Code](https://code.visualstudio.com/);
 * [Atom](https://atom.io/);
 * [Vim](https://www.vim.org/).
 
-Além disso, para desenvolver aplicações e sistemas mais complexos, existem ferramentas ainda mais completas (e complexas! :sweat:) conhecidas como Ambientes de Desenvolvimento Integrado (_IDEs_). Uma das mais populares é [PyCharm](https://www.jetbrains.com/es-es/pycharm/). Existem também IDEs em linha tais como [Colaboratory](https://colab.research.google.com/) e [Jupyter](https://jupyter.org/) que não requerem que as descarregue para o seu computador. :músculo:
+Além disso, para desenvolver aplicações e sistemas mais complexos, existem ferramentas ainda mais completas (e complexas! :sweat:) conhecidas como Ambientes de Desenvolvimento Integrado (_IDEs_). Uma das mais populares é o [PyCharm](https://www.jetbrains.com/es-es/pycharm/). Existem também IDEs em linha tais como [Colaboratory](https://colab.research.google.com/) e [Jupyter](https://jupyter.org/) que não precisamos baixar no computador. :músculo:
 
-Com excepção do Colab, para utilizar qualquer um destes editores e ambientes de desenvolvimento, teremos de os instalar nos nossos computadores. E com isso, seremos capazes de programar e executar os nossos guiões, não é verdade?
+Com excepção do Colab, para utilizar qualquer um destes editores e ambientes de desenvolvimento, teremos de instalá-los nos nossos computadores. E com isso, seremos capazes de programar e executar os nossos scripts, certo?
 
-Não! porque os editores são apenas ferramentas para escrever código, e não vêm com Python 😒. Vejamos então antes de continuarmos como instalar todas estas coisas.
+Não! Porque os editores são apenas ferramentas para escrever código, e não vêm com Python 😒. Vejamos então antes de continuarmos como instalar todas estas coisas.
 
 ### 💻 Instalar o ambiente local 
 
-> Nota: este guia é orientado para uma instalação local no Linux. Se tiver o Windows, [aqui](https://code.visualstudio.com/docs/python/python-tutorial) encontrará mais informações.
+> Nota: este guia é orientado para uma instalação local no Linux. Se tiver o Windows, [aqui](https://code.visualstudio.com/docs/python/python-tutorial) você encontrará mais informações.
 
-Para utilizar Python localmente (isto é, no seu computador em vez de numa plataforma online como [Replit](https://replit.com/) ou [Mumuki](https://mumuki.io)) precisaremos de instalar algum software. Abrir um terminal. Notará que algo semelhante ao que se segue aparece:
+Para utilizar o Python localmente (isto é, no seu computador, em vez de numa plataforma online como [Replit](https://replit.com/) ou [Mumuki](https://mumuki.io)) precisaremos instalar algum software. Abra um terminal. Note que algo semelhante ao que se segue aparece:
 
 ```shell
-my_name@my_computer:~$
+meu_nome@meu_computador:~$
 ```
 
-O que isto indica é que está ligado ao computador `my_computer` com um utilizador chamado `my_name`. Além disso, o sinal `$` (também chamado de prompt) indica que o terminal está pronto para aceitar comandos. Finalmente, o símbolo `~` indica que está no directório home do `my_name`, também chamado _home_.
+O que isto indica é que está ligado ao computador `meu_computador` com um utilizador chamado `meu_nome`. Além disso, o sinal `$` (também chamado de prompt) indica que o terminal está pronto para aceitar comandos. Finalmente, o símbolo `~` indica que está no directório principal do `meu_nome`, também chamado de _home_.
 
 E que comandos se pode executar? Aqui estão alguns dos (tantos) disponíveis:
 
-  * `cd`: mudar directório
-  *`ls`: mostrar o conteúdo do directório
-  * `pwd`: mostrar directório actual
+  * `cd`: mudar de diretório
+  * `ls`: mostrar o conteúdo do diretório
+  * `pwd`: mostrar o diretório atual
 
 A forma mais fácil de instalar o Python no Ubuntu (20.04 ou superior) é com o seguinte comando:
 
@@ -148,7 +148,7 @@ A forma mais fácil de instalar o Python no Ubuntu (20.04 ou superior) é com o 
 sudo apt install python3 python-is-python3 python3-pip
 ```
 
-O Código Visual é um dos editores de código mais comuns e flexíveis (em 2023). Por isso, neste tutorial vamos escolhê-lo. Para o instalarmos no Ubuntu, vamos executar o seguinte:
+O Visual Code é um dos editores de código mais comuns e flexíveis (em 2023). Por isso, neste tutorial vamos escolhê-lo. Para o instalarmos no Ubuntu, vamos executar o seguinte:
 
 ```bash
 sudo snap install code
@@ -160,22 +160,22 @@ Ou, se este comando gerar um aviso, podemos fazer o seguinte:
 $ sudo snap install code --classic
 ```
 
-Chegou a hora de testar tudo! Para editar um ficheiro, pode abrir Código Visual a partir do menu de aplicação, ou executando o comando ``código` num terminal. Exemplo:
+Chegou a hora de testar tudo! Para editar um arquivo, você pode abrir o Visual Code a partir do menu de aplicativos, ou executando o comando `code` num terminal. Exemplo:
 
 ```bash
-$ código mi_script.py
+$ code meu_script.py
 ```
 
-> Nota: O suporte por defeito do Código Visual para Python é limitado. Se quiser melhorar o apoio pode instalar a extensão oficial Python, a partir do menu Extensões (_Extensões_, na barra lateral esquerda). Aí deverá procurar por "Python" e escolher a extensão fornecida pela Microsoft:
+> Nota: O suporte que o Visual Code oferece para Python é limitado (por default). Se você quiser melhorar o supoprte, pode instalar a extensão oficial Python, a partir do menu Extensões (_Extensions_, na barra lateral esquerda). Aí você deve procurar por "Python" e escolher a extensão fornecida pela Microsoft:
 >
 > ![captura de ecrã de código visual](./vs_python_extension.png)
 
-Depois, para executar o conteúdo do ficheiro, pode fazê-lo:
+Depois, para executar o conteúdo do arquivo, corra:
 
 ```bash
-$ python3 mi_script.py
+$ python3 meu_script.py
 ```
-## Um guião mais complexo 💪
+## Um script mais complexo 💪
 
 Agora que temos todas as ferramentas instaladas e sabemos como criar e executar guiões, vamos olhar para um exemplo ligeiramente mais complexo de um guião para nos dar uma visão do grande potencial dos guiões no nosso trabalho diário.
 
