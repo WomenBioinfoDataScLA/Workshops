@@ -228,3 +228,18 @@ Obteniendo información del archivo [ES]Scripting.md
 Pesa: 11730 bytes
 Modificado por última vez: 2023-01-15 17:26:31
 ```
+
+> 💪 ¡Desafío final! Creá un script `swap.py` que tome dos nombres de archivo y renombre al primero con el nombre del segundo, y al segundo lo renombre con el nombre del primero.
+> Ejemplo:
+>
+> ```bash
+> cat hola.txt
+> hola
+> cat chau.txt
+> chau
+> ./swap.py hola.txt chau.txt
+> cat hola.txt
+> chau
+> cat chau.txt
+> hola
+> ```
