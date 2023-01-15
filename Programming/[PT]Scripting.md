@@ -12,13 +12,13 @@
 
 ## O que é um script? 💬
 
-Um _script_ (espanhol: guion) é basicamente um conjunto de instruções ordenadas, que têm como objectivo resolver uma tarefa específica. ⛔ Espera, isso soa muito como a definição de um _programa_, não soa?
+Um _script_ é basicamente um conjunto de instruções ordenadas, que têm o objetivo de resolver uma tarefa específica. ⛔ Espera, isso soa muito como a definição de um _programa_, não soa?
 
 Muito bem, você já entendeu! É que os scripts **são** programas, mas têm algumas características particulares:
 
  1) Normalmente interagem com bibliotecas de sistemas operativos, seja diretamente ou através de comandos bash;
  2) São normalmente executados num terminal (_shell_) e geralmente contra um intérprete;
- 3) Normalmente não têm uma interface gráfica, mas todas as interacções ocorrem através de entradas e saídas de texto;
+ 3) Normalmente não têm uma interface gráfica, mas todas as interações ocorrem através de entradas e saídas de texto;
  4) Recebem os seus argumentos a partir do terminal;
  5) Devolvem um código de saída numérico e inteiro (`0` por padrão e em caso de sucesso);
  6) Operam principalmente contra arquivos e _data streams_, tais como entrada padrão (`stdin`), saída padrão (`stdout`) e erro padrão (`stderr`).
@@ -29,19 +29,19 @@ Mais concretamente, os scripts são geralmente escritos em texto simples, utiliz
 
 Os scripts são particularmente úteis para automatizar tarefas que são executadas periodicamente (também conhecidas como tarefas programadas ou calendarizadas) ou para automatizar situações tediosas como, por exemplo
 
- * Executando um conjunto de programas e combinando os seus resultados;
- * Descarregar, carregar, mover e/ou descompactar ficheiros;
+ * Executar um conjunto de programas e combinar os seus resultados;
+ * Baixar, carregar, mover e/ou descompactar arquivos;
  * Realizar conversões de formato;
- * Execução de tarefas de construção de projectos de software, tais como compilação, teste e publicação; * Execução de tarefas operacionais de manutenção de sistemas, tais como: * Execução de tarefas de manutenção de sistemas, tais como
- * Execução de tarefas de manutenção do sistema operativo, tais como instalação e configuração de software, libertação de espaço, etc.
+ * Executar tarefas de construção de projectos de software, tais como compilação, teste e publicação;
+ * Executar tarefas de manutenção do sistema operativo, tais como instalação e configuração de software, liberação de espaço, etc.
 
-## Que línguas são usadas para a escrita?
+## Que linguagens são usadas para escrever scripts?
 
-Como já dissemos, as linguagens utilizadas para a escrita são geralmente interpretadas, ou seja, são executadas directamente contra um programa de interpretação que lê e executa as instruções, em vez de exigir uma compilação prévia (como seria por exemplo o caso de Java, C ou Go).
+Como já dissemos, as linguagens utilizadas para a escrita são geralmente interpretadas, ou seja, são executadas diretamente contra um programa de interpretação que lê e executa as instruções, em vez de exigir uma compilação prévia (como seria por exemplo o caso de Java, C ou Go).
 
-Isto porque quando programamos scripts, preocupamo-nos que a escrita de tais programas seja rápida e fácil, mas não que a sua execução seja rápida (as línguas compiladas normalmente optimizam o nosso código para reduzir o tempo de execução e os recursos em geral). Além disso, as linguagens de scripting tendem a oferecer uma fácil integração para executar programas externos, gerir ficheiros e interagir com o sistema operativo em geral.
+Isto porque quando programamos scripts, preocupamo-nos que a escrita de tais programas seja rápida e fácil, mas não que a sua execução seja rápida (as linguagens compiladas normalmente optimizam o nosso código para reduzir o tempo de execução e os recursos em geral). Além disso, as linguagens de scripting tendem a oferecer uma fácil integração para executar programas externos, gerir arquivos e interagir com o sistema operativo em geral.
 
-## Estrutura dos guiões Python 🧱
+## Estrutura dos scripts em Python 🧱
 
 Os roteiros têm sempre um único ponto de entrada, ou _main_, que é o que será executado quando invocado a partir do terminal.
 
