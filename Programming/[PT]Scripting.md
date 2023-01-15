@@ -43,68 +43,68 @@ Isto porque quando programamos scripts, preocupamo-nos que a escrita de tais pro
 
 ## Estrutura dos scripts em Python 🧱
 
-Os roteiros têm sempre um único ponto de entrada, ou _main_, que é o que será executado quando invocado a partir do terminal.
+Os scripts têm sempre um único ponto de entrada, ou _main_, que é o que será executado quando invocado a partir do terminal.
 
-Em Python, podemos fazer isto de duas maneiras. Uma delas é a forma mais "básica", que é ter um ficheiro normal `.py`, que importa os pacotes necessários e executa as operações. Por exemplo, digamos que fazemos um guião que diz simplesmente "olá mundo" e termina. Para o fazer, escreveríamos um ficheiro `hello.py` contendo exactamente isto:
+Em Python, podemos fazer isto de duas maneiras. Uma delas é a forma mais "básica", que é ter um arquivo normal `.py`, que importa os pacotes necessários e executa as operações. Por exemplo, digamos que fazemos um script que diz simplesmente "olá mundo" e termina. Para isso, criaríamos um arquivo `hello.py` contendo exactamente isto:
 
 ```python
 print("olá mundo")
 ```
 
-Em alternativa, podemos escrevê-lo de uma forma ligeiramente mais complexa, mas mais "clássica" e conceptualmente correcta:
+Como alternativa, podemos escrevê-lo de uma forma um pouco mais complexa, mas mais "clássica" e conceptualmente correta:
 
 ```python
 def main():
     print("olá mundo")
 
-se __nome__ == "__main__":
-  principal()
+if __name__ == "__main__":
+  main()
 ```
 
-E é tudo! Este é provavelmente um dos guiões mais simples que podemos fazer.
+E isso é tudo! Este é provavelmente um dos scripts mais simples que podemos fazer.
 
-## Como é que gerimos um guião? 🤔
+## Como executamos um script? 🤔
 
-Agora, como é que o executamos? A forma mais óbvia é correr o ficheiro a partir do terminal, utilizando o caminho absoluto ou relativo para o ficheiro, invocando directamente o intérprete apropriado. Por exemplo, ao fazer:
+Agora, como é que o executamos? A forma mais óbvia é executar o arquivo a partir do terminal, utilizando o caminho absoluto ou relativo para o arquivo, invocando diretamente o intérprete apropriado. Por exemplo, fazendo:
 
 
 ```bash
-python3 olá.py
+python3 hello.py
 ```
 
-Embora claramente mais simples, este atalho pode ter algumas desvantagens em relação à utilização de todos os passos acima referidos, nomeadamente o facto de forçar aqueles que utilizam o nosso guião a saber qual o intérprete contra o qual o guião deve ser executado.
+Embora claramente mais simples, este atalho pode ter algumas desvantagens em relação à utilização de todos os passos ditos anteriormente, já que obriga quem usa o nosso script a conhecer o intérprete contra o qual o script deve ser executado.
 
-Seria melhor se a pessoa que usa o nosso guião não tivesse de saber qual o intérprete contra o qual comparar o ficheiro, não seria? Por outras palavras, poder simplesmente fazer `./hello.py`. Mas como é que o sistema reconheceria que este ficheiro, que à primeira vista parece um ficheiro de texto comum, tem de ser executado como um guião?
+Seria melhor se a pessoa que usa o nosso script não tivesse de saber qual o intérprete contra o qual executar o arquivo, não seria? Em outras palavras, poder simplesmente rodar `./hello.py`. Mas como é que o sistema reconheceria que este arquivo, que à primeira vista parece um arquivo de texto comum, tem de ser executado como um script?
 
-Em **linux** todos os ficheiros de texto simples são apenas texto simples, por isso não importa a extensão que lhes dês, por isso tens de dizer de alguma forma que um determinado ficheiro é um script contendo comandos a serem executados. Para isso, precisamos:
+Em **linux** todos os arquivos de texto simples são apenas texto simples, por isso, não importa a extensão que lhes damos, então temos que dizer de alguma forma que um determinado arquivo é um script contendo comandos a serem executados. Para isso, precisamos:
 
-1) Primeiro, o primeiro é normalmente digitado `#!`, que é conhecido como shebang, seguido pelo caminho do intérprete contra o qual o programa será executado (python neste caso). Em sistemas Linux é: `#!/bin/python3`.
+1) Em primeiro lugar, começar digitado `#!`, que é conhecido como shebang, seguido pelo caminho do intérprete contra o qual o seu script será executado (Python, neste caso). Em sistemas Linux ficaria: `#!/bin/python3`.
 
-2) Em segundo lugar, o ficheiro deve ter permissões de execução. Como já vimos, este último pode ser feito utilizando o comando `chmod` cujas opções são:
+2) Em segundo lugar, o arquivo deve ter permissões de execução. Como já vimos, este último pode ser feito utilizando o comando `chmod` cujas opções são:
 
-    `+r`, `+w` ou `+x` para dar permissões de leitura, escrita ou execução a um ficheiro, respectivamente.
+    `+r`, `+w` ou `+x` para dar permissões de leitura, escrita ou execução a um arquivo, respectivamente.
 
     `-r`, `-w` ou `-x` para os remover.
 
 
-    Estas opções podem ser combinadas, portanto, se eu quiser dar todas as permissões a um ficheiro que eu possa fazer:
+    Estas opções podem ser combinadas. Portanto, se eu quiser dar todas as permissões a um arquivo que eu possa fazer:
 
     ```bash
-    chmod +rwx ficheiro
+    chmod +rwx arquivo
     ```
 
-3) Finalmente, devemos executar o ficheiro utilizando o caminho completo (absoluto) para o ficheiro ou estando na pasta onde o ficheiro se encontra podemos utilizar o `./nome_script.py`.
+3) Finalmente, devemos executar o arquivo utilizando o caminho completo (absoluto) para o arquivo ou se estamos na pasta onde o arquivo se encontra, podemos utilizar o `./nome_do_script.py`.
 
 Por exemplo, o nosso `hello.py` terá este aspecto:
 
 ```python
-/bin/python3
+#!/bin/python3
 
 def main():
     print("olá mundo")
 
-se __nome__ == "__main__":
-  principal()
+if __name__ == "__main__":
+  main()
 ```
 
 ## IDEs ou Ambientes de Desenvolvimento 
