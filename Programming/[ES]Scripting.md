@@ -10,7 +10,7 @@
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 
-## ¿Qué es un script?
+## ¿Qué es un script? 💬
 
 Un _script_ (en español: guion) es básicamente un conjunto de instrucciones ordenadas, que buscan resolver una tarea específica. ⛔ Momento, se parece mucho a la definición de un _programa_, ¿no?
 
@@ -41,7 +41,7 @@ Como ya contamos, los lenguajes usados para scripting suelen ser interpretados, 
 
 Esto es así porque cuando programamos scripts nos importará que la escritura de dichos programas sea rápida y sencilla, pero no así que su ejecución sea rápida (los lenguajes compilados suelen optimizar nuestro código para reducir el tiempo de ejecución y recursos en general). Además los lenguajes de _scripting_ suelen ofrecer fácil integración para ejecutar programas externos, gestionar archivos e interactuar con el sistema operativo en general.
 
-## Estructura de los scripts en Python
+## Estructura de los scripts en Python 🧱
 
 Los scripts tienen siempre un único punto de entrada, o _main_, que es aquello que se ejecutará cuando se invoque al mismo desde la terminal.
 
@@ -64,7 +64,7 @@ if __name__ == "__main__":
 ¡Y eso es todo! Este es probablemente uno de los scripts más simples que podemos realizar.
 
 
-## ¿Como ejecutamos un script?
+## ¿Como ejecutamos un script? 🤔
 
 Ahora bien, ¿cómo hacemos para ejecutarlo? La forma más obvia es ejecutar el archivo desde la terminal, usando la ruta absoluta o relativa al archivo invocando directamente el intérprete adecuado. Por ejemplo haciendo:
 
@@ -108,7 +108,7 @@ if __name__ == "__main__":
   main()
 ```
 
-## IDEs o Entornos de Desarrollo
+## IDEs o Entornos de Desarrollo 
 
 Para escribir cómodamente nuestros scripts vamos a necesitar una herramienta llamada editor de código, que se parece bastante a un editor de texto, pero no sirve para escribir poemas, currículums, o trabajos prácticos de la escuela (donde nos va a importar que nos corrija la ortografía, subrayar, poner negritas o cambiar colores), sino para crear programas complejos. :star_struck:
 
@@ -125,7 +125,7 @@ Con la excepción de Colab, para usar cualquiera de estos editores y entornos de
 
 ¡No! Porque los editores sólo son herramientas para escribir código, y no vienen con Python 😒. Veamos entonces antes de continuar como instalar todas estas cosas.
 
-## Instalación del entorno local
+## 💻 Instalación del entorno local 
 
 > Nota: esta guía está orientada a una instalación local en Linux. Si tenés Windows, [acá](https://code.visualstudio.com/docs/python/python-tutorial) encontrarás más información.
 
@@ -178,7 +178,9 @@ $ python3 mi_script.py
 ```
 
 
-## Un script más complejo
+## Un script más complejo 💪
+
+Ahora que tenemos todas las herramientas instaladas y sabemos como crear y ejecutar scripts, vamos a ver un ejemplo un poco más complejo de script que nos sirva para vislumbrar el gran potencial de los scripts en nuestro trabajo diario.
 
 Como mencionamos anteriormente, los scripts suelen interactuar con el el sistema de archivos (_file system_ o _FS_) y el sistema operativo en general (_Operative System_ u _OS_). Justamente por ello es que [el módulo `os`](https://docs.python.org/es/3.10/library/os.html) de Python nos será de particular ayuda cuando escribamos nuestros scripts. Allí encontraremos operaciones como las siguientes:
 
@@ -215,7 +217,6 @@ print("Modificado por última vez:", datetime.utcfromtimestamp(estadisticas.st_a
 
 Para poder hacer ejecutable a nuestro script deberemos hacer lo siguiente:
 
-
 ```bash
 chmod u+x stats.py
 ```
@@ -229,7 +230,7 @@ Pesa: 11730 bytes
 Modificado por última vez: 2023-01-15 17:26:31
 ```
 
-> 💪 ¡Desafío final! Creá un script `swap.py` que tome dos nombres de archivo y renombre al primero con el nombre del segundo, y al segundo lo renombre con el nombre del primero.
+> 🧗🏻‍♀️ ¡Desafío final! Creá un script `swap.py` que tome dos nombres de archivo y renombre al primero con el nombre del segundo, y al segundo lo renombre con el nombre del primero.
 > Ejemplo:
 >
 > ```bash
@@ -245,13 +246,23 @@ Modificado por última vez: 2023-01-15 17:26:31
 > ```
 
 
-## Para cerrar
+## Aquí nadie tiene la última palabra
+
+Hasta aquí hemos visto qué es un script, sus usos y qué herramientas podemos utilizar para desarrollarlos. Ahora bien, es importante tener en cuenta que las herramientas son solo eso: herramientas 🛠️. Y al igual que sucede con los lenguajes de programación, no hay una mejor que la otra, si no que existen más bien herramientas más apropiadas que otras para uno u otro uso.
+
+Es por ello que para desarrollar scripts te mostramos IDEs como [Visual Studio Code](https://code.visualstudio.com/), que resultan particularmente útiles cuando estamos desarrollando cierto tipo de proyectos como los que hicimos de ejemplo, donde no era necesario visualizar de forma interactiva tablas o gráficos 📊.
+
+Pero, en el mundo de los datos esto de manipular tablas y analizar gráficos es cosa de todos los días, por lo que en este mundillo nos puede resultar de gran utilidad otras herramientas que nos permita explorar y visualizar tablas y gráficos sin necesidad de tener miles de pesañas abiertas.
+
+Existe en Python, lo que se conocen como cuadernos interactivos (o `ipynb`s, por las siglas en inglés de _Interactive Python Notebook_). Este tipo de archivo nos permitirán resolver, tanto los problemas más complejos como los que venimos viendo hasta ahora, pero también los que necesitaremos realizar a la hora de trabajar con datos.
+
+Si bien en nuestro curso usaremos los `Notebooks` para desarrollar código Python, estos pueden ser utilizados para desarrollar en otros leguajes de programación también comunes en el mundo de los datos: Julia, Python y R.
+
+La manera más sencilla de empezar a trabajar con los cuadernos interactivos es utilizando la plataforma [Colab](https://colab.research.google.com) de Google, pero recordá que también podés ejecutarlos y crearlos de manera local usando [Visual Studio Code](https://code.visualstudio.com/) o algún otro IDE específico para este tipo de archivos como [Juptyer](https://jupyter.org/install) 🔬.
+
+Dentro de cualquiera de estas plataformas vas a poder crear cuadernos, en los que convivirán fragmentos (llamados _celdas_) de texto (para tomar notas) y código (para ejecutar experimentos):
+
+![colab](Colab[ES].png)
 
 
-A partir de esta lección comenzaremos a utilizar una nueva herramienta: los cuadernos interactivos de Python (o `ipynb`s, por las siglas en inglés de _Interactive Python Notebook_). Éstos nos permitirán resolver problemas más complejos que los que venimos viendo hasta ahora, y los necesitaremos para realizar varios de los próximos ejercicios.
-
-La manera más sencilla de empezar a trabajar con ellos es utilizando la plataforma [Colab](https://colab.research.google.com) de Google. Otra alternativa un poco más compleja pero también muy flexible es instalar en tu computadora el laboratorio de [Juptyer](https://jupyter.org/install) 🔬.
-
-Dentro de cualquiera de las dos plataformas vas a poder crear cuadernos, en los que convivirán fragmentos (llamados _celdas_) de texto (para tomar notas) y código (para ejecutar experimentos).
-
-:checkered_flag: Una vez que hayas podido crear un cuaderno en Juyter o Colab, acompañános al siguiente ejercicio.
+:checkered_flag: Una vez que hayas podido crear un cuaderno en Juyter o Colab, como se muestra en la imágen ya podés comenzar a trabajar en con tus datos 📈 💪
