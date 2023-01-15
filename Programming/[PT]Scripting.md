@@ -177,69 +177,69 @@ $ python3 meu_script.py
 ```
 ## Um script mais complexo 💪
 
-Agora que temos todas as ferramentas instaladas e sabemos como criar e executar guiões, vamos olhar para um exemplo ligeiramente mais complexo de um guião para nos dar uma visão do grande potencial dos guiões no nosso trabalho diário.
+Agora que temos todas as ferramentas instaladas e sabemos como criar e executar scripts, vamos olhar para um exemplo ligeiramente mais complexo de um script para nos dar uma visão do grande potencial dos script no nosso trabalho diário.
 
-Como mencionado anteriormente, os scripts geralmente interagem com o sistema de ficheiros (_Sistema de ficheiros_ ou _FS_) e o sistema operativo em geral (_Sistema Operativo_ ou _OS_). É precisamente por esta razão que o módulo 'os' de Python (https://docs.python.org/es/3.10/library/os.html) será de particular ajuda na escrita dos seus guiões. Aí encontrará operações como as que se seguem:
+Como mencionado anteriormente, os scripts geralmente interagem com o sistema de arquivos (_file system_ ou _FS_) e o sistema operativo em geral (_Operative System_ ou _OS_). É precisamente por esta razão que o módulo 'os' do Python (https://docs.python.org/es/3.10/library/os.html) nos ajudará na escrita dos seus scripts. Nele encontraremos operações como as que se seguem:
 
-  * `os.stat`: permite-nos obter estatísticas sobre um ficheiro (tal como o seu tamanho).
-  * ``os.rename`: permite-nos renomear ficheiros
-  * `os.rmdir`: permite-nos eliminar directórios.
+  * `os.stat`: nos permite obter estatísticas sobre um arquivo (tal como o seu tamanho).
+  * ``os.rename`: nos permite renomear arquivos
+  * `os.rmdir`: nos permite deletar diretórios
 
-Da mesma forma, [o submódulo `os.path`](https://docs.python.org/3/library/os.path.html) dar-nos-á mais funcionalidades para interagir com ficheiros e os seus caminhos:
+Da mesma forma, [o submódulo `os.path`](https://docs.python.org/3/library/os.path.html) nos dá mais funcionalidades para interagir com arquivos e os seus caminhos:
 
- * `os.path.dirname`: permite-nos obter o directório onde um ficheiro está contido.
- * 'os.path.exists': permite-nos saber se um ficheiro existe
- * 'os.path.join': permite-nos concatenar caminhos (por exemplo, combinar '/um' e 'caminho' para obter '/um/caminho')
+ * `os.path.dirname`: nos permite obter o diretório onde um arquivo está contido.
+ * 'os.path.exists': nos permite saber se um arquivo existe
+ * 'os.path.join': nos permite concatenar caminhos (por exemplo, combinar '/um' e 'caminho' para obter '/um/caminho')
 
-Finalmente, [o módulo `sys`](https://docs.python.org/es/3/library/sys.html) dar-nos-á acesso a `sys.argv`: uma lista contendo o nome do guião e os argumentos com os quais um programa foi executado.
+Finalmente, [o módulo `sys`](https://docs.python.org/es/3/library/sys.html) nos dá acesso ao `sys.argv`: uma lista contendo o nome do script e os argumentos com os quais ele foi executado.
 
-Vamos ver um pequeno exemplo! Criar o seguinte guião `stats.py`.
+Vamos ver um pequeno exemplo! Crie o seguinte script `stats.py`.
 
 ```python
-/bin/python3
+#!/bin/python3
 
-importar os
-sistema de importação
-de data/hora de importação # de data para transformar datas
+import os
+import sys
+from datetime import datetime #para transformar datas
 
-ficheiro = sys.argv[1] # o primeiro parâmetro corresponde à posição 1,
-                      # desde que a posição 0 contém o nome do guião
+arquivo = sys.argv[1] # o primeiro parâmetro corresponde à posição 1,
+                      # já que a posição 0 contém o nome do script
 
-imprimir("Obter informação de ficheiro", ficheiro)
+imprimir("Obtendo informação do arquivo", arquivo)
 
-statistics = os.stat(file)
-print("Weighhs:", statistics.st_size, "bytes")
-print("Last modified:", datetime.utcfromtimestamp(stats.st_atime).strftime('%Y-%m-%d %H:%M:%S'))
+estatisticas  = os.stat(arquivo)
+print("Peso:", estatisticas.st_size, "bytes")
+print("Modificado pela última vez em:", datetime.utcfromtimestamp(estatisticas.st_atime).strftime('%Y-%m-%d %H:%M:%S'))
 ```
 
-A fim de tornar o nosso guião executável, temos de fazer o seguinte:
+A fim de tornar o nosso script executável, temos de fazer o seguinte:
 
 ```bash
 chmod u+x stats.py
 ```
 
-E agora podemos geri-lo desta forma:
+E agora podemos executá-lo desta forma:
 
 ```bash
-./stats.py '[ES]Scripting.md'.
-Obter informação do ficheiro [ES]Scripting.md
+./stats.py '[PT]Scripting.md'.
+Obtendo informação do arquivo [PT]Scripting.md
 Peso: 11730 bytes
-Última modificação: 2023-01-15 17:26:31 AM
+Modificado pela última vez em: 2023-01-15 17:26:31 AM
 ```
 
-> 🧗🏻♀️ Desafio final! Criar um guião `swap.py` que toma dois nomes de ficheiro e renomeia o primeiro com o nome do segundo, e renomeia o segundo com o nome do primeiro.
-> Exemplo:
+> 🧗🏻♀️ Desafio final! Criar um script `swap.py` que receba dois nomes de arquivo e renomeie o primeiro com o nome do segundo, e renomeie o segundo com o nome do primeiro. Exemplo:
 >
 > ```bash
-> $ cat hello.txt
+> $ cat ola.txt
 > olá
-> $ $ $ cat hello.txt
-> ```
-> ```bash
-> $ ./swap.py hello.txt chau.txt chau.txt
-> $ $ $ cat hello.txt
-> chau
-> $ $ $ gato chau.txt
+> $ cat tchau.txt
+> tchau
+> 
+> $ ./swap.py ola.txt tchau.txt
+> 
+> $ cat ola.txt
+> tchau
+> $ cat tchau.txt
 > olá
 > ```
 
