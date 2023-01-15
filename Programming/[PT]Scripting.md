@@ -10,24 +10,24 @@
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
-## O que é um guião? 💬
+## O que é um script? 💬
 
-Um _escrito_ (espanhol: guion) é basicamente um conjunto de instruções ordenadas, que têm como objectivo resolver uma tarefa específica. ⛔ Espera, isso soa muito como a definição de um _programa_, não soa?
+Um _script_ (espanhol: guion) é basicamente um conjunto de instruções ordenadas, que têm como objectivo resolver uma tarefa específica. ⛔ Espera, isso soa muito como a definição de um _programa_, não soa?
 
-Muito bem, já nos percebeu! É que os guiões **são** programas, mas têm algumas características particulares:
+Muito bem, você já entendeu! É que os scripts **são** programas, mas têm algumas características particulares:
 
- 1) Normalmente interagem com bibliotecas de sistemas operativos, quer directamente, quer através de comandos bash;
+ 1) Normalmente interagem com bibliotecas de sistemas operativos, seja diretamente ou através de comandos bash;
  2) São normalmente executados num terminal (_shell_) e geralmente contra um intérprete;
- 3) Normalmente não têm uma interface gráfica, mas todas as interacções ocorrem através de entrada e saída de texto;
- 4) Eles recebem os seus argumentos do terminal;
- 5) Eles devolvem um código de saída numérico e inteiro (`0` por defeito e em caso de sucesso);
- 6) Operar principalmente contra ficheiros e _data streams_, tais como entrada padrão (`stdin`), saída padrão (`stdout`) e erro padrão (`stderr`).
+ 3) Normalmente não têm uma interface gráfica, mas todas as interacções ocorrem através de entradas e saídas de texto;
+ 4) Recebem os seus argumentos a partir do terminal;
+ 5) Devolvem um código de saída numérico e inteiro (`0` por padrão e em caso de sucesso);
+ 6) Operam principalmente contra arquivos e _data streams_, tais como entrada padrão (`stdin`), saída padrão (`stdout`) e erro padrão (`stderr`).
 
-Mais concretamente, os guiões são geralmente escritos em texto simples, utilizando uma linguagem de programação _interpretada_, tal como Python, Perl, Ruby ou Bash, e o seu comprimento variará de acordo com a sua linguagem. Por exemplo, os guiões Python utilizam a extensão `.py`, e os escritos em Bash, `.sh` (ou sem qualquer extensão).
+Mais concretamente, os scripts são geralmente escritos em texto simples, utilizando uma linguagem de programação _interpretada_, tal como Python, Perl, Ruby ou Bash, e o sua extensão variará de acordo com a sua linguagem. Por exemplo, os scripts em Python utilizam a extensão `.py`, e os escritos em Bash, `.sh` (ou sem qualquer extensão).
 
-## Porque é que queremos guiões?
+## Para quê queremos scripts?
 
-Os guiões são particularmente úteis para automatizar tarefas que decorrem periodicamente (também conhecidas como tarefas programadas ou calendarizadas) ou para automatizar situações enfadonhas como, por exemplo
+Os scripts são particularmente úteis para automatizar tarefas que são executadas periodicamente (também conhecidas como tarefas programadas ou calendarizadas) ou para automatizar situações tediosas como, por exemplo
 
  * Executando um conjunto de programas e combinando os seus resultados;
  * Descarregar, carregar, mover e/ou descompactar ficheiros;
