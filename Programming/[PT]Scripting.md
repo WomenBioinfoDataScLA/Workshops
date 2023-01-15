@@ -80,7 +80,7 @@ Em **linux**, todos os arquivos de texto simples são apenas texto simples, por 
 
 1) Em primeiro lugar, começar digitado `#!`, que é conhecido como shebang, seguido pelo caminho do intérprete contra o qual o seu script será executado (Python, neste caso). Em sistemas Linux ficaria: `#!/bin/python3`.
 
-2) Em segundo lugar, o arquivo deve ter permissões de execução. Como já vimos, este último pode ser feito utilizando o comando `chmod` cujas opções são:
+2) Em segundo lugar, o arquivo deve ter permissões de execução. Como já vimos, isso pode ser feito utilizando o comando `chmod` cujas opções são:
 
     `+r`, `+w` ou `+x` para dar permissões de leitura, escrita ou execução a um arquivo, respectivamente.
 
