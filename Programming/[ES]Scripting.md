@@ -43,13 +43,43 @@ Esto es así porque cuando programamos scripts nos importará que la escritura d
 
 ## Estructura de los scripts en Python
 
+Los scripts tienen siempre un único punto de entrada, o _main_, que es aquello que se ejecutará cuando se invoque al mismo desde la terminal.
+
+En Python podemos hacerlo de dos formas. Una es la más "básica", que consiste en contar con un archivo `.py` común y corriente, que importe los paquetes necesarios y ejecute ejecute las operaciones. Por ejemplo, supongamos que haremos un script que simplemente dice `hola mundo` y termina. Para ello deberemos escribir un archivo `hello.py` que contenga exactamente ésto:
+
+```python
+print("hola mundo")
+```
+
+Alternativamente, podemos escribirlo de una forma un poco más compleja, pero más "clásica" y conceptualmente correcta:
+
+```python
+def main():
+    print("hola mundo")
+
+if __name__ == "__main__":
+  main()
+```
+
+¡Y eso es todo! Este es probablemente uno de los scripts más simples que podemos realizar.
+
+
 ## ¿Como ejecutamos un script?
 
-Ahora bien, la gran pregunta es ¿cómo reconoce el sistema que este archivo que a simple vista parece un archivo de texto común se tiene que ejecutar como un script?:
+Ahora bien, ¿cómo hacemos para ejecutarlo? La forma más obvia es ejecutar el archivo desde la terminal, usando la ruta absoluta o relativa al archivo invocando directamente el intérprete adecuado. Por ejemplo haciendo:
+
+
+```
+python3 hello.py
+```
+
+Aunque es claramente más sencilla, esta forma abreviada de ejecución puede tener algunas desventajas respecto de usar todos los pasos anteriores, entre ellas y la más importante es que obliga a quienes utilizan nuestro script a conocer el intérprete contra el que debe ejecutar el script.
+
+Sería mejor que la persona que usa nuestro script no tuviera que saber con qué interprete ejecutar el archivo, ¿no? En otras palabras, poder hacer simplemente `./hello.py`. Pero, ¿cómo reconocería el sistema que este archivo que a simple vista parece un archivo de texto común se tiene que ejecutar como un script?
 
 En **linux** todos los archivos de texto plano son justamente eso textos planos, por lo que no influye la extensión que le pongamos, por lo cual hay que de alguna manera indicarle que un archivo en particular es un script que contiene comandos que deben ejecutarse. Para esto necesitamos:
 
-    1) En primer lugar, en la primera se suele escribir #!, que se conoce como shebang, seguido de la ruta del interprete contra el que se debe ejecutar el programa (python en este caso). En los sistemas Linux es: `#!/bin/python3`
+    1) En primer lugar, en la primera se suele escribir `#!`, que se conoce como shebang, seguido de la ruta del interprete contra el que se debe ejecutar el programa (python en este caso). En los sistemas Linux es: `#!/bin/python3`
 
     2) En segundo lugar el archivo tiene que tener permisos de ejecución. Como ya vimos, esto último se puede hacer usando el comando `chmod` cuyas opciones son:
 
@@ -66,15 +96,16 @@ En **linux** todos los archivos de texto plano son justamente eso textos planos,
 
     3) Por último, debemos ejecutar el archivo usando la ruta completa (absoluta) al archivo o estando en la carpeta donde se encuentra el archivo podemos usar el `./nombre_script.py`
 
-La mayoría de estos pasos son equivalentes en todos los sistemas operativos y pueden ser resumidos quizás tomando algunos atajos:
+Por ejemplo, en nuestro `hello.py` nos quedará así:
 
-    1) Ejecutar el archivo desde la terminal, usando la ruta absoluta o relativa al archivo invocando directamente el intérprete adecuado. Por ejemplo haciendo:
+```python
+#!/bin/python3
 
-    ```python
-    python3 nombre_script.py
-    ```
+def main():
+    print("hola mundo")
 
-Aunque es claramente más sencilla, esta forma abreviada de ejecución puede tener algunas desventajas respecto de usar todos los pasos anteriores, entre ellas y la más importante es que obliga a quienes utilizan nuestro script a conocer el intérprete contra el que debe ejecutar el script.
-
+if __name__ == "__main__":
+  main()
+```
 
 ## IDEs o Entornos de Desarrollo
