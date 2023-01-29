@@ -191,7 +191,7 @@ Como mencionamos anteriormente, los scripts suelen interactuar con el el sistema
 De igual forma, [el submódulo `os.path`](https://docs.python.org/3/library/os.path.html) nos dará más funcionalidades para interactuar con archivos y sus rutas:
 
  * `os.path.dirname`: nos permite obtener el directorio donde un archivo está contenido
- * `os.getcwd()`: nos permite conocer el directorio donde estamos
+ * `os.getcwd`: nos permite conocer el directorio donde estamos
  * `os.path.exists`: nos permite saber si un archivo existe
  * `os.path.join`: nos permite concatenar rutas (por ejemplo, combinar `/una` y `ruta` para obtener `/una/ruta`)
 
