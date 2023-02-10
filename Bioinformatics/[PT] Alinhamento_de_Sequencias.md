@@ -141,3 +141,5 @@ Existem também ferramentas que permitem comparações de sequências pareadas e
 Em ambos os casos o alinhamento pode ser local ou global, o que implicará algumas limitações de utilização para cada caso.
 
 > PARA PENSAR 🤔: Em que casos um ou outro tipo de alinhamento será útil? Que limitações cada um terá?
+
+👉 Vamos conhecer e aprender a usar o BLAST no [próximo material](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Bioinformatics/%5BPT%5D%20Busca_similaridade_sequencia.md)!
