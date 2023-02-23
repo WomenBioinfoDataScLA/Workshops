@@ -55,4 +55,4 @@ Uma vez que um repositório é criado localmente, ele pode ser continuamente sin
 
 - `git pull`: para baixar as alterações que possam existir no repositório remoto (`origin`).
 
-Mas já que `melhor que falar é fazer`, vamos ao que interessa com alguns exercícios [práticos](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BPT%5D2.Pratica.md)!
+É hora de [configurar](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BPT%5D1.Git_and_GitHub_setup.md) tudo!
