@@ -156,3 +156,5 @@ Digite `yes`. Se disser algo como o seguinte, funcionou:
 ```
 Hi <seu login>! You've successfully authenticated, but Github does not provide shell access.
 ```
+
+😍 Agora temos tudo pronto para começar a parte [prática](https://github.com/WomenBioinfoDataScLA/Workshops/blob/master/Git_%26GitHub/%5BPT%5D2.Pratica.md) deste tutorial.
